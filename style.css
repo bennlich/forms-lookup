@@ -1,0 +1,50 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background: #eeefee;
+  font-family: sans-serif;
+}
+
+#srl-filter-input {
+  width: 500px;
+}
+
+.search-results {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 0px 20px 16px 20px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.results-header {
+  font-size: 20px;
+  margin: 18px 0px 12px 0px;
+}
+
+.guide-results {
+  columns: 2;
+}
+
+.guide-result {
+  margin: 8px 0px;
+}
+
+.form-results {
+  /*columns: 2;*/
+}
+
+.form-result {
+  margin: 12px 0px;
+}
+
+.form-number {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
