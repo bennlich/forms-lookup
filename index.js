@@ -165,13 +165,22 @@ async function init() {
     });
 
     let matchingForms = forms.filter((form) => {
-      let allTags = [form.id, form.title];
+      let allTags = [form.id, form.title, form.id.replace(/\-/g, '')].concat(form.id.split('-'));
       return _.some(allTags.map((tag) => tag.toLowerCase().startsWith(currentInput.toLowerCase())));
     });
 
-    guideResults.innerHTML = matchingGuides.map((guide) => guideResult(guide)).join('\n');
-
-    formResults.innerHTML = matchingForms.map((form) => formResult(form)).join('\n');
+    if (matchingGuides.length > 0) {
+      guideResults.innerHTML = matchingGuides.map((guide) => guideResult(guide)).join('\n');  
+    } else {
+      guideResults.innerHTML = "No matching guides";
+    }
+    
+    if (matchingForms.length > 0) {
+      formResults.innerHTML = matchingForms.map((form) => formResult(form)).join('\n');  
+    } else {
+      formResults.innerHTML = "No matching forms";
+    }
+    
   }
 
   function guideResult(guide) {
