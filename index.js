@@ -170,7 +170,7 @@ async function init() {
     });
 
     if (matchingGuides.length > 0) {
-      guideResults.innerHTML = matchingGuides.map((guide) => guideResult(guide)).join('\n');  
+      guideResults.innerHTML = matchingGuides.sort((a, b) => a.title < b.title ? -1 : 1).map((guide) => guideResult(guide)).join('\n');
     } else {
       guideResults.innerHTML = "No matching guides";
     }
