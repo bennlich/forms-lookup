@@ -1,0 +1,163 @@
+﻿/*New classes for Side Callout integration*/
+/*Special Notice Callout*/
+
+.sideSpecialNotice {
+	border-style: solid;
+	border-color: rgb(182,151,151);
+}
+
+.sideSpecialNotice h3 {
+	background-repeat: no-repeat;
+	background-color: rgb(135,37,37);   
+	background-image: url(/images/icon-clipboard.png);
+    color: rgb(255,255,255);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sideSpecialNotice .inner {
+	color: rgb(135,37,37);
+}
+
+.sideSpecialNotice .inner p {
+}
+
+.sideSpecialNotice .inner a {
+	text-decoration: none;
+}
+
+.sideSpecialNotice .inner a:hover {
+	text-decoration: underline;
+}
+
+/*Video Callout*/
+.sideVideo		 {
+	border-style: solid;
+	border-color: rgb(224,224,224);
+	clear: both;
+	display: block;	
+}
+
+.sideVideo a {
+	text-decoration: none;
+}
+
+.sideVideo a:hover {
+	text-decoration: underline;
+}
+.sideVideoHeader {
+    margin-top: 10px;
+	padding: 0 10px !important;
+    font-size: 1.334em;
+}
+
+.sideVideo .caption	 { 
+}
+
+/*Blue Side Callouts*/
+.blueSideCallouts {
+	border-style: solid;
+	border-color: rgb(106,136,171);
+	clear: both;
+	display: block;
+}
+
+.blueSideCallouts .inner			 {
+	border-bottom-style: solid;
+	background-color: rgb(245,246,249);
+    border-bottom-color: rgb(245,246,249);
+}
+
+.blueSideCallouts .inner a {
+	text-decoration:underline;
+}
+
+.blueSideCallouts .inner a:hover {
+	text-decoration: underline;
+}
+
+.blueSideCallouts > .inner > h3		{
+	  font-weight: bold !important;
+    font-size: 1.1em !important;
+}
+
+.blueSideCallouts .inner .callout_content	 {
+	text-align: left;
+}
+
+.blueSideCallouts .inner .callout_content a {
+	text-decoration: underline;
+}
+
+.blueSideCallouts .inner .callout_content a:hover {
+	text-decoration: underline;
+}
+
+.blueSideCallouts .inner .generic_content	 {
+}
+
+.blueSideCallouts .inner .generic_content a {
+	text-decoration: underline;
+}
+
+.blueSideCallouts .inner .generic_content a:hover {
+	text-decoration: underline;
+}
+
+.blueSideCallouts ul, .blueSideCallouts li {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.blueSideCallouts .inner .callout_content ul {
+	list-style: none;
+}
+
+.blueSideCallouts .inner .generic_content ul {
+	list-style: none;
+}
+
+.blueSideCallouts .inner .callout_content li {
+	background-repeat: no-repeat;
+	background-image: url(/images/bullet-doublearrow.png);
+	display: block;	
+}
+
+.blueSideCallouts .inner .generic_content li {
+	background-repeat: no-repeat;
+	background-image: url(/images/bullet-doublearrow.png);
+	display: block;
+}
+
+
+/* BEGIN FEATURED PROFILE */
+.sideProfile {
+    text-align: center;
+}
+
+.sideProfile-pic {
+    width: 242px;
+    margin: 0 auto;
+    padding: 0.8em 0.8em 1em;
+    border: 0.1em solid #e5e5e5;
+    box-shadow: 3px 3px 5px #e6e6e6;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sideProfile-img {
+    width: 98%;
+    height: auto;
+    background-color: #e5e5e5;
+}
+
+.sideProfile-title {
+    margin-top: 6px;
+    font-family: 'Arial', san-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    color: inherit;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+/* END FEATURED PROFILE */

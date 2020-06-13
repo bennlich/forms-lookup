@@ -1,0 +1,61 @@
+﻿/*Updated [date] by [user initials]*/
+/* List of Updates */
+/* 8/3/2015:  Reorganize */
+
+#mainContent {
+	background-repeat: repeat;
+	background-image: url(/images/bg-3column.png);
+}
+
+.inner-wrap {
+}
+
+/* Content Headers */
+.headwrap	 {
+	float: left;
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	background-image: url(/images/fullLine.png);
+}
+/*  Left Panel */
+#leftPanel {
+	float: left;
+}
+/* Main Panel */
+#mainPanel	{
+	float: left;
+}
+
+#landingPage #printWrap {
+}
+
+.headwrap h1 {
+}
+
+.leftBorder {
+	border-left-color: rgb(226,227,227);
+	border-left-style: solid;
+	border-left-width: thin;		
+}
+
+.rightBorder {
+	border-right-color: rgb(226,227,227);
+	border-right-style: solid;
+	border-right-width: thin;		
+}
+
+.fullLine			{
+	background-repeat: repeat-x;
+	background-image: url(/images/fullLine.png); 
+	/*****thin/thick line*****/
+}
+
+.shadow {
+}
+
+#twoColumns .centerPanel h3 {
+}
+
+.col-last {
+    padding-right: 0;
+}

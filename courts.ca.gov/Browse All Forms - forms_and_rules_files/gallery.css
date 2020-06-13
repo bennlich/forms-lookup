@@ -1,0 +1,85 @@
+﻿.borderColor {
+	background-color: #fff;
+	border: thin #3c3c3c solid;
+}
+
+.rg-gallery {
+	background-color: #fff;
+}
+
+.rg-thumbs {
+	position: relative;
+}
+
+.rg-image-wrapper{
+	position:relative;
+}
+.rg-image{
+	position:relative;
+	text-align:center;
+}
+.rg-image img{
+	max-height:100%;
+	max-width:100%;
+}
+.rg-image-nav a{
+	position:absolute;
+	cursor:pointer;
+	opacity:0;
+	outline:none;
+}
+.rg-image-nav a.rg-image-nav-prev {
+	background:transparent url(/images/ad_prev.png) no-repeat -20% 50%;
+}
+.rg-image-nav a.rg-image-nav-next{
+    background:transparent url(/images/ad_next.png) no-repeat -20% 50%;		
+}
+.rg-image-nav a:hover{
+	opacity:0.8;
+}
+.rg-caption-wrapper {
+	position:relative;
+	background-color: #3c3c3c;
+}
+.rg-photocredit {
+	position: relative;
+}
+.rg-photocredit p {
+	color: rgb(255,255,255);
+	text-align: right;
+	font-style: italic;
+}
+.rg-caption {
+	position: relative;
+}
+
+.rg-caption p{
+	color: rgb(255,255,255);
+}
+.rg-caption p a {
+	color: rgb(255,255,255);
+}
+.rg-view{
+	display: none;
+}
+.rg-view a{
+	display:block;
+	float:right;
+	opacity:0.8;
+}
+.rg-view a:hover{
+	opacity:1.0;
+}
+.rg-view a.rg-view-full{
+}
+.rg-view a.rg-view-selected{
+	background-color:#6f6f6f;
+	border-color:#6f6f6f;
+}
+.rg-view a.rg-view-thumbs{
+}
+.rg-loading{
+	position:absolute;
+	background:#000 url() no-repeat center center;
+	opacity:0.7;
+}

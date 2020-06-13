@@ -1,0 +1,205 @@
+﻿/**
+  * CSS overrides to apply accessibility corrections
+  *
+  */
+
+/* BEGN header corrections */
+h2, h3, h4, h5, h6, #accordionTab h2 a {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 300 !important;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none !important;
+    padding: 0 !important;
+    border: none !important;
+    color: #000;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 1.1em;
+}
+
+h2.blueSideHeader {
+    margin: 0;
+    padding: 6px !important;
+    background-color: rgb(106,136,171);
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    text-transform: capitalize !important;
+}
+
+h2.sideSpecialNoticeHeader {
+    padding: 10px 8px 10px 30px !important;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: rgb(135,37,37);
+    background-image: url();
+    background-position: 8px 8px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    text-transform: capitalize !important;
+}
+
+h2.noticeDisclaimerHeader {
+    color: rgb(119,119,119) !important;
+    font-size: 1.2em;
+}
+/* END */
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+        background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+        background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+        background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+        background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+.nav .dropdown:hover .dropdown-menu,
+.nav .dropdown:focus .dropdown-menu,
+#offCanvas .dropdown:focus .dropdown-menu,
+#offCanvas .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav .dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.show-menu {
+    display: block;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+        background: -webkit-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+        background: -o-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+        background: -ms-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+        background: -moz-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+        background: linear-gradient(to bottom, rgb(7,56,115) 0%, rgb(7,56,115) 100%); 
+    color: #ffffff !important;
+    outline: 0;
+}
+
+.filetype-icon {
+    width: auto !important;
+}
+
+.external-icon {
+    width: auto !important;
+}
+
+
+/* link focus styling */
+a:focus, input:focus, button:focus, input:focus, .btn:focus, .results-total:focus,
+.container-inlinesearch p:focus, .container-inlinesearch li:focus, [role~="button"]:focus {
+    outline: 4px solid #DC7D09 !important;
+    outline-offset: 2px;
+}
+
+/* accordion fixes */
+div#simpleAccordion button.accordion_button {
+	background-position: right 0.25rem center; margin: 0px; padding: 0rem 0rem 0rem 0rem; border-radius: 0px; border: 0px currentColor; border-image: none; width: 100%; text-align: left; color: rgb(9, 54, 145); text-decoration: none; display: inline-block; cursor: pointer; box-shadow: none; background-image: none; background-repeat: no-repeat; background-size: .5rem; background-color: rgb(255, 255, 255); -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; -webkit-box-shadow: none;
+}
+div#simpleAccordion button.[aria-expanded=false].accordion_button {
+	background-image: none; background-repeat: no-repeat; background-size: .5rem; background-color: transparent;
+}
+.accordion_button {
+	background-position: right 0.25rem center; margin: 0px; padding: 0rem 0rem 0rem 0rem; border-radius: 0px; border: 0px currentColor; border-image: none; width: 100%; text-align: left; color: rgb(9, 54, 145); text-decoration: none; display: inline-block; cursor: pointer; box-shadow: none; background-image: url("../img/minus.svg"), linear-gradient(transparent, transparent); background-repeat: no-repeat; background-size: .5rem; background-color: rgb(255, 255, 255); -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; -webkit-box-shadow: none;
+}
+.accordion_button:active {
+	color: rgb(9, 54, 145); text-decoration: underline; box-shadow: none; background-color: transparent; -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; -webkit-box-shadow: none;
+}
+.accordion_button:visited {
+	color: rgb(9, 54, 145);
+}
+.accordion_button:hover {
+	color: rgb(27, 27, 27); text-decoration: underline; box-shadow: none; background-color: transparent; -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; -webkit-box-shadow: none;
+}
+[aria-expanded=false].accordion_button {
+	background-image: url("../img/plus.svg"), linear-gradient(transparent, transparent); background-repeat: no-repeat; background-size: .5rem; background-color: transparent;
+}
+.expandall_button {
+	background-image: url("../img/plus.svg"), linear-gradient(transparent, transparent); 
+}
+.collapseall_button {
+	background-image: url("../img/minus.svg"), linear-gradient(transparent, transparent); 
+}
+.expandall_button, .collapseall_button {
+	margin: 0px; padding: 0rem 0.5rem 0rem 0rem; padding-left: 1rem; border-radius: 0px; border: 0px currentColor; border-image: none; text-align: left; color: rgb(9, 54, 145); text-decoration: underline; cursor: pointer; box-shadow: none;background-position: left 0rem center; background-repeat: no-repeat; background-size: .5rem; background-color: rgb(255, 255, 255);
+}
+.expandall_button:active, .collapseall_button:active {
+	color: rgb(9, 54, 145); text-decoration: underline; box-shadow: none; background-color: transparent; -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; -webkit-box-shadow: none;
+}
+.expandall_button:visited, .collapseall_button:visited {
+	color: rgb(9, 54, 145);
+}
+.expandall_button:hover, .collapseall_button:hover {
+	color: rgb(27, 27, 27); text-decoration: underline; box-shadow: none; background-color: transparent; -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; -webkit-box-shadow: none;
+}
+
+
+/* BEGIN forms */
+.form-control {
+    color: inherit;
+}
+
+.form-control::-webkit-input-placeholder { /* Edge */
+  color: inherit;
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer */
+  color: inherit;
+}
+
+.form-control::placeholder {
+  color: inherit;
+}
+/* END */

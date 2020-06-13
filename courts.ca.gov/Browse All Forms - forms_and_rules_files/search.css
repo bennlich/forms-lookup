@@ -1,0 +1,308 @@
+﻿/* Updated 07/05/2018 at 1:56pm */
+/*Google Search Results Search again box*/
+.oversizeLeft		 {
+	float: left;
+}
+
+.searchforWrap			 {
+	float: left;
+	width: 670px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+form#searchfor			 { }
+
+span.searchText			 { 
+}
+
+div#searchforfieldWrap	 {
+	float: left;
+}
+
+input#searchforfield	{
+	background: none;
+	font-size: 1em;
+	width: 350px;
+	padding: 6px 12px;
+}
+
+div#btnsearchforWrap	{
+	float: left;
+    padding-left: 4px;
+}
+
+input#btnsearhfor		 {
+	width: 64px;
+	height: 21px;
+}
+
+.advtxtWrap				 {
+	padding: 2px 0 0 10px;
+	float: left;
+	width: 200px;
+}
+
+.sortsearch				 {
+	display: block;
+	width: 670px;
+	margin-bottom: 23px;
+	text-align: right;
+}
+
+.sortsearch label		 {
+	font-weight: bold;
+	padding: 0 2px 0 15px;
+}
+
+/*Court Location Callout*/
+.courtLocations {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: none;
+}
+
+.courtLocations .subTitle {
+	display: none;
+}
+
+/*Find My Court - old*/
+.findMyCourtWrap {}
+
+form#findMyCourt		 {
+	position: relative;
+}
+div#findMyCourtfieldWrap	 {
+	width: 225px;
+	margin: 5px 0 0 4px;
+}
+
+div#findMyCourtfieldWrap label {
+    display: none;
+}
+input#findMyCourtfield	{}
+input#findMyCourtfield:focus {
+    outline-offset: 0;
+    outline: 0;
+}
+
+div#findMyCourtbtnWrap	 { 
+	float: left; 
+}
+
+div#findMyCourtbtnWrap label {
+    display:none;
+}
+input#findMyCourtbtn {}
+
+/* Central Search Callount */
+.CenterSearch .col-xs-10 {
+}
+
+.CenterSearch .form-control {
+	float: left;
+	background-color: rgb(238,238,238);  
+}
+
+.CenterSearch input:focus {
+	background-color: rgb(255,255,255);		
+}
+
+.CenterSearch input::placeholder {
+	font-style: italic;
+	color: rgb(153,153,153);
+}
+.CenterSearch input:-ms-input-placeholder { /* IE10-11 */
+	font-style: italic;
+	color: rgb(153,153,153);
+}
+.CenterSearch input::-ms-input-placeholder { / *Edge */
+	font-style: italic;
+	color: rgb(153,153,153);
+}
+
+.CenterSearch .btn-default {
+	overflow: visible;
+	position: absolute;
+	float: right;	
+	cursor: pointer;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgb(255,255,255);
+	background-color: rgb(7,56,115);		
+}
+
+.CenterSearch .btn-default:hover {	
+	color: rgb(255,255,255);		
+	background-color: rgb(106,136,171);
+}	
+      
+.CenterSearch .btn-default:active,
+.CenterSearch .btn-default:focus{     
+	background-color: rgb(7,56,115); 
+}
+
+.CenterSearch .btn-default::before {
+	 content: '';
+	 position: absolute;
+	 border-style: solid solid solid none;
+	 border-color: transparent rgb(7,56,115) transparent;
+}
+
+.CenterSearch .btn-default:hover::before{
+	border-right-color: rgb(106,136,171);
+}
+    
+.CenterSearch .btn-default:focus::before{
+	border-right-color: rgb(7,56,115);
+}    
+ 
+.CenterSearch .btn-default::-moz-focus-inner {
+}
+
+
+/* New Contextual Search box */
+.newContextSearch {
+	position: relative;		
+}
+
+.newContextSearch input#contextSearchField {
+	float: left;   
+	font-weight: 700;
+    background-color: #eee;    
+}
+
+.newContextSearch input#contextSearchField:focus {
+    background-color: #fff;    	
+}
+
+.newContextSearch input#contextSearchField::-webkit-input-placeholder {
+	font-weight: normal;
+	font-style: italic;
+	color: #999;
+}
+    
+.newContextSearch input#contextSearchField:-moz-placeholder {
+	 font-weight: normal;
+	 font-style: italic;
+	 color: #999;
+}
+    
+.newContextSearch input#contextSearchField:-ms-input-placeholder {
+	 font-weight: normal;
+	 font-style: italic;
+	 color: #999;
+}  
+
+.newContextSearch button {
+	overflow: visible;
+	position: absolute;
+	float: right;	
+	cursor: pointer;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.newContextSearch button:hover{		
+}	
+      
+.newContextSearch button:active,
+.newContextSearch button:focus{     
+}
+
+.newContextSearch button::before {
+	 content: '';
+	 position: absolute;
+	 border-style: solid solid solid none;
+}
+
+.newContextSearch button::-moz-focus-inner {
+}
+
+.newContextSearch button#contextSearchButton {
+    color: #fff;
+    background-color: #073873;    
+}
+.newContextSearch button#contextSearchButton:hover{        
+     background-color: #6a88ab;
+}    
+      
+.newContextSearch button#contextSearchButton:active,
+.newContextSearch button#contextSearchButton:focus{   
+     background-color: #073873;    
+}
+.newContextSearch button#contextSearchButton:before {
+     border-color: transparent #073873 transparent;
+}
+.newContextSearch button#contextSearchButton:hover:before{
+     border-right-color: #6a88ab;
+}
+    
+.newContextSearch button#contextSearchButton:focus:before{
+     border-right-color: #073873;
+}
+
+/* BEGIN Search results page adjustments */
+#searchResults .oversizeLeft, #searchResults .searchforWrap {
+    width: 100%;
+}
+#searchResults .oversizeLeft {
+    margin-top: 12px;;
+}
+
+#searchforfield {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+        border-top-color: rgb(204, 204, 204);
+        border-right-color: rgb(204, 204, 204);
+        border-bottom-color: rgb(204, 204, 204);
+        border-left-color: rgb(204, 204, 204);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#btnsearchfor {
+    display: inline-block;
+    height: 0;
+    padding: 14px 22px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url('/images/icon-maginfyglass-18x18.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    border-radius: 4px;
+}
+
+/* END */

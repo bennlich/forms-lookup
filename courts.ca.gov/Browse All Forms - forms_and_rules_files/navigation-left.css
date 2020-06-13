@@ -1,0 +1,155 @@
+﻿
+/*----------------- LEFT NAVIGATION -----------------*/
+.sectionTitle{
+	font-weight: 700;
+}
+
+.sectionTitle a, .sectionTitle a:visited {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+.sectionTitle a:hover {
+	text-decoration: underline;
+}
+
+/*First Level Navigation*/
+
+.side-nav {
+	list-style: none;		
+}
+
+.side-nav li a:not(.button) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.side-nav li a:not(.button):link, .side-nav a:not(.button):visited {
+	color: rgb(7,56,115);	
+}
+
+.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+  	background: transparent;
+  	color: rgb(7,56,115); 
+}
+        
+.side-nav li a:not(.button):active {
+  	color: rgb(7,56,115); 
+  	font-weight: 700;
+}
+
+.side-nav li {
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-color: rgb(211,222,235);
+	background-image: none;
+}
+
+.side-nav li a {
+	text-decoration: none;
+}
+
+.side-nav li.active > a:first-child:not(.button) {
+	color: rgb(0,0,0);  
+	font-family: inherit;
+}
+
+/*Second Level Navigation*/
+
+.side-nav li ul {
+	list-style: none;
+}
+
+.side-nav li ul li {
+	background: none;
+	font-weight: 400;
+}
+
+.side-nav li.active ul li a, .side-nav li.active ul li a:hover, .side-nav li.active ul li a:focus {
+	background-repeat: no-repeat;
+    color: rgb(7,56,115);    
+	display: block;
+	font-weight: 400;	
+}
+
+.side-nav li.active ul li.active {
+	font-weight: 700;
+    color: rgb(0,0,0);    
+	background: none;
+	display: block;
+	font-weight: bold;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: thin;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: thin	
+}
+
+/*Third Level Navigation*/
+.side-nav ul ul {
+	list-style: none;
+}
+
+.side-nav ul ul li {
+	background: none;
+	font-weight: normal;
+}
+
+.side-nav li ul li:first-child {
+    border-top: 1px solid #c1cddc !important
+}
+
+.side-nav li ul li:not(:last-child) {
+    padding: 0 !important;
+    border-bottom: 1px solid #c1cddc !important
+}
+
+.side-nav li.active ul ul li {
+    color: rgb(0,0,0);    
+	background: none;
+	display: block;
+	font-weight: bold;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: thin;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: thin	
+}
+
+.side-nav li.active ul ul li a, .side-nav li.active ul ul li a:hover, .side-nav li.active ul ul li a:focus {
+	background-repeat: no-repeat;
+  color: rgb(7,56,115);    
+	display: block;
+}
+
+.side-nav li.active ul ul li a.active {
+    color: rgb(0,0,0);    
+	font-weight: bold;
+}
+
+.sideNavHeader a {
+    display: block;
+}
+
+.sideNavHeader a:hover, .sideNavMenu li a:hover,
+.sideNavHeader a:focus, .sideNavMenu li a:focus {
+    background-color: rgb(7,56,115) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.sideNavSubMenu {
+    background-color: #ecf0f4;
+}
+
+.sideNavSubMenu li a {
+    padding: 7px 7px 7px 21px !important;
+}

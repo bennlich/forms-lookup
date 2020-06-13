@@ -1,0 +1,271 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*  Custom Bootstrap Fonts */
+html {
+	font-size: 100%;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 60%;
+	line-height: 0; 
+}
+p {	}
+a {
+  	line-height: inherit;
+}
+ul,
+ol,
+dl {
+  	font-size: inherit;
+}
+blockquote,
+blockquote p {
+  line-height: normal;
+  font-size: 1em;  
+}
+
+table thead tr th, table thead tr td {
+	font-size: inherit;
+}
+
+
+/* Default */
+.cleaner, .clear	{
+	font-size: 1px;
+}
+.more	 {
+ 	font-size: 0.833em; 
+}
+
+.selected {
+    font-weight: 600 !important;
+}
+
+/* Headers */
+.titleWrap .subtitle	{
+	font-size: 1.25em;
+}
+input[type="text"].topSearch {
+	font-size: 1em !important;
+}
+
+#searchBar .form-inline .form-group button {
+	font-size: 1.067em;			
+}
+#searchBar .advsearch	 {
+	font-size: 0.833em;	
+}
+.tabWrap ul li a, .tabWrap ul li a:visited {
+	font-size: 1.25em;
+}
+.tabWrap ul li a.active, .tabWrap ul li a:visited.active {
+	font-size: 1.25em;
+}
+#breadcrumb			 {
+	font-size: 0.917em;
+}
+#breadcrumbSmall			 {
+	font-size: 0.917em;
+}
+#printWrap			 {
+	font-size: 1em;
+}
+#lang				 {
+	font-size: 1em;
+}
+#footerWrap				 {
+	font-size: 1em;	
+}
+
+/* Navigation Top */
+.navbar .nav > li {
+    font-size: 1.167em;
+}
+.navbar-nav > li > a {
+	line-height: inherit; 
+}
+
+/* Navigation Left */
+.sectionTitle{
+	font-size: 1.167em;
+}
+.side-nav li {
+	font-size: inherit;
+}
+.side-nav li.active ul ul li {	
+	line-height: 1.2em;  
+}
+.side-nav li.active ul ul li a, .side-nav li.active ul ul li a:hover, .side-nav li.active ul ul li a:focus {
+	line-height: 1.2em;
+}
+
+.sideNavHeader {
+    font-size: 1.334em !important;
+}
+
+.sideNavMenu li {
+    font-size: 0.8em !important;
+}
+/* Homepage */
+.tab-content > .tab-pane > .rightSide > h3		{
+	font-size: 0.917em;
+}
+.storyPanels .storyPanel	{	
+	line-height: 20px;		
+}
+.storyPanels .storyPanel h2	{
+    font-size: 1.167em;
+}
+.storyPanels .storyPanel .storyPanelItem .date	{
+	font-size: 0.833em;
+}
+.OCIs .OCI h2	{
+    font-size: 1.167em;
+}
+.OCIs .OCI .OCIItem .date	{
+	font-size: 0.833em;
+}
+.socialMedia	{
+	line-height: 20px;
+}
+.socialMedia h2	{
+    font-size: 1.167em;
+}
+.socialMedia .inner .date	{
+	font-size: 0.833em;
+}
+
+/* Page Layout */
+#twoColumns .centerPanel h3 {
+	font-size: 1.167em;
+}
+
+/* Modules Side */
+.sideSpecialNotice h3 {
+	font-size: 1em;
+}
+.sideSpecialNotice .inner p {
+	line-height: 1.5em;
+}
+.sideVideo h3		{
+	font-size: 1.1em;
+}
+.blueSideCallouts .inner h3		{
+	font-size: 1.1em;
+}
+
+/* Modules Content */
+.panel-default > .panel-heading >.panel-title {
+ 	font-size: 1em;
+}
+#accordionHomePage .panel-title a:link {
+    font-size: 1em; 	   	
+}
+#accordionTab .panel-title a:link {
+    font-size: 1em;  	   	
+}
+a.expandall		 {
+	font-size: 0.917em;
+}
+a.collapseall	 {
+	font-size: 0.917em;
+}
+.doubleBlock .text		 {
+	line-height: 18px;
+}
+.doubleBlock .text li	 {
+	line-height: 15px;	
+}
+.showHideNavigation .singleBlock li {
+	line-height: 1.8em;
+}
+.heroWater .rightSide h3 {
+	font-size: 1.167em;
+}
+.imageTextBlock	{
+	line-height: 18px;
+}
+.textPanel	{
+	line-height: 18px;
+}
+.textPanel h2 {
+	font-size: 1.167em;
+}
+#twoBulletLists .bulletPanel h2 {
+	font-size: 1.167em;
+}
+#twoBulletLists .bulletPanel h4 {
+	font-size: 1em;
+	line-height: 14px;		
+}
+#twoBulletLists .bulletPanel p.heading	 {
+	line-height: 20px;
+	font-size: 1.167em;
+}
+.noteModule h3 {
+	font-size: 0.917em;
+}
+
+#special .special_content .left h2		 {
+	font-size: 1.167em;
+}
+#special .special_content .left .date	 {
+	font-size: 0.75em;
+}
+
+/* Search */
+#floatRight .courtLocations h2, #floatRight .courtLocations h3,
+#rightPanel .courtLocations h2, #rightPanel .courtLocations h3 {
+	font-size: 1.167em;
+}
+#findMyCourtWrap .form-control {
+	font-size: inherit;
+}
+#findMyCourtWrap .btn {}
+#findMyCourtResults .county div {
+	font-size: 1em;
+}
+.CenterSearch .form-control {
+	font-size: 1.067em;
+}
+.CenterSearch .btn-default {
+ 	font-size: 1.067em;	
+}
+.newContextSearch input#contextSearchField {
+	font-size: 1.067em;	
+}
+.newContextSearch button {
+	font-size: 1.067em;
+}
+
+/* Tables */
+table {
+	font-size: inherit;	
+}
+table tr td {
+	font-size: 1em; 
+}
+table tr th {
+	font-size: 1em;
+}
+table .note {
+	font-size: 0.833em;
+}
+
+/* Gallery */
+.rg-image{
+	line-height:0px;
+}
+.rg-photocredit p {
+    font-size: 0.8em;    
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+	#leftNavDropdown  .dropdown-header {			
+		font-size: 1.334em;	
+	}
+	#leftNavDropdown li li {
+		font-size: 0.9em;
+	}
+}

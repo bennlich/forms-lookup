@@ -1,0 +1,292 @@
+﻿/*Updated [date] by [user initials]*/
+/* List of Updates */
+/* 8/3/2015:  Reorganize */
+
+/*----------------- SKIP NAVINGATION -----------------*/
+.skipnav							 {
+	position: absolute;
+	top: -200px;
+}
+.skipnav:focus {
+  position: relative;
+	top: 0;
+}
+
+.titleWrap				 {
+	position: absolute;
+}
+
+.titleWrap .title		 {
+	font-family: "Times New Roman", Times, serif;
+	color: rgb(34,34,34);
+    font-weight: 400;
+}
+
+.titleWrap .subtitle	{
+	color: rgb(34,34,34);
+    font-weight: 400;
+}
+
+/* ******************************************************************** */
+/* SEARCH/TOOLBAR */
+#searchBar						 {
+	clear: both;	
+	background-color: rgb(7,56,115);
+}
+
+#searchBar form {
+	text-align: right;
+}
+
+#searchBar .outline {
+	border: thin solid #ffffff;
+}
+
+#largeScreen {
+	display: none;
+	color: rgb(255,255,255);
+}
+#mediumScreen {
+	display: none;
+	color: rgb(255,255,255);
+}
+#smallScreen {
+	display: none;
+	color: rgb(255,255,255);
+}
+#defaultScreen {
+	display: inline;
+	color: rgb(255,255,255);
+}
+
+/* ******************************************************************** */
+/* Advance search */
+
+#searchBar .col-xs-1 {
+}
+#searchBar .advsearch	 {
+	position: relative;
+	text-align: left;
+}
+#searchBar .advsearch a, #searchBar .advsearch a:visited	{
+	text-decoration: none;
+	color: rgb(255,255,255) !important;
+}
+#searchBar .advsearch a:hover	 {
+	text-decoration: underline;
+}
+/* ******************************************************************** */
+/* Banner Image in top of page */
+#header			 {
+	clear: both;
+	position: relative;
+}
+
+#header .logo	 {
+	background-color: rgb(255,255,255);
+}
+
+#header .logoSmall	 {
+	background-color: rgb(255,255,255);
+}
+
+/* ******************************************************************** */
+/* Site Tabs at top of page above navigation */
+.tabWrap {
+}
+
+.tabWrap a			 {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.tabWrap a, .tabWrap a:visited {
+	text-decoration: none;
+	color: #ffffff !important;
+}
+
+.tabWrap ul			 {
+	list-style-type: none;
+}
+
+.tabWrap ul li		 {
+	float: left;
+	background-image: none;
+}
+
+.tabWrap ul li a, .tabWrap ul li a:visited {
+	display: block;
+	float: left;
+	text-align: center;
+	background-repeat: no-repeat;	
+	background-color: rgb(127, 149, 175);
+}
+
+.tabWrap ul li a.active, .tabWrap ul li a:visited.active {
+	display: block;
+	float: left;
+	text-align: center;
+	background-color: rgb(127, 149, 175);  
+    color: #ffffff !important;
+}
+
+.tabWrap ul li a:hover {
+	background: -webkit-linear-gradient(top, rgb(224, 230, 236) 0%, rgb(171, 185, 202) 3%, rgb(14, 62, 119) 5%, rgb(67, 103, 145) 50%, rgb(119, 143, 171) 90%, rgb(127, 149, 175) 100%);
+	background: -o-linear-gradient(top, rgb(224, 230, 236) 0%, rgb(171, 185, 202) 3%, rgb(14, 62, 119) 5%, rgb(67, 103, 145) 50%, rgb(119, 143, 171) 90%, rgb(127, 149, 175) 100%);
+	background: -ms-linear-gradient(top, rgb(224, 230, 236) 0%, rgb(171, 185, 202) 3%, rgb(14, 62, 119) 5%, rgb(67, 103, 145) 50%, rgb(119, 143, 171) 90%, rgb(127, 149, 175) 100%);
+	background: -moz-linear-gradient(top, rgb(224, 230, 236) 0%, rgb(171, 185, 202) 3%, rgb(14, 62, 119) 5%, rgb(67, 103, 145) 50%, rgb(119, 143, 171) 90%, rgb(127, 149, 175) 100%);
+	background: linear-gradient(to bottom, rgb(224, 230, 236) 0%, rgb(171, 185, 202) 3%, rgb(14, 62, 119) 5%, rgb(67, 103, 145) 50%, rgb(119, 143, 171) 90%, rgb(127, 149, 175) 100%);
+    color: #ffffff !important;
+	text-decoration: none !important;
+}
+
+/*Landing Pages Banner */
+
+#landingBanner {
+	border-bottom-style: solid;
+    border-bottom-color: rgb(255,255,255);	
+	background: -webkit-linear-gradient(top, rgb(157, 169, 181) 0%, rgb(103, 124, 151) 72%, rgb(85, 110, 140) 100%);
+	background: -o-linear-gradient(top, rgb(157, 169, 181) 0%, rgb(103, 124, 151) 72%, rgb(85, 110, 140) 100%);
+	background: -ms-linear-gradient(top, rgb(157, 169, 181) 0%, rgb(103, 124, 151) 72%, rgb(85, 110, 140) 100%);
+	background: -moz-linear-gradient(top, rgb(157, 169, 181) 0%, rgb(103, 124, 151) 72%, rgb(85, 110, 140) 100%);
+	background: linear-gradient(to bottom, rgb(157, 169, 181) 0%, rgb(103, 124, 151) 72%, rgb(85, 110, 140) 100%);
+	overflow: hidden;
+}
+
+#landingBanner .txtRight h1,
+#landingBanner .txtRight2 h1 {
+	background: none;
+	color: rgb(255,255,255);
+}
+
+#landingBanner .txtRight p,
+#landingBanner .txtRight2 p {
+	color: rgb(255,255,255);
+}
+
+/*----------------- BREADCRUMB -----------------*/
+#breadcrumb			 {
+	position: relative;
+	font-weight: bold;
+	color: rgb(30,35,42);
+}
+
+#breadcrumb a		 {
+	text-decoration: underline;
+	font-weight: normal;
+	color: rgb(44,49,56);
+}
+
+#breadcrumb span	{
+	font-weight: normal;
+	color: rgb(98,103,110);
+}
+
+#breadcrumbSmall			 {
+	position: relative;
+	font-weight: bold;
+	color: rgb(30,35,42);
+}
+
+#breadcrumbSmall a		 {
+	text-decoration: underline;
+	font-weight: normal;
+	color: rgb(44,49,56);
+}
+
+#breadcrumbSmall span	{
+	font-weight: normal;
+	color: rgb(98,103,110);
+}
+
+/*----------------- PRINT EXTRAS --------------*/
+#print-extras { 
+	display: none; 
+}
+#print-close-page a {
+    background-image: url(/images/bg-close.png); 
+}
+#print-print-button a {
+    background-image: url(/images/btn-print.png); 
+}
+
+/*----------------- PRINT/EMAIL -----------------*/
+#printWrap			 {
+	clear: both;
+	text-align: right;
+	display: block;
+}
+
+#printWrap a.print	 {
+	background-repeat: no-repeat;
+	background-image: url(/images/icon-print.png);
+}
+
+#printWrap a.email	 {
+	background-repeat: no-repeat;
+	background-image: url(/images/icon-email.png); 
+}
+
+.langswitch	 {
+	background-repeat: no-repeat;
+	background-image: url(/images/icon-flag.png);
+}
+
+#printWrap a.langSP	 {
+	background-repeat: no-repeat;
+	background-image: url(/images/icon_spanish.png);
+}
+
+#printWrap a.langENG	 {
+	background-repeat: no-repeat;
+	background-image: url(/images/icon_english.gif); 
+}
+
+/*----------------- LANGUAGE SELECTION -----------------*/
+#lang				 {
+	float: right;
+	text-align: right;
+	color: rgb(222,223,225);
+}
+
+#lang a				 { 
+	color: rgb(35,59,113);
+}
+
+#lang .langwrap, #lang .langwrapch	 {
+	float: left;
+	border-right-style: solid;
+	border-right-color: rgb(204,204,204);
+}
+
+#lang .last	 {
+	border: none;
+}
+
+#lang .langwrap	 a.selected	 {
+	font-weight: bold;
+	background: none;
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+/* ******************************************************************** */
+/* FOOTER */
+#footerWrap				 {
+	clear: both;
+    color: rgb(221,221,221);
+	background-color: rgb(7,56,115);	
+}
+
+#footerWrap a			 {
+	text-decoration: none;
+	color: rgb(221,221,221) !important;
+}
+
+#footerWrap a:hover		 {
+	text-decoration: underline;
+}
+
+#footerWrap .right {
+	text-align: right;
+}

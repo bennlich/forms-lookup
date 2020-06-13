@@ -1,0 +1,17 @@
+{
+  "name": "embedded-forms-lookup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "form-lookup-drupal-api.js",
+  "scripts": {
+    "build": "sass style/_form-lookup.scss style/form-lookup.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "nanohtml": "^1.9.1"
+  }
+}

@@ -1,0 +1,190 @@
+﻿/*----------------- PRIMARY SITE HORIZONTAL MENU -----------------*/
+#menuWrapper	{
+	position: relative;
+	float: left;
+	background: -webkit-linear-gradient(top, rgb(128, 149, 176) 0%, rgb(177, 190, 206) 42%, rgb(237, 241, 244) 83%, rgb(253, 253, 253) 100%);
+	background: -o-linear-gradient(top, rgb(128, 149, 176) 0%, rgb(177, 190, 206) 42%, rgb(237, 241, 244) 83%, rgb(253, 253, 253) 100%);
+	background: -ms-linear-gradient(top, rgb(128, 149, 176) 0%, rgb(177, 190, 206) 42%, rgb(237, 241, 244) 83%, rgb(253, 253, 253) 100%);
+	background: -moz-linear-gradient(top, rgb(128, 149, 176) 0%, rgb(177, 190, 206) 42%, rgb(237, 241, 244) 83%, rgb(253, 253, 253) 100%);
+	background: linear-gradient(to bottom, rgb(128, 149, 176) 0%, rgb(177, 190, 206) 42%, rgb(237, 241, 244) 83%, rgb(253, 253, 253) 100%);
+}
+
+#menuWrapper.hp	 {
+	background: none;
+}
+
+#menuWrapper h1     {
+    color: rgb(109,51,8);
+}
+#menuWrapper h1 a {
+    text-decoration: none;
+    color: rgb(109,51,8);
+}
+
+.navbar {
+}
+
+.navbar .navbar-inner {
+}
+
+.navbar .nav {
+    display: table;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	background: -webkit-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: -o-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: -ms-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: -moz-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: linear-gradient(to bottom, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);	
+}
+
+.navbar .nav > li {
+    display: table-cell;
+    width: auto;
+    float: none;
+    text-align: center;
+}
+
+.nav > li {
+	background-image: none;
+}
+
+.navbar .nav li a:hover {
+    text-decoration: none !important;
+}
+
+.nav > li > a {
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 300;		
+}
+
+.navbar-collapse {}
+
+.navbar-nav > li > a {
+}
+
+.navbar-default .navbar-nav > li {
+	border-right: solid 1px rgb(132,134,137);	
+}
+
+.navbar-default .navbar-nav > li.last {
+}
+
+.navbar-default .navbar-nav > li > a {
+	background: -webkit-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: -o-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: -ms-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: -moz-linear-gradient(top, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+	background: linear-gradient(to bottom, rgb(124, 124, 124) 0%, rgb(84, 84, 85) 100%);
+    color: #ffffff !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-nav > .open > a {
+	background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-nav > .open > a:hover {
+	background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background: -webkit-linear-gradient(top, rgb(74, 90, 109) 0%, rgb(51, 54, 59) 100%);
+	background: -o-linear-gradient(top, rgb(74, 90, 109) 0%, rgb(51, 54, 59) 100%);
+	background: -ms-linear-gradient(top, rgb(74, 90, 109) 0%, rgb(51, 54, 59) 100%);
+	background: -moz-linear-gradient(top, rgb(74, 90, 109) 0%, rgb(51, 54, 59) 100%);
+	background: linear-gradient(to bottom, rgb(74, 90, 109) 0%, rgb(51, 54, 59) 100%);
+    color: #ffffff !important;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+	background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+    color: #ffffff !important;
+}
+
+.open > .dropdown-menu {
+	background: -webkit-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -o-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -ms-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: -moz-linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);
+	background: linear-gradient(45deg, rgb(78, 100, 127) 0%, rgb(78, 107, 148) 100%);		
+}
+
+.nav .dropdown:hover .dropdown-menu, #offCanvas .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav .dropdown-menu, #offCanvas .dropdown-menu {
+  	background-color: rgb(78,109,153);
+}
+
+nav .dropdown-menu > li, #offCanvas .dropdown-menu > li {
+	border-bottom-color: rgb(99,127,166);
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.nav .dropdown-menu > li > a, #offCanvas .dropdown-menu > li > a {
+    color: #ffffff !important;
+	text-decoration: none !important;	
+}
+
+.nav .dropdown-menu > li.endstop, #offCanvas .dropdown-menu > li.endstop {
+    display: inline-block;
+    width: 74%;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+}
+
+.nav .dropdown-menu > li > a.dropdown-toggle, #offCanvas .dropdown-menu > li > a.dropdown-toggle {
+    display: inline-block;
+    width: 24px;
+    border-left: 1px solid rgb(99,127,166);
+}
+
+.nav .dropdown-toggle, .nav .dropdown-menu {
+    z-index: 1050;
+}
+
+.dropdown-menu > li {
+	background-image: none;
+}
+
+.dropdown-menu > li > a:hover {
+	background: -webkit-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+	background: -o-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+	background: -ms-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+	background: -moz-linear-gradient(top, rgb(7,56,115) 0%, rgb(7,56,115) 100%);
+	background: linear-gradient(to bottom, rgb(7,56,115) 0%, rgb(7,56,115) 100%); 
+    color: #ffffff !important;
+}
+
+/* Make Bootstrap backdrop invisible */
+#jcc-dropdown-backdrop {
+    opacity: 0;
+}

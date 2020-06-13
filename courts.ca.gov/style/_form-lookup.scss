@@ -1,0 +1,209 @@
+.jcc-forms-filter__input {
+  background-position-y: 4px;
+  background-position-x: 0.3rem;
+  background-size: 1.8rem;
+  background-image: url(../images/icomoon/SVG/search.svg);
+  background-repeat: no-repeat;
+  padding-left: 2.4rem;
+}
+
+.jcc-forms-filter__results-container {
+  background: white;
+  border-radius: 4px;
+  margin-top: 20px;
+  color: #333;
+  width: 800px;
+  max-width: 100%;
+}
+
+.jcc-forms-filter__results-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  // @include u-text(primary);
+  // @include u-font(sans, md);
+}
+
+.jcc-forms-filter__no-results,
+.jcc-forms-filter__loading {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.jcc-forms-filter__no-results--guides,
+.jcc-forms-filter__loading--guides {
+  border-bottom: 1px solid #eee;
+}
+
+.jcc-forms-filter__guide-result-row {
+  display: flex;
+}
+
+.jcc-forms-filter__guide-result {
+  flex-grow: 1;
+  width: 50%;
+  box-sizing: border-box;
+
+  &:first-child {
+    border-right: 1px solid #eee;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.jcc-forms-filter__form-result {
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.jcc-forms-filter__form-result-content {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.jcc-forms-filter__form-number-and-title {
+  flex-grow: 1;
+  text-decoration: none;
+  margin-right: 20px;
+  color: #333;
+  cursor: pointer;
+
+  .form-number {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 16px;
+  }
+
+  .form-title {
+    color: #333;
+  }
+
+  &:hover {
+    .form-title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.jcc-forms-filter__form-guide-button,
+.jcc-forms-filter__download-form-button {
+  white-space: nowrap;
+}
+
+.jcc-forms-filter__form-guide-button {
+  margin-right: 14px;
+}
+
+.jcc-forms-filter__download-form-button {
+  margin-right: 0px;
+}
+
+.jcc-forms-filter__form-links {
+  display: none;
+  padding: 4px 20px 10px 20px;
+
+  &.visible {
+    display: block;
+  }
+}
+
+/* extra styles for courts.ca.gov overrides */
+.jcc-forms-filter__input-label {
+  font-weight: 400;
+}
+
+.jcc-forms-filter__input {
+  /* from uswds */
+  border-radius: 0;
+  color: #1b1b1b;
+  display: block;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  max-width: 30rem;
+  padding: 0.5rem;
+  width: 100%;
+  /* end from uswds */
+
+  background-image: url(../icons/search.svg);
+  padding-left: 2.4rem;
+}
+
+.jcc-forms-filter__results-container {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* from uswds */
+// .usa-button {
+//   padding-bottom: 1rem;
+//   padding-top: 1rem;
+//   padding-left: 1.5rem;
+//   padding-right: 1.5rem;
+// }
+
+// .usa-button {
+//   font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+//   font-size: 1.06rem;
+//   line-height: 1;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   background-color: #005ea2;
+//   border: 0;
+//   border-radius: 0;
+//   color: white;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-weight: bold;
+//   margin-right: 0.5rem;
+//   padding: 0.75rem 1.25rem;
+//   text-align: center;
+//   text-decoration: none;
+//   width: 100%;
+// }
+
+// .usa-button:hover {
+//   background-color: #0b4778;
+//   border-bottom: 0;
+//   color: white;
+//   text-decoration: none;
+// }
+
+// .usa-button--outline {
+//   -moz-osx-font-smoothing: auto;
+//   -webkit-font-smoothing: subpixel-antialiased;
+//   background-color: transparent;
+//   -webkit-box-shadow: inset 0 0 0 2px #005ea2;
+//   box-shadow: inset 0 0 0 2px #005ea2;
+//   color: #005ea2;
+// }
+
+// .usa-button--outline:hover {
+//   background-color: transparent;
+//   -webkit-box-shadow: inset 0 0 0 2px #0b4778;
+//   box-shadow: inset 0 0 0 2px #0b4778;
+//   color: #0b4778;
+// }
+
+// @media (min-width: 30em) {
+//   .usa-button {
+//     width: auto;
+//   }
+// }
+/* end courts.ca.gov overrides */

@@ -1,0 +1,122 @@
+﻿
+
+table {
+	clear: both;
+	border-bottom-style: solid;	
+	border-bottom-color: rgb(204,204,204);
+	border-collapse: collapse;
+}
+
+table tr th,
+table tr td {
+	text-align: left;
+	vertical-align: top;
+}
+
+table tr td {
+	color: #222222;
+	text-align: left; 
+	border-left-style: solid;
+	border-top-style: solid;
+    background-color: rgb(251,252,253);
+    border-left-color: rgb(255,255,255);
+    border-top-color: rgb(255,255,255);	
+}
+
+table tr th {
+	font-weight: bold;
+	vertical-align: top;
+	border-left-style: solid;
+	border-top-style: solid;	
+	background-color: rgb(255,255,255);
+    color: rgb(7,56,115);
+    border-left-color: rgb(255,255,255);
+    border-top-color: rgb(255,255,255);	
+}
+
+table tr.header td, 
+table thead td, 
+table thead th, 
+table tr.header th{
+	border-bottom-style: solid;
+	border-bottom-color: rgb(204,204,204);
+}
+
+table .right {
+	text-align: right;
+}
+
+table .note {
+}
+
+table .selected {
+	border-left-style: solid;
+    background-color: rgb(147,167,192);
+    color: rgb(255,255,255);
+    border-left-color: rgb(255,255,255);	
+}
+
+table tr.even td {
+	border-left-style: solid;
+	border-top-style: solid;
+    background-color: rgb(245,246,248);
+    border-left-color: rgb(255,255,255);
+    border-top-color: rgb(255,255,255);	
+}
+
+table td.colOne		{
+    background-color: rgb(205,215,227) !important;
+    color: rgb(7,56,115);
+}
+
+table.courtSearch     {
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table.courtSearch thead         { margin: 0; }
+table.courtSearch thead th         {
+    background-color: #bcbcbe;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    border: solid #FFF;
+    border-width: 0 0 2px 0;
+}
+table.myCourts thead th.first     {
+    text-align: left;
+}
+table.courtSearch tr td     {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #FFF;
+    text-align: center;
+}
+table.courtSearch td.city     {
+    background-color: #d9d9d9;
+    width: 173px;
+    padding: 5px 5px 5px 10px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+}
+table.courtSearch td.city2     {
+    background-color: #d9d9d9;
+    padding: 5px 5px 5px 10px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+/* specifically for News Releases */
+table th.dateColumn {
+}
+
+table th.dataColumn {
+}
+
