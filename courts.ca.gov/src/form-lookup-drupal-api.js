@@ -1,10 +1,10 @@
 // import _ from "underscore";
 
 import { guides } from './guides.js';
+import { fetchForms } from './fetchForms.js';
 
 let searchInput;
 let resultsContainer;
-let previousRequest;
 
 export async function initFormsLookup(containerEl) {
   console.log("form-lookup-drupal-api init");
@@ -26,34 +26,6 @@ export async function initFormsLookup(containerEl) {
 
   // Add the results container to the page
   resultsContainer = containerEl.appendChild(html`<div></div>`);
-
-  let _fetchForms = function() {
-    // Abort previous request--we're about to send a new one
-    if (previousRequest) previousRequest.abort();
-
-    let query = searchInput.value;
-    if (query === '') {
-      render();
-      return;
-    }
-
-    let url = `http://jcc.lndo.site:8080/json/jcc-forms?query=${query}`;
-    // let url = `https://pr-187-jcc-srl.pantheonsite.io/json/jcc-forms?query=${query}`;
-    let newRequest = new XMLHttpRequest();
-    newRequest.responseType = "json";
-    newRequest.onload = function() {
-      render({
-        query: query,
-        formResults: newRequest.response
-      });
-    };
-    newRequest.open("GET", url);
-    previousRequest = newRequest;
-    newRequest.send();
-  };
-
-  // Wait 200ms after someone is finished typing before fetching results
-  let fetchForms = _.debounce(_fetchForms, 200);
 
   let render = ({ query, formResults } = {}) => {
     resultsContainer.firstChild && resultsContainer.firstChild.remove();
@@ -170,10 +142,10 @@ export async function initFormsLookup(containerEl) {
   function setQuery(newQuery) {
     searchInput.value = newQuery;
     searchInput.focus();
-    fetchForms();
+    fetchForms(searchInput.value, render);
   }
 
-  searchInput.addEventListener("input", () => fetchForms());
+  searchInput.addEventListener("input", () => fetchForms(searchInput.value, render));
 
   render();
 
