@@ -126,7 +126,7 @@ export async function initFormsLookup(containerEl) {
   function categoryResultRow(guideResultGroup) {
     let onCategoryClick = (e, guide) => {
       e.preventDefault();
-      setQuery(guide.title);
+      setQuery(guide.query);
     };
     return html`
       <div class="jcc-forms-filter__guide-result-row">
