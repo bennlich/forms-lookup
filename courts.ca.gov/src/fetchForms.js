@@ -4,11 +4,6 @@ let _fetchForms = function(query, callback) {
   // Abort previous request--we're about to send a new one
   if (previousRequest) previousRequest.abort();
 
-  if (query === '') {
-    callback();
-    return;
-  }
-
   let url = `http://jcc.lndo.site:8080/json/jcc-forms?query=${query}`;
   // let url = `https://pr-187-jcc-srl.pantheonsite.io/json/jcc-forms?query=${query}`;
   let newRequest = new XMLHttpRequest();
