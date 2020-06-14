@@ -26,12 +26,12 @@ export function initFormsLookup(containerEl) {
   searchInput = document.querySelector("#jcc-forms-filter__input");
   resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
 
-  let render = ({ query, formResults } = {}) => {
+  let render = ({ query, formResults, loading } = {}) => {
     resultsContainer.firstChild && resultsContainer.firstChild.remove();
-    resultsContainer.appendChild(renderSearchResults({ query, formResults }));
+    resultsContainer.appendChild(renderSearchResults({ query, formResults, loading }));
   };
 
-  let renderSearchResults = ({ query, formResults }) => {
+  let renderSearchResults = ({ query, formResults, loading }) => {
 
     //   if (formResults) {
     //     let caseTypes = _.unique(_.flatten(formResults.map(f => f["case_types"].split(", "))));
@@ -51,6 +51,7 @@ export function initFormsLookup(containerEl) {
         let setQuery = (newQuery) => {
           searchInput.value = newQuery;
           searchInput.focus();
+          render({ loading: true });
           fetchForms(searchInput.value, render);
         };
         let onCategoryClick = (e, guide) => {
@@ -108,6 +109,13 @@ export function initFormsLookup(containerEl) {
       `;
     };
 
+    if (loading) {
+      return html`
+        <div class="jcc-forms-filter__results-container">
+          Loading...
+        </div>`;
+    }
+
     if (!formResults) {
       return html`
         <div class="jcc-forms-filter__results-container">
@@ -125,7 +133,8 @@ export function initFormsLookup(containerEl) {
     if (searchInput.value === '') {
       render();
     } else {
-      fetchForms(searchInput.value, render)
+      render({ loading: true });
+      fetchForms(searchInput.value, render);
     }
   });
 

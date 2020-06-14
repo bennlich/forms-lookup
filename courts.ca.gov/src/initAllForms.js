@@ -15,12 +15,16 @@ export function initAllForms(containerEl) {
 
   resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
 
-  fetchForms('', ({ query, formResults}) => {
-    resultsContainer.appendChild(renderFormResults({ query, formResults }));
-  });
-}
+  render({ loading: true });
+  fetchForms('', render);
+};
 
-let renderFormResults = ({ query, formResults }) => {
+let render = ({ query, formResults, loading }) => {
+  resultsContainer.firstChild && resultsContainer.firstChild.remove();
+  resultsContainer.appendChild(renderFormResults({ query, formResults, loading }));
+};
+
+let renderFormResults = ({ query, formResults, loading }) => {
   let formResult = (form) => {
     let formInfoUrl = `https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/${form.id
       .toLowerCase()
@@ -39,6 +43,14 @@ let renderFormResults = ({ query, formResults }) => {
       </div>
     `;
   };
+
+  if (loading) {
+    return html`
+      <div class="jcc-forms-filter__results-container">
+        Loading...
+      </div>
+    `;
+  }
 
   return html`
     <div class="jcc-forms-filter__results-container">
