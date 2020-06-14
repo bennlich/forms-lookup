@@ -41,123 +41,80 @@ export async function initFormsLookup(containerEl) {
   let fetchForms = _.debounce(_fetchForms, 200);
 
   let render = (formResults) => {
+    containerEl.firstChild && containerEl.firstChild.remove();
+    containerEl.appendChild(renderSearchResults(formResults));
+  };
 
-    let renderGuideResults = () => {
-      let matchingGuides = guides;
+  let renderSearchResults = (formResults) => {
+
+    // let renderGuides = () => {
+    //   let matchingGuides = guides;
       
-      if (formResults) {
-        let caseTypes = _.unique(_.flatten(formResults.map(f => f["case_types"].split(", "))));
-        matchingGuides = guides.filter(guide => caseTypes.includes(guide.title));
-      }
+    //   if (formResults) {
+    //     let caseTypes = _.unique(_.flatten(formResults.map(f => f["case_types"].split(", "))));
+    //     matchingGuides = guides.filter(guide => caseTypes.includes(guide.title));
+    //   }
 
-      // Sort the guides
-      matchingGuides = matchingGuides.sort((a, b) => (a.title < b.title ? -1 : 1));
+    //   // Sort the guides
+    //   matchingGuides = matchingGuides.sort((a, b) => (a.title < b.title ? -1 : 1));
+      
+    //   // Chunk the guides into columns
+    //   let guideResultGroups = _.chunk(matchingGuides, 2);
+    //   if (window.innerWidth < 700) {
+    //     guideResultGroups = _.chunk(matchingGuides, 1);
+    //   }
+        
+    //   return (
+    //     html`<div>
+    //       <div class="jcc-forms-filter__results-header">How-to instructions for types of court cases</div>
+    //       <div class="jcc-forms-filter__guide-results">
+    //         ${matchingGuides.length > 0 ? guideResultGroups.map(categoryResultRow) : noGuides()}
+    //       </div>
+    //     </div>`
+    //   );
+    // };
+
+    let renderCategories = () => {
+      let categories = guides.sort((a, b) => (a.title < b.title ? -1 : 1));
       
       // Chunk the guides into columns
-      let guideResultGroups = _.chunk(matchingGuides, 2);
+      let categoryGroups = _.chunk(categories, 2);
       if (window.innerWidth < 700) {
-        guideResultGroups = _.chunk(matchingGuides, 1);
+        categoryGroups = _.chunk(categories, 1);
       }
         
-      return (
-        html`<div>
+      return html`
+        <div>
           <div class="jcc-forms-filter__results-header">How-to instructions for types of court cases</div>
           <div class="jcc-forms-filter__guide-results">
-            ${matchingGuides.length > 0 ? guideResultGroups.map(guideResultRow) : noGuides()}
+            ${categoryGroups.map(categoryResultRow)}
           </div>
-        </div>`
-      );
+        </div>
+      `;
     };
 
     let renderFormResults = () => {
-      if (!formResults) {
-        return '';
-      }
-      return (
-        html`<div>
+      return html`
+        <div>
           <div class="jcc-forms-filter__results-header">Forms</div>
           <div class="jcc-forms-filter__form-results">
               ${formResults.length > 0 ? formResults.map(formResult) : noForms()}
           </div>
-        </div>`
-      );
+        </div>
+      `;
     };
 
-    containerEl.firstChild && containerEl.firstChild.remove();
-    containerEl.appendChild(
-      html`<div class="jcc-forms-filter__results-container">
-        ${renderGuideResults()}
-        ${renderFormResults()}
-      </div>`
-    );
-  }
-
-  // let render = (formResults) => {
-  //   // debug
-  //   console.log(formResults);
-  //   window.formResults = formResults;
-
-  //   if (!formResults) {
-  //     searchResultsContainer.innerHTML = `
-  //       <div class="jcc-forms-filter__results-header">How-to instructions for types of court cases</div>
-  //       <div class="jcc-forms-filter__guide-results">
-  //           <div class="jcc-forms-filter__loading--guides">...</div>
-  //       </div>
-  //     `;
-  //     renderGuides(formResults);
-  //   } else {
-  //     searchResultsContainer.innerHTML = `
-  //       <div class="jcc-forms-filter__results-header">How-to instructions for types of court cases</div>
-  //       <div class="jcc-forms-filter__guide-results">
-  //           <div class="jcc-forms-filter__loading--guides">...</div>
-  //       </div>
-  //       <div class="jcc-forms-filter__results-header">Forms</div>
-  //       <div class="jcc-forms-filter__form-results">
-  //           <div class="jcc-forms-filter__loading">...</div>
-  //       </div>
-  //     `;
-  //     renderGuides(formResults);
-  //     renderForms(formResults);
-  //   }
-  // }
-
-  // let renderForms = formResults => {    
-  //   formResultsContainer = document.querySelector(".jcc-forms-filter__form-results");
-  //   if (formResults.length > 0) {
-  //     formResultsContainer.innerHTML = "";
-  //     formResults.map(form => formResult(form)).forEach(el => formResultsContainer.appendChild(el));
-  //   } else {
-  //     formResultsContainer.innerHTML = noForms();
-  //   }
-  // };
-
-  // let renderGuides = formResults => {
-  //   guideResultsContainer = document.querySelector(".jcc-forms-filter__guide-results");
-  //   let matchingGuides = guides;
-
-  //   if (formResults) {
-  //     let caseTypes = _.unique(_.flatten(formResults.map(f => f["case_types"].split(", "))));
-  //     matchingGuides = guides.filter(guide => caseTypes.includes(guide.title));
-  //   }
-
-  //   if (matchingGuides.length > 0) {
-  //     matchingGuides = matchingGuides.sort((a, b) => (a.title < b.title ? -1 : 1));
-  //     let guideResultGroups = _.chunk(matchingGuides, 2);
-  //     if (window.innerWidth < 700) {
-  //       guideResultGroups = _.chunk(matchingGuides, 1);
-  //     }
-  //     guideResultsContainer.innerHTML = guideResultGroups
-  //       .map(guideGroup => guideResultRow(guideGroup))
-  //       .join("\n");
-  //   } else {
-  //     guideResultsContainer.innerHTML = noGuides();
-  //   }
-  // };
-
-  function noGuides() {
-    return html`
-      <div class="jcc-forms-filter__no-results jcc-forms-filter__no-results--guides">No matching guides</div>
-    `;
+    if (!formResults) {
+      return html`
+        <div class="jcc-forms-filter__results-container">
+          ${renderCategories()}
+        </div>`;
+    } else {
+      return html`
+        <div class="jcc-forms-filter__results-container">
+          ${renderFormResults()}
+        </div>`;
+    }
   }
 
   function noForms() {
@@ -166,27 +123,20 @@ export async function initFormsLookup(containerEl) {
     `;
   }
 
-  function guideResultRow(guideResultGroup) {
-    if (guideResultGroup.length == 2) {
-      return html`
-        <div class="jcc-forms-filter__guide-result-row">
+  function categoryResultRow(guideResultGroup) {
+    let onCategoryClick = (e, guide) => {
+      e.preventDefault();
+      setQuery(guide.title);
+    };
+    return html`
+      <div class="jcc-forms-filter__guide-result-row">
+        ${guideResultGroup.map(guide => html`
           <div class="jcc-forms-filter__guide-result">
-            <a href="${guideResultGroup[0].url}" target="_blank">${guideResultGroup[0].title}</a>
+            <a href="#" target="_blank" onclick=${e => onCategoryClick(e, guide)}>${guide.title}</a>
           </div>
-          <div class="jcc-forms-filter__guide-result">
-            <a href="${guideResultGroup[1].url}" target="_blank">${guideResultGroup[1].title}</a>
-          </div>
-        </div>
-      `;
-    } else {
-      return html`
-        <div class="jcc-forms-filter__guide-result-row">
-          <div class="jcc-forms-filter__guide-result">
-            <a href="${guideResultGroup[0].url}" target="_blank">${guideResultGroup[0].title}</a>
-          </div>
-        </div>
-      `;
-    }
+        `)}
+      </div>
+    `;
   }
 
   function formResult(form) {
@@ -204,7 +154,15 @@ export async function initFormsLookup(containerEl) {
     `;
   }
 
+  function setQuery(newQuery) {
+    searchInput.value = newQuery;
+    searchInput.focus();
+    fetchForms();
+  }
+
   searchInput.addEventListener("input", () => fetchForms());
 
   render();
+
+  searchInput.focus();
 }
