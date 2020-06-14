@@ -2,18 +2,30 @@
 
 import { guides } from './guides.js';
 
-let searchResultsContainer = document.querySelector(".jcc-forms-filter__results-container");
-let guideResultsContainer = document.querySelector(".jcc-forms-filter__guide-results");
-let formResultsContainer = document.querySelector(".jcc-forms-filter__form-results");
-let searchInput = document.querySelector("#jcc-forms-filter__input");
-
+let searchInput;
+let resultsContainer;
 let previousRequest;
-
-let containerEl;
 
 export async function initFormsLookup(containerEl) {
   console.log("form-lookup-drupal-api init");
-  containerEl = containerEl;
+
+  // Add the search input to the page
+  let searchInputContainer = html`
+    <div class="jcc-forms-filter__input-container">
+        <label for="jcc-forms-filter__input" class="jcc-forms-filter__input-label">Search for any topic or form number, or <a class="text-white" href="../05-pages-form-lookup-all-forms/05-pages-form-lookup-all-forms.html">view all forms</a></label>
+        <input type="text"
+               id="jcc-forms-filter__input"
+               placeholder="E.g. divorce, name change, fl-100, restraining order"
+               class="usa-input jcc-forms-filter__input"
+               name="input-type-text"
+               autocomplete="off">
+    </div>
+  `;
+  containerEl.appendChild(searchInputContainer);
+  searchInput = document.querySelector("#jcc-forms-filter__input");
+
+  // Add the results container to the page
+  resultsContainer = containerEl.appendChild(html`<div></div>`);
 
   let _fetchForms = function() {
     // Abort previous request--we're about to send a new one
@@ -44,8 +56,8 @@ export async function initFormsLookup(containerEl) {
   let fetchForms = _.debounce(_fetchForms, 200);
 
   let render = ({ query, formResults } = {}) => {
-    containerEl.firstChild && containerEl.firstChild.remove();
-    containerEl.appendChild(renderSearchResults({ query, formResults }));
+    resultsContainer.firstChild && resultsContainer.firstChild.remove();
+    resultsContainer.appendChild(renderSearchResults({ query, formResults }));
   };
 
   let renderSearchResults = ({ query, formResults }) => {
