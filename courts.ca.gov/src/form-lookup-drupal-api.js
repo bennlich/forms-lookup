@@ -151,7 +151,7 @@ export async function initFormsLookup(containerEl) {
   function formResult(form) {
     let formInfoUrl = `https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/${form.id
       .toLowerCase()
-      .replace(/\(|\)/g, "")}`;
+      .replace(/\(|\)|\./g, "")}`;
 
     return html`
       <div class="jcc-forms-filter__form-result">
