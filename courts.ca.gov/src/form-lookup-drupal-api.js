@@ -30,7 +30,10 @@ export async function initFormsLookup(containerEl) {
     let newRequest = new XMLHttpRequest();
     newRequest.responseType = "json";
     newRequest.onload = function() {
-      render(newRequest.response);
+      render({
+        query: query,
+        formResults: newRequest.response
+      });
     };
     newRequest.open("GET", url);
     previousRequest = newRequest;
@@ -40,12 +43,12 @@ export async function initFormsLookup(containerEl) {
   // Wait 200ms after someone is finished typing before fetching results
   let fetchForms = _.debounce(_fetchForms, 200);
 
-  let render = (formResults) => {
+  let render = ({ query, formResults } = {}) => {
     containerEl.firstChild && containerEl.firstChild.remove();
-    containerEl.appendChild(renderSearchResults(formResults));
+    containerEl.appendChild(renderSearchResults({ query, formResults }));
   };
 
-  let renderSearchResults = (formResults) => {
+  let renderSearchResults = ({ query, formResults }) => {
 
     // let renderGuides = () => {
     //   let matchingGuides = guides;
@@ -85,7 +88,6 @@ export async function initFormsLookup(containerEl) {
         
       return html`
         <div>
-          <div class="jcc-forms-filter__results-header">How-to instructions for types of court cases</div>
           <div class="jcc-forms-filter__guide-results">
             ${categoryGroups.map(categoryResultRow)}
           </div>
@@ -93,13 +95,14 @@ export async function initFormsLookup(containerEl) {
       `;
     };
 
-    let renderFormResults = () => {
+    let renderFormResults = ({ query, formResults }) => {
       return html`
         <div>
-          <div class="jcc-forms-filter__results-header">Forms</div>
-          <div class="jcc-forms-filter__form-results">
-              ${formResults.length > 0 ? formResults.map(formResult) : noForms()}
-          </div>
+          <div class="jcc-forms-filter__results-header">Found ${formResults.length} forms matching "${query}"</div>
+          ${formResults.length > 0 ?
+            html`<div class="jcc-forms-filter__form-results">
+              ${formResults.map(formResult)}
+            </div>` : ''}
         </div>
       `;
     };
@@ -112,15 +115,9 @@ export async function initFormsLookup(containerEl) {
     } else {
       return html`
         <div class="jcc-forms-filter__results-container">
-          ${renderFormResults()}
+          ${renderFormResults({ query, formResults })}
         </div>`;
     }
-  }
-
-  function noForms() {
-    return html`
-      <div class="jcc-forms-filter__no-results">No matching forms</div>
-    `;
   }
 
   function categoryResultRow(guideResultGroup) {
