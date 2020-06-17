@@ -27,7 +27,7 @@ export function initFormsLookup(containerEl) {
   resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
 
   let render = ({ query, formResults, loading } = {}) => {
-    resultsContainer.firstChild && resultsContainer.firstChild.remove();
+    Array.from(resultsContainer.children).forEach(el => el.remove());
     resultsContainer.appendChild(renderSearchResults({ query, formResults, loading }));
   };
 
@@ -109,6 +109,22 @@ export function initFormsLookup(containerEl) {
       `;
     };
 
+    let guideAlert = ({ query, formResults }) => {
+      let matchingGuide = guides.find(guide => guide.query === query);
+      if (matchingGuide) {
+        return html`
+          <div class="usa-alert usa-alert--info usa-alert--slim" >
+            <div class="usa-alert__body">
+              <p class="usa-alert__text">
+                Looking for more info about ${query}? Read the <a href="${matchingGuide.url}">${matchingGuide.title} self-help guide</a> or view the <a href="${matchingGuide.formsUrl}">${matchingGuide.title} forms page</a>.
+              </p>
+            </div>
+          </div>`;  
+      } else {
+        return '';
+      }
+    };
+
     if (loading) {
       return html`
         <div class="jcc-forms-filter__results-container">
@@ -123,6 +139,7 @@ export function initFormsLookup(containerEl) {
         </div>`;
     } else {
       return html`
+        ${ guideAlert({ query, formResults }) }
         <div class="jcc-forms-filter__results-container">
           ${renderFormResults({ query, formResults })}
         </div>`;
