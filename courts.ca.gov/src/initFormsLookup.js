@@ -33,11 +33,6 @@ export function initFormsLookup(containerEl) {
 
   let renderSearchResults = ({ query, formResults, loading }) => {
 
-    //   if (formResults) {
-    //     let caseTypes = _.unique(_.flatten(formResults.map(f => f["case_types"].split(", "))));
-    //     matchingGuides = guides.filter(guide => caseTypes.includes(guide.title));
-    //   }
-
     let renderCategories = () => {
       let categories = guides.sort((a, b) => (a.title < b.title ? -1 : 1));
       
