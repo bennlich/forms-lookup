@@ -43,15 +43,11 @@ export function initFormsLookup(containerEl) {
       }
 
       let categoryResultRow = (guideResultGroup) => {
-        let setQuery = (newQuery) => {
-          searchInput.value = newQuery;
-          searchInput.focus();
-          render({ loading: true });
-          fetchForms(searchInput.value, render);
-        };
         let onCategoryClick = (e, guide) => {
           e.preventDefault();
-          setQuery(guide.query);
+          searchInput.value = guide.query;
+          searchInput.focus();
+          doQuery(guide.query);
         };
         return html`
           <div class="jcc-forms-filter__guide-result-row">
@@ -141,19 +137,21 @@ export function initFormsLookup(containerEl) {
     }
   }
 
-  searchInput.addEventListener("input", () => {
+  searchInput.addEventListener("input", () => doQuery(searchInput.value));
+
+  function doQuery(newQuery) {
     // Update query string
-    let newUrl = `${window.location.pathname}?query=${searchInput.value}`;
+    let newUrl = `${window.location.pathname}?query=${newQuery}`;
     history.replaceState(null, '', newUrl);
     
     // Fetch and re-render
-    if (searchInput.value === '') {
+    if (newQuery === '') {
       render();
     } else {
       render({ loading: true });
-      fetchForms(searchInput.value, render);
+      fetchForms(newQuery, render);
     }
-  });
+  }
 
   function updateStateFromQueryString() {
     let parseQueryString = queryString => {
@@ -170,7 +168,7 @@ export function initFormsLookup(containerEl) {
 
     let queryDict = parseQueryString(window.location.search);
     if (queryDict.query) {
-      searchInput.value = queryDict.query;
+      searchInput.value = decodeURI(queryDict.query);
       render({ loading: true });
       fetchForms(searchInput.value, render);
     }
