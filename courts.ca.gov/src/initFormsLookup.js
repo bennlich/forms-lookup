@@ -82,12 +82,12 @@ export function initFormsLookup(containerEl) {
         return html`
           <div class="jcc-forms-filter__form-result">
             <div class="jcc-forms-filter__form-result-content">
-              <a class="jcc-forms-filter__form-number-and-title" href="${formInfoUrl}" target="_blank">
+              <a class="jcc-forms-filter__form-number-and-title" href="${formInfoUrl}">
                 <div class="form-number">${form.id}</div>
                 <div class="form-title">${form.title}</div>
               </a>
-              <a class="usa-button usa-button--outline jcc-forms-filter__form-guide-button" href="${formInfoUrl}" target="_blank">See form info</a>
-              <a class="usa-button usa-button--outline jcc-forms-filter__download-form-button" href="${form.url}" target="_blank">Download form</a>
+              <a class="usa-button usa-button--outline jcc-forms-filter__form-guide-button" href="${formInfoUrl}">See form info</a>
+              <a class="usa-button usa-button--outline jcc-forms-filter__download-form-button" href="${form.url}">Download form</a>
             </div>
           </div>
         `;
@@ -142,6 +142,11 @@ export function initFormsLookup(containerEl) {
   }
 
   searchInput.addEventListener("input", () => {
+    // Update query string
+    let newUrl = `${window.location.pathname}?query=${searchInput.value}`;
+    history.replaceState(null, '', newUrl);
+    
+    // Fetch and re-render
     if (searchInput.value === '') {
       render();
     } else {
@@ -150,7 +155,30 @@ export function initFormsLookup(containerEl) {
     }
   });
 
+  function updateStateFromQueryString() {
+    let parseQueryString = queryString => {
+      let pairs = queryString.slice(1).split('&').map(pair => pair.split('='));
+      let queryDict = {};
+      for (let i=0; i<pairs.length; i++) {
+        queryDict[pairs[i][0]] = pairs[i][1];
+      }
+      return queryDict;
+    }
+    
+    if (!window.location.search)
+      return;
+
+    let queryDict = parseQueryString(window.location.search);
+    if (queryDict.query) {
+      searchInput.value = queryDict.query;
+      render({ loading: true });
+      fetchForms(searchInput.value, render);
+    }
+  }
+
   render();
+
+  updateStateFromQueryString();
 
   searchInput.focus();
 }
