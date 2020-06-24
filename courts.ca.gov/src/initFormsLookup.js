@@ -47,7 +47,7 @@ export function initFormsLookup(containerEl) {
           e.preventDefault();
           searchInput.value = guide.query;
           searchInput.focus();
-          doQuery(guide.query);
+          doQuery({ query: guide.query, pushState: true });
         };
         return html`
           <div class="jcc-forms-filter__guide-result-row">
@@ -137,16 +137,22 @@ export function initFormsLookup(containerEl) {
     }
   }
 
-  searchInput.addEventListener("input", () => doQuery(searchInput.value));
+  searchInput.addEventListener("input", () => doQuery({ query: searchInput.value }));
 
-  function doQuery(newQuery) {
+  window.addEventListener("popstate", () => updateStateFromQueryString());
+
+  function doQuery({ query, pushState=false }) {
     // Update query string
-    let newUrl = `${window.location.pathname}?query=${newQuery}`;
-    history.replaceState(null, '', newUrl);
+    let newUrl = `${window.location.pathname}?query=${query}`;
+    if (pushState) {
+      history.pushState(null, '', newUrl);
+    } else {
+      history.replaceState(null, '', newUrl);
+    }
     
     // Fetch and re-render
     render({ loading: true });
-    fetchForms(newQuery, render);
+    fetchForms(query, render);
   }
 
   function updateStateFromQueryString() {
@@ -159,15 +165,15 @@ export function initFormsLookup(containerEl) {
       return queryDict;
     }
     
-    if (!window.location.search)
-      return;
-
-    let queryDict = parseQueryString(window.location.search);
-    if (queryDict.query) {
-      searchInput.value = decodeURI(queryDict.query);
-      render({ loading: true });
-      fetchForms(searchInput.value, render);
+    let query = '';
+    if (window.location.search) {
+      let queryDict = parseQueryString(window.location.search);
+      query = queryDict.query;  
     }
+    
+    searchInput.value = decodeURI(query);
+    render({ loading: true });
+    fetchForms(query, render);
   }
 
   render();
