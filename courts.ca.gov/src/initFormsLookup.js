@@ -145,12 +145,8 @@ export function initFormsLookup(containerEl) {
     history.replaceState(null, '', newUrl);
     
     // Fetch and re-render
-    if (newQuery === '') {
-      render();
-    } else {
-      render({ loading: true });
-      fetchForms(newQuery, render);
-    }
+    render({ loading: true });
+    fetchForms(newQuery, render);
   }
 
   function updateStateFromQueryString() {
