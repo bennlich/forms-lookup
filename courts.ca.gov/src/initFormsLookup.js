@@ -168,10 +168,10 @@ export function initFormsLookup(containerEl) {
     let query = '';
     if (window.location.search) {
       let queryDict = parseQueryString(window.location.search);
-      query = queryDict.query;  
+      query = decodeURI(queryDict.query);
     }
     
-    searchInput.value = decodeURI(query);
+    searchInput.value = query;
     render({ loading: true });
     fetchForms(query, render);
   }
