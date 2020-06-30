@@ -1,6 +1,8 @@
 ## forms lookup - red dot integration
 
-Javascript module that renders:
+![](screenshot.png)
+
+This is a javascript module that renders:
 
 1) a JCC form search input and search results (see [src/initFormsLookup.js](src/initFormsLookup.js))
 2) a list of all JCC forms (see [src/initAllForms.js](src/initAllForms.js))
