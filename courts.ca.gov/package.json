@@ -2,16 +2,25 @@
   "name": "embedded-forms-lookup",
   "version": "1.0.0",
   "description": "",
-  "main": "form-lookup-drupal-api.js",
+  "main": "",
   "scripts": {
-    "build": "sass style/_form-lookup.scss style/form-lookup.css"
+    "build": "npm run build-sass && npm run build-js",
+    "build-sass": "sass --no-source-map style/_forms-lookup.scss build/forms-lookup.css",
+    "build-js": "rollup --config rollup.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "rollup": "^2.18.1",
     "sass": "^1.26.5"
   },
   "dependencies": {
-    "nanohtml": "^1.9.1"
+    "nanohtml": "^1.9.1",
+    "underscore": "^1.10.2"
   }
 }

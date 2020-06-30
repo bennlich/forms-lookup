@@ -1,3 +1,5 @@
+import _ from "underscore";
+
 let previousRequest;
 
 let _fetchForms = function(query, callback) {

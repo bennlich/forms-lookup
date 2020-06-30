@@ -1,4 +1,5 @@
-// import _ from "underscore";
+import _ from 'underscore';
+import html from 'nanohtml/lib/browser';
 
 import { guides } from './guides.js';
 import { fetchForms } from './fetchForms.js';
@@ -6,8 +7,8 @@ import { fetchForms } from './fetchForms.js';
 let searchInput;
 let resultsContainer;
 
-export function initFormsLookup(containerEl) {
-  console.log("form-lookup-drupal-api init");
+export default function initFormsLookup(containerEl) {
+  console.log('form-lookup-drupal-api init');
 
   // Add the forms lookup DOM elements to the page
   containerEl.appendChild(html`
