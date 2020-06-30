@@ -1,5 +1,12 @@
 ## forms lookup - red dot integration
 
+Javascript module that renders:
+
+1) a JCC form search input and search results (see [src/initFormsLookup.js](src/initFormsLookup.js))
+2) a list of all JCC forms (see [src/initAllForms.js](src/initAllForms.js))
+
+Results for both listings are currently provided by an HTTP API in the [jcc-srl](https://github.com/chapter-three/jcc-srl/tree/epic-forms) Drupal.
+
 ### Install dependencies
 
 ```
@@ -66,3 +73,5 @@ Include the following `<div>` and `<script>` tags (see [allforms.html lines 434-
 
 Develop locally with your favorite static web server. E.g. `python -m SimpleHTTPServer`.
 
+- [index.html](index.html) corresponds to https://www.courts.ca.gov/forms.htm
+- [allorms.html](allforms.html) replaces https://www.courts.ca.gov/formname.htm and https://www.courts.ca.gov/formnumber.htm
