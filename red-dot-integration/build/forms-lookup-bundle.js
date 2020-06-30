@@ -2392,7 +2392,7 @@ var initFormsLookup = (function () {
 
   var browser = dom(document);
 
-  var guides = [{
+  var categories = [{
     id: "small-claims",
     title: "Small Claims",
     query: "small claims",
@@ -2647,7 +2647,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject4() {
-    var data = _taggedTemplateLiteral(["\n        <div>\n          <div class=\"jcc-forms-filter__guide-results\">\n            ", "\n          </div>\n        </div>\n      "]);
+    var data = _taggedTemplateLiteral(["\n        <div>\n          <div class=\"jcc-forms-filter__category-results\">\n            ", "\n          </div>\n        </div>\n      "]);
 
     _templateObject4 = function _templateObject4() {
       return data;
@@ -2657,7 +2657,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject3() {
-    var data = _taggedTemplateLiteral(["\n              <div class=\"jcc-forms-filter__guide-result\">\n                <a href=\"#\" target=\"_blank\" onclick=", ">", "</a>\n              </div>\n            "]);
+    var data = _taggedTemplateLiteral(["\n              <div class=\"jcc-forms-filter__category-result\">\n                <a href=\"#\" target=\"_blank\" onclick=", ">", "</a>\n              </div>\n            "]);
 
     _templateObject3 = function _templateObject3() {
       return data;
@@ -2667,7 +2667,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject2() {
-    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__guide-result-row\">\n            ", "\n          </div>\n        "]);
+    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__category-result-row\">\n            ", "\n          </div>\n        "]);
 
     _templateObject2 = function _templateObject2() {
       return data;
@@ -2716,31 +2716,31 @@ var initFormsLookup = (function () {
           loading = _ref2.loading;
 
       var renderCategories = function renderCategories() {
-        var categories = guides.sort(function (a, b) {
+        var sortedCategories = categories.sort(function (a, b) {
           return a.title < b.title ? -1 : 1;
-        }); // Chunk the guides into columns
+        }); // Chunk the categories into columns
 
-        var categoryGroups = _$1.chunk(categories, 2);
+        var categoryGroups = _$1.chunk(sortedCategories, 2);
 
         if (window.innerWidth < 700) {
-          categoryGroups = _$1.chunk(categories, 1);
+          categoryGroups = _$1.chunk(sortedCategories, 1);
         }
 
-        var categoryResultRow = function categoryResultRow(guideResultGroup) {
-          var onCategoryClick = function onCategoryClick(e, guide) {
+        var categoryResultRow = function categoryResultRow(categoryGroup) {
+          var onCategoryClick = function onCategoryClick(e, category) {
             e.preventDefault();
-            searchInput.value = guide.query;
+            searchInput.value = category.query;
             searchInput.focus();
             doQuery({
-              query: guide.query,
+              query: category.query,
               pushState: true
             });
           };
 
-          return browser(_templateObject2(), guideResultGroup.map(function (guide) {
+          return browser(_templateObject2(), categoryGroup.map(function (category) {
             return browser(_templateObject3(), function (e) {
-              return onCategoryClick(e, guide);
-            }, guide.title);
+              return onCategoryClick(e, category);
+            }, category.title);
           }));
         };
 
@@ -2759,15 +2759,14 @@ var initFormsLookup = (function () {
         return browser(_templateObject6(), formResults.length, query, formResults.length > 0 ? browser(_templateObject7(), formResults.map(formResult)) : '');
       };
 
-      var guideAlert = function guideAlert(_ref4) {
-        var query = _ref4.query,
-            formResults = _ref4.formResults;
-        var matchingGuide = guides.find(function (guide) {
-          return guide.query === query;
+      var categoryAlert = function categoryAlert(_ref4) {
+        var query = _ref4.query;
+        var category = categories.find(function (category) {
+          return category.query === query;
         });
 
-        if (matchingGuide) {
-          return browser(_templateObject8(), query, matchingGuide.url, matchingGuide.title, matchingGuide.formsUrl, matchingGuide.title);
+        if (category) {
+          return browser(_templateObject8(), query, category.url, category.title, category.formsUrl, category.title);
         } else {
           return '';
         }
@@ -2780,9 +2779,8 @@ var initFormsLookup = (function () {
       if (!formResults) {
         return browser(_templateObject10(), renderCategories());
       } else {
-        return browser(_templateObject11(), guideAlert({
-          query: query,
-          formResults: formResults
+        return browser(_templateObject11(), categoryAlert({
+          query: query
         }), renderFormResults({
           query: query,
           formResults: formResults

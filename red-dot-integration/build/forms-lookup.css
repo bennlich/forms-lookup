@@ -31,31 +31,26 @@
   text-align: center;
 }
 
-.jcc-forms-filter__no-results--guides,
-.jcc-forms-filter__loading--guides {
-  border-bottom: 1px solid #eee;
-}
-
-.jcc-forms-filter__guide-result-row {
+.jcc-forms-filter__category-result-row {
   display: flex;
 }
 
-.jcc-forms-filter__guide-result {
+.jcc-forms-filter__category-result {
   flex-grow: 1;
   width: 50%;
   box-sizing: border-box;
 }
-.jcc-forms-filter__guide-result:first-child {
+.jcc-forms-filter__category-result:first-child {
   border-right: 1px solid #eee;
 }
-.jcc-forms-filter__guide-result a {
+.jcc-forms-filter__category-result a {
   display: block;
   text-decoration: none;
   padding: 10px 20px;
   border-bottom: 1px solid #eee;
   color: #333;
 }
-.jcc-forms-filter__guide-result a:hover {
+.jcc-forms-filter__category-result a:hover {
   text-decoration: underline;
 }
 
