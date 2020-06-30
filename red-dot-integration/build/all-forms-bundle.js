@@ -2410,6 +2410,7 @@ var initAllForms = (function () {
   };
 
   var _executeQuery = function _executeQuery(query, callback) {
+    // TODO: Pull this out into an env or config variable
     // let url = `http://jcc.lndo.site:8080/json/jcc-forms?query=${query}`;
     var url = "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
     var newRequest = new XMLHttpRequest();
