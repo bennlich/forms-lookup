@@ -29,7 +29,9 @@ In the `build/` directory you will find three files:
 - [all-forms-bundle.js](build/all-forms-bundle.js) - script for the all forms page
 - [forms-lookup.css](build/forms-lookup.css) - stylesheet for both pages
 
-#### Deploy [forms.htm](https://www.courts.ca.gov/forms.htm)
+#### Deploy forms lookup
+
+This is a new search input and results list for the [forms.htm](https://www.courts.ca.gov/forms.htm) page.
 
 Include the stylesheet (see [index.html line 56](index.html#L56)):
 
@@ -49,7 +51,7 @@ Include the following `<div>` and `<script>` tags (see [index.html lines 434-442
 </div>
 ```
 
-#### Deploy allforms.html
+#### Deploy all forms listing
 
 This is a new listing of all forms that replaces both [formname.htm](https://www.courts.ca.gov/formname.htm) and [formnumber.htm](https://www.courts.ca.gov/formnumber.htm). 
 
