@@ -8,7 +8,7 @@ let searchInput;
 let resultsContainer;
 
 export default function initFormsLookup(containerEl) {
-  console.log('form-lookup-drupal-api init');
+  console.log('forms lookup init');
 
   // Add the forms lookup DOM elements to the page
   containerEl.appendChild(html`

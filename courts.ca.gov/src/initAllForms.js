@@ -1,8 +1,11 @@
-import { fetchForms } from './fetchForms.js';
+import _ from 'underscore';
+import html from 'nanohtml/lib/browser';
+
+import { fetchAllForms } from './fetchForms.js';
 
 let resultsContainer;
 
-export function initAllForms(containerEl) {
+export default function initAllForms(containerEl) {
   console.log("all forms init");
 
   // Add the forms lookup DOM elements to the page
@@ -16,7 +19,7 @@ export function initAllForms(containerEl) {
   resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
 
   render({ loading: true });
-  fetchForms('', render);
+  fetchAllForms(render);
 };
 
 let render = ({ query, formResults, loading }) => {
