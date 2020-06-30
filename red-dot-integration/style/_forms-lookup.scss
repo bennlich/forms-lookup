@@ -34,16 +34,11 @@
   text-align: center;
 }
 
-.jcc-forms-filter__no-results--guides,
-.jcc-forms-filter__loading--guides {
-  border-bottom: 1px solid #eee;
-}
-
-.jcc-forms-filter__guide-result-row {
+.jcc-forms-filter__category-result-row {
   display: flex;
 }
 
-.jcc-forms-filter__guide-result {
+.jcc-forms-filter__category-result {
   flex-grow: 1;
   width: 50%;
   box-sizing: border-box;

@@ -1,7 +1,7 @@
 import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 
-import { guides } from './guides.js';
+import { categories } from './categories.js';
 import { fetchForms } from './fetchForms.js';
 
 let searchInput;
@@ -35,26 +35,26 @@ export default function initFormsLookup(containerEl) {
   let renderSearchResults = ({ query, formResults, loading }) => {
 
     let renderCategories = () => {
-      let categories = guides.sort((a, b) => (a.title < b.title ? -1 : 1));
+      let sortedCategories = categories.sort((a, b) => (a.title < b.title ? -1 : 1));
       
-      // Chunk the guides into columns
-      let categoryGroups = _.chunk(categories, 2);
+      // Chunk the categories into columns
+      let categoryGroups = _.chunk(sortedCategories, 2);
       if (window.innerWidth < 700) {
-        categoryGroups = _.chunk(categories, 1);
+        categoryGroups = _.chunk(sortedCategories, 1);
       }
 
-      let categoryResultRow = (guideResultGroup) => {
-        let onCategoryClick = (e, guide) => {
+      let categoryResultRow = (categoryGroup) => {
+        let onCategoryClick = (e, category) => {
           e.preventDefault();
-          searchInput.value = guide.query;
+          searchInput.value = category.query;
           searchInput.focus();
-          doQuery({ query: guide.query, pushState: true });
+          doQuery({ query: category.query, pushState: true });
         };
         return html`
-          <div class="jcc-forms-filter__guide-result-row">
-            ${guideResultGroup.map(guide => html`
-              <div class="jcc-forms-filter__guide-result">
-                <a href="#" target="_blank" onclick=${e => onCategoryClick(e, guide)}>${guide.title}</a>
+          <div class="jcc-forms-filter__category-result-row">
+            ${categoryGroup.map(category => html`
+              <div class="jcc-forms-filter__category-result">
+                <a href="#" target="_blank" onclick=${e => onCategoryClick(e, category)}>${category.title}</a>
               </div>
             `)}
           </div>
@@ -63,7 +63,7 @@ export default function initFormsLookup(containerEl) {
         
       return html`
         <div>
-          <div class="jcc-forms-filter__guide-results">
+          <div class="jcc-forms-filter__category-results">
             ${categoryGroups.map(categoryResultRow)}
           </div>
         </div>
@@ -101,14 +101,14 @@ export default function initFormsLookup(containerEl) {
       `;
     };
 
-    let guideAlert = ({ query, formResults }) => {
-      let matchingGuide = guides.find(guide => guide.query === query);
-      if (matchingGuide) {
+    let categoryAlert = ({ query }) => {
+      let category = categories.find(category => category.query === query);
+      if (category) {
         return html`
           <div class="usa-alert usa-alert--info usa-alert--slim" >
             <div class="usa-alert__body">
               <p class="usa-alert__text">
-                Looking for more info about ${query}? Read the <a href="${matchingGuide.url}">${matchingGuide.title} self-help guide</a> or view the <a href="${matchingGuide.formsUrl}">${matchingGuide.title} forms page</a>.
+                Looking for more info about ${query}? Read the <a href="${category.url}">${category.title} self-help guide</a> or view the <a href="${category.formsUrl}">${category.title} forms page</a>.
               </p>
             </div>
           </div>`;  
@@ -131,7 +131,7 @@ export default function initFormsLookup(containerEl) {
         </div>`;
     } else {
       return html`
-        ${ guideAlert({ query, formResults }) }
+        ${ categoryAlert({ query }) }
         <div class="jcc-forms-filter__results-container">
           ${renderFormResults({ query, formResults })}
         </div>`;

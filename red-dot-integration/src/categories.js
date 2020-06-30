@@ -1,4 +1,4 @@
-export const guides = [
+export const categories = [
   {
     id: "small-claims",
     title: "Small Claims",
