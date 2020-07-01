@@ -7,7 +7,7 @@ let _fetchForms = function(query, callback) {
   if (previousRequest) previousRequest.abort();
 
   if (query === '') {
-    callback({ query, formResults: null });
+    callback({ query, response: null });
     return;
   }
 
@@ -23,7 +23,7 @@ let _executeQuery = function(query, callback) {
   newRequest.onload = function() {
     callback({
       query: query,
-      formResults: newRequest.response
+      response: newRequest.response
     });
   };
   newRequest.open("GET", url);

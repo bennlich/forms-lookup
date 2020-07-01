@@ -22,12 +22,12 @@ export default function initAllForms(containerEl) {
   fetchAllForms(render);
 };
 
-let render = ({ query, formResults, loading }) => {
+let render = ({ query, response, loading }) => {
   resultsContainer.firstChild && resultsContainer.firstChild.remove();
-  resultsContainer.appendChild(renderFormResults({ query, formResults, loading }));
+  resultsContainer.appendChild(renderFormResults({ query, response, loading }));
 };
 
-let renderFormResults = ({ query, formResults, loading }) => {
+let renderFormResults = ({ query, response, loading }) => {
   let formResult = (form) => {
     let formInfoUrl = `https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/${form.id
       .toLowerCase()
@@ -59,7 +59,7 @@ let renderFormResults = ({ query, formResults, loading }) => {
     <div class="jcc-forms-filter__results-container">
       <div class="jcc-forms-filter__results-header">All Forms</div>
       <div class="jcc-forms-filter__form-results">
-        ${formResults.map(formResult)}
+        ${response.map(formResult)}
       </div>
     </div>
   `;
