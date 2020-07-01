@@ -1,4 +1,5 @@
-import _ from "underscore";
+import _ from 'underscore';
+import { formsAPIUrl } from './config.js';
 
 let previousRequest;
 
@@ -15,9 +16,7 @@ let _fetchForms = function(query, callback) {
 };
 
 let _executeQuery = function(query, callback) {
-  // TODO: Pull this out into an env or config variable
-  // let url = `http://jcc.lndo.site:8080/json/jcc-forms?query=${query}`;
-  let url = `https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=${query}`;
+  let url = formsAPIUrl(query);
   let newRequest = new XMLHttpRequest();
   newRequest.responseType = "json";
   newRequest.onload = function() {

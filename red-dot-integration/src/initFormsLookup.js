@@ -5,6 +5,7 @@ import { fetchForms } from './fetchForms.js';
 import { CategoryLinks } from './components/CategoryLinks.js';
 import { CategoryAlert } from './components/CategoryAlert.js';
 import { FormResults } from './components/FormResults.js';
+import { allFormsPageUrl } from './config.js';
 
 let searchInput;
 let resultsContainer;
@@ -15,7 +16,7 @@ export default function initFormsLookup(containerEl) {
   // Add the forms lookup DOM elements to the page
   containerEl.appendChild(html`
     <div class="jcc-forms-filter__input-container">
-        <label for="jcc-forms-filter__input" class="jcc-forms-filter__input-label">Search for any topic or form number, or <a class="text-white" href="./allforms.html">view all forms</a></label>
+        <label for="jcc-forms-filter__input" class="jcc-forms-filter__input-label">Search for any topic or form number, or <a class="text-white" href="${allFormsPageUrl}">view all forms</a></label>
         <input type="text"
                id="jcc-forms-filter__input"
                placeholder="E.g. divorce, name change, fl-100, restraining order"
@@ -35,7 +36,6 @@ export default function initFormsLookup(containerEl) {
   };
 
   let renderSearchResults = ({ query, response, loading }) => {
-
     let onCategoryClick = (e, category) => {
       e.preventDefault();
       searchInput.value = category.query;
@@ -62,7 +62,7 @@ export default function initFormsLookup(containerEl) {
           ${FormResults({ query, response })}
         </div>`;
     }
-  }
+  };
 
   searchInput.addEventListener("input", () => doQuery({ query: searchInput.value }));
 

@@ -17,8 +17,11 @@ npm install
 
 ### Build
 
+The two build commands use [src/config.dev.js](src/config.dev.js) and [src/config.prod.js](src/config.prod.js) respectively.
+
 ```
-npm run build
+npm run build-dev
+npm run build-prod
 ```
 
 ### Deploy to red dot

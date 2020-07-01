@@ -4,6 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
+    "build-dev": "cp src/config.dev.js src/config.js && npm run build",
+    "build-prod": "cp src/config.prod.js src/config.js && npm run build",
     "build": "npm run build-sass && npm run build-js",
     "build-sass": "sass --no-source-map style/_forms-lookup.scss build/forms-lookup.css",
     "build-js": "rollup --config rollup.config.js"
