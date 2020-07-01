@@ -2547,7 +2547,7 @@ var initFormsLookup = (function () {
     if (query === '') {
       callback({
         query: query,
-        formResults: null
+        response: null
       });
       return;
     }
@@ -2565,7 +2565,7 @@ var initFormsLookup = (function () {
     newRequest.onload = function () {
       callback({
         query: query,
-        formResults: newRequest.response
+        response: newRequest.response
       });
     };
 
@@ -2577,88 +2577,8 @@ var initFormsLookup = (function () {
 
   var fetchForms = _$1.debounce(_fetchForms, 200);
 
-  function _templateObject11() {
-    var data = _taggedTemplateLiteral(["\n        ", "\n        <div class=\"jcc-forms-filter__results-container\">\n          ", "\n        </div>"]);
-
-    _templateObject11 = function _templateObject11() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject10() {
-    var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          ", "\n        </div>"]);
-
-    _templateObject10 = function _templateObject10() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject9() {
-    var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          Loading...\n        </div>"]);
-
-    _templateObject9 = function _templateObject9() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject8() {
-    var data = _taggedTemplateLiteral(["\n          <div class=\"usa-alert usa-alert--info usa-alert--slim\" >\n            <div class=\"usa-alert__body\">\n              <p class=\"usa-alert__text\">\n                Looking for more info about ", "? Read the <a href=\"", "\">", " self-help guide</a> or view the <a href=\"", "\">", " forms page</a>.\n              </p>\n            </div>\n          </div>"]);
-
-    _templateObject8 = function _templateObject8() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject7() {
-    var data = _taggedTemplateLiteral(["<div class=\"jcc-forms-filter__form-results\">\n              ", "\n            </div>"]);
-
-    _templateObject7 = function _templateObject7() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject6() {
-    var data = _taggedTemplateLiteral(["\n        <div>\n          <div class=\"jcc-forms-filter__results-header\">Found ", " forms matching \"", "\"</div>\n          ", "\n        </div>\n      "]);
-
-    _templateObject6 = function _templateObject6() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject5() {
-    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__form-result\">\n            <div class=\"jcc-forms-filter__form-result-content\">\n              <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\">\n                <div class=\"form-number\">", "</div>\n                <div class=\"form-title\">", "</div>\n              </a>\n              <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\">See form info</a>\n              <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\">Download form</a>\n            </div>\n          </div>\n        "]);
-
-    _templateObject5 = function _templateObject5() {
-      return data;
-    };
-
-    return data;
-  }
-
-  function _templateObject4() {
-    var data = _taggedTemplateLiteral(["\n        <div>\n          <div class=\"jcc-forms-filter__category-results\">\n            ", "\n          </div>\n        </div>\n      "]);
-
-    _templateObject4 = function _templateObject4() {
-      return data;
-    };
-
-    return data;
-  }
-
   function _templateObject3() {
-    var data = _taggedTemplateLiteral(["\n              <div class=\"jcc-forms-filter__category-result\">\n                <a href=\"#\" target=\"_blank\" onclick=", ">", "</a>\n              </div>\n            "]);
+    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n      </div>\n    </div>\n  "]);
 
     _templateObject3 = function _templateObject3() {
       return data;
@@ -2668,7 +2588,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject2() {
-    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__category-result-row\">\n            ", "\n          </div>\n        "]);
+    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"#\" target=\"_blank\" onclick=", ">", "</a>\n          </div>\n        "]);
 
     _templateObject2 = function _templateObject2() {
       return data;
@@ -2678,9 +2598,134 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n        <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"./allforms.html\">view all forms</a></label>\n        <input type=\"text\"\n               id=\"jcc-forms-filter__input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__category-result-row\">\n        ", "\n      </div>\n    "]);
 
     _templateObject = function _templateObject() {
+      return data;
+    };
+
+    return data;
+  }
+  var CategoryLinks = function CategoryLinks(_ref) {
+    var onCategoryClick = _ref.onCategoryClick;
+    var sortedCategories = categories.sort(function (a, b) {
+      return a.title < b.title ? -1 : 1;
+    }); // Chunk the categories into columns
+
+    var categoryGroups = _$1.chunk(sortedCategories, 2);
+
+    if (window.innerWidth < 700) {
+      categoryGroups = _$1.chunk(sortedCategories, 1);
+    }
+
+    var CategoryResultRow = function CategoryResultRow(categoryGroup) {
+      return browser(_templateObject(), categoryGroup.map(function (category) {
+        return browser(_templateObject2(), function (e) {
+          return onCategoryClick(e, category);
+        }, category.title);
+      }));
+    };
+
+    return browser(_templateObject3(), categoryGroups.map(CategoryResultRow));
+  };
+
+  function _templateObject$1() {
+    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info usa-alert--slim\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__text\">\n            Looking for more info about ", "? Read the <a href=\"", "\">", " self-help guide</a> or view the <a href=\"", "\">", " forms page</a>.\n          </p>\n        </div>\n      </div>"]);
+
+    _templateObject$1 = function _templateObject() {
+      return data;
+    };
+
+    return data;
+  }
+  var CategoryAlert = function CategoryAlert(_ref) {
+    var query = _ref.query;
+    var category = categories.find(function (category) {
+      return category.query === query;
+    });
+
+    if (category) {
+      return browser(_templateObject$1(), query, category.url, category.title, category.formsUrl, category.title);
+    } else {
+      return '';
+    }
+  };
+
+  function _templateObject3$1() {
+    var data = _taggedTemplateLiteral(["<div class=\"jcc-forms-filter__form-results\">\n          ", "\n        </div>"]);
+
+    _templateObject3$1 = function _templateObject3() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject2$1() {
+    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__results-header\">Found ", " forms matching \"", "\"</div>\n      ", "\n    </div>\n  "]);
+
+    _templateObject2$1 = function _templateObject2() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject$2() {
+    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\">See form info</a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\">Download form</a>\n        </div>\n      </div>\n    "]);
+
+    _templateObject$2 = function _templateObject() {
+      return data;
+    };
+
+    return data;
+  }
+  var FormResults = function FormResults(_ref) {
+    var query = _ref.query,
+        response = _ref.response;
+
+    var FormResult = function FormResult(form) {
+      var formInfoUrl = "https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
+      return browser(_templateObject$2(), formInfoUrl, form.id, form.title, formInfoUrl, form.url);
+    };
+
+    return browser(_templateObject2$1(), response.length, query, response.length > 0 ? browser(_templateObject3$1(), response.map(FormResult)) : '');
+  };
+
+  function _templateObject4() {
+    var data = _taggedTemplateLiteral(["\n        ", "\n        <div class=\"jcc-forms-filter__results-container\">\n          ", "\n        </div>"]);
+
+    _templateObject4 = function _templateObject4() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject3$2() {
+    var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          ", "\n        </div>"]);
+
+    _templateObject3$2 = function _templateObject3() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject2$2() {
+    var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          Loading...\n        </div>"]);
+
+    _templateObject2$2 = function _templateObject2() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject$3() {
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n        <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"./allforms.html\">view all forms</a></label>\n        <input type=\"text\"\n               id=\"jcc-forms-filter__input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
+
+    _templateObject$3 = function _templateObject() {
       return data;
     };
 
@@ -2691,14 +2736,14 @@ var initFormsLookup = (function () {
   function initFormsLookup(containerEl) {
     console.log('forms lookup init'); // Add the forms lookup DOM elements to the page
 
-    containerEl.appendChild(browser(_templateObject()));
+    containerEl.appendChild(browser(_templateObject$3()));
     searchInput = document.querySelector("#jcc-forms-filter__input");
     resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
 
     var render = function render() {
       var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
           query = _ref.query,
-          formResults = _ref.formResults,
+          response = _ref.response,
           loading = _ref.loading;
 
       Array.from(resultsContainer.children).forEach(function (el) {
@@ -2706,85 +2751,40 @@ var initFormsLookup = (function () {
       });
       resultsContainer.appendChild(renderSearchResults({
         query: query,
-        formResults: formResults,
+        response: response,
         loading: loading
       }));
     };
 
     var renderSearchResults = function renderSearchResults(_ref2) {
       var query = _ref2.query,
-          formResults = _ref2.formResults,
+          response = _ref2.response,
           loading = _ref2.loading;
 
-      var renderCategories = function renderCategories() {
-        var sortedCategories = categories.sort(function (a, b) {
-          return a.title < b.title ? -1 : 1;
-        }); // Chunk the categories into columns
-
-        var categoryGroups = _$1.chunk(sortedCategories, 2);
-
-        if (window.innerWidth < 700) {
-          categoryGroups = _$1.chunk(sortedCategories, 1);
-        }
-
-        var categoryResultRow = function categoryResultRow(categoryGroup) {
-          var onCategoryClick = function onCategoryClick(e, category) {
-            e.preventDefault();
-            searchInput.value = category.query;
-            searchInput.focus();
-            doQuery({
-              query: category.query,
-              pushState: true
-            });
-          };
-
-          return browser(_templateObject2(), categoryGroup.map(function (category) {
-            return browser(_templateObject3(), function (e) {
-              return onCategoryClick(e, category);
-            }, category.title);
-          }));
-        };
-
-        return browser(_templateObject4(), categoryGroups.map(categoryResultRow));
-      };
-
-      var renderFormResults = function renderFormResults(_ref3) {
-        var query = _ref3.query,
-            formResults = _ref3.formResults;
-
-        var formResult = function formResult(form) {
-          var formInfoUrl = "https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
-          return browser(_templateObject5(), formInfoUrl, form.id, form.title, formInfoUrl, form.url);
-        };
-
-        return browser(_templateObject6(), formResults.length, query, formResults.length > 0 ? browser(_templateObject7(), formResults.map(formResult)) : '');
-      };
-
-      var categoryAlert = function categoryAlert(_ref4) {
-        var query = _ref4.query;
-        var category = categories.find(function (category) {
-          return category.query === query;
+      var onCategoryClick = function onCategoryClick(e, category) {
+        e.preventDefault();
+        searchInput.value = category.query;
+        searchInput.focus();
+        doQuery({
+          query: category.query,
+          pushState: true
         });
-
-        if (category) {
-          return browser(_templateObject8(), query, category.url, category.title, category.formsUrl, category.title);
-        } else {
-          return '';
-        }
       };
 
       if (loading) {
-        return browser(_templateObject9());
+        return browser(_templateObject2$2());
       }
 
-      if (!formResults) {
-        return browser(_templateObject10(), renderCategories());
+      if (!response) {
+        return browser(_templateObject3$2(), CategoryLinks({
+          onCategoryClick: onCategoryClick
+        }));
       } else {
-        return browser(_templateObject11(), categoryAlert({
+        return browser(_templateObject4(), CategoryAlert({
           query: query
-        }), renderFormResults({
+        }), FormResults({
           query: query,
-          formResults: formResults
+          response: response
         }));
       }
     };
@@ -2798,10 +2798,10 @@ var initFormsLookup = (function () {
       return updateStateFromQueryString();
     });
 
-    function doQuery(_ref5) {
-      var query = _ref5.query,
-          _ref5$pushState = _ref5.pushState,
-          pushState = _ref5$pushState === void 0 ? false : _ref5$pushState;
+    function doQuery(_ref3) {
+      var query = _ref3.query,
+          _ref3$pushState = _ref3.pushState,
+          pushState = _ref3$pushState === void 0 ? false : _ref3$pushState;
       // Update query string
       var newUrl = "".concat(window.location.pathname, "?query=").concat(query);
 

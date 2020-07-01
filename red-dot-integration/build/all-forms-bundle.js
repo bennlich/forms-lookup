@@ -2401,7 +2401,7 @@ var initAllForms = (function () {
     if (query === '') {
       callback({
         query: query,
-        formResults: null
+        response: null
       });
       return;
     }
@@ -2419,7 +2419,7 @@ var initAllForms = (function () {
     newRequest.onload = function () {
       callback({
         query: query,
-        formResults: newRequest.response
+        response: newRequest.response
       });
     };
 
@@ -2488,19 +2488,19 @@ var initAllForms = (function () {
 
   var render = function render(_ref) {
     var query = _ref.query,
-        formResults = _ref.formResults,
+        response = _ref.response,
         loading = _ref.loading;
     resultsContainer.firstChild && resultsContainer.firstChild.remove();
     resultsContainer.appendChild(renderFormResults({
       query: query,
-      formResults: formResults,
+      response: response,
       loading: loading
     }));
   };
 
   var renderFormResults = function renderFormResults(_ref2) {
     var query = _ref2.query,
-        formResults = _ref2.formResults,
+        response = _ref2.response,
         loading = _ref2.loading;
 
     var formResult = function formResult(form) {
@@ -2512,7 +2512,7 @@ var initAllForms = (function () {
       return browser(_templateObject3());
     }
 
-    return browser(_templateObject4(), formResults.map(formResult));
+    return browser(_templateObject4(), response.map(formResult));
   };
 
   return initAllForms;
