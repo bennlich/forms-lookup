@@ -50,7 +50,7 @@ let renderFormResults = ({ query, response, loading }) => {
   if (loading) {
     return html`
       <div class="jcc-forms-filter__results-container">
-        Loading...
+        <div class="jcc-forms-filter__loading">Loading...</div>
       </div>
     `;
   }
