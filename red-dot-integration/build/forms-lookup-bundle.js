@@ -2538,7 +2538,7 @@ var initFormsLookup = (function () {
     formsUrl: "https://www.courts.ca.gov/11183.htm"
   }];
 
-  var allFormsPageUrl = '/allforms.html';
+  var allFormsPageUrl = './allforms.html';
   var formsAPIUrl = function formsAPIUrl(query) {
     return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
   };

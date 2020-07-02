@@ -2392,7 +2392,7 @@ var initAllForms = (function () {
 
   var browser = dom(document);
 
-  var lookupPageUrl = '/';
+  var lookupPageUrl = './';
   var formsAPIUrl = function formsAPIUrl(query) {
     return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
   };
