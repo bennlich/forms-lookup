@@ -2392,6 +2392,11 @@ var initAllForms = (function () {
 
   var browser = dom(document);
 
+  var lookupPageUrl = '/';
+  var formsAPIUrl = function formsAPIUrl(query) {
+    return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
+  };
+
   var previousRequest;
 
   var _fetchForms = function _fetchForms(query, callback) {
@@ -2410,9 +2415,7 @@ var initAllForms = (function () {
   };
 
   var _executeQuery = function _executeQuery(query, callback) {
-    // TODO: Pull this out into an env or config variable
-    // let url = `http://jcc.lndo.site:8080/json/jcc-forms?query=${query}`;
-    var url = "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
+    var url = formsAPIUrl(query);
     var newRequest = new XMLHttpRequest();
     newRequest.responseType = "json";
 
@@ -2446,7 +2449,7 @@ var initAllForms = (function () {
   }
 
   function _templateObject3() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__results-container\">\n        Loading...\n      </div>\n    "]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__results-container\">\n        <div class=\"jcc-forms-filter__loading\">Loading...</div>\n      </div>\n    "]);
 
     _templateObject3 = function _templateObject3() {
       return data;
@@ -2466,7 +2469,7 @@ var initAllForms = (function () {
   }
 
   function _templateObject() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n      <label class=\"jcc-forms-filter__input-label\">Browse the list of all court forms, or <a class=\"text-white\" href=\"./\">search by topic or form number</a></label>\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n      <label class=\"jcc-forms-filter__input-label\">Browse the list of all court forms, or <a class=\"text-white\" href=\"", "\">search by topic or form number</a></label>\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
 
     _templateObject = function _templateObject() {
       return data;
@@ -2478,7 +2481,7 @@ var initAllForms = (function () {
   function initAllForms(containerEl) {
     console.log("all forms init"); // Add the forms lookup DOM elements to the page
 
-    containerEl.appendChild(browser(_templateObject()));
+    containerEl.appendChild(browser(_templateObject(), lookupPageUrl));
     resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
     render({
       loading: true

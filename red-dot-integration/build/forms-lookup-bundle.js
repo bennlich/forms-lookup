@@ -2538,6 +2538,11 @@ var initFormsLookup = (function () {
     formsUrl: "https://www.courts.ca.gov/11183.htm"
   }];
 
+  var allFormsPageUrl = '/allforms.html';
+  var formsAPIUrl = function formsAPIUrl(query) {
+    return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
+  };
+
   var previousRequest;
 
   var _fetchForms = function _fetchForms(query, callback) {
@@ -2556,9 +2561,7 @@ var initFormsLookup = (function () {
   };
 
   var _executeQuery = function _executeQuery(query, callback) {
-    // TODO: Pull this out into an env or config variable
-    // let url = `http://jcc.lndo.site:8080/json/jcc-forms?query=${query}`;
-    var url = "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
+    var url = formsAPIUrl(query);
     var newRequest = new XMLHttpRequest();
     newRequest.responseType = "json";
 
@@ -2630,7 +2633,7 @@ var initFormsLookup = (function () {
   };
 
   function _templateObject$1() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info usa-alert--slim\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__text\">\n            Looking for more info about ", "? Read the <a href=\"", "\">", " self-help guide</a> or view the <a href=\"", "\">", " forms page</a>.\n          </p>\n        </div>\n      </div>"]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__heading jcc-forms-filter__alert-heading\">Looking for info about ", "?</p>\n          <p class=\"usa-alert__text\">\n            Read the <a href=\"", "\">", " self-help guide</a> and the <a href=\"", "\">", " forms page</a>.\n          </p>\n        </div>\n      </div>"]);
 
     _templateObject$1 = function _templateObject() {
       return data;
@@ -2672,7 +2675,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject$2() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\">See form info</a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\">Download form</a>\n        </div>\n      </div>\n    "]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\">See form info</a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\">View PDF</a>\n        </div>\n      </div>\n    "]);
 
     _templateObject$2 = function _templateObject() {
       return data;
@@ -2713,7 +2716,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject2$2() {
-    var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          Loading...\n        </div>"]);
+    var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          <div class=\"jcc-forms-filter__loading\">Loading...</div>\n        </div>"]);
 
     _templateObject2$2 = function _templateObject2() {
       return data;
@@ -2723,7 +2726,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject$3() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n        <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"./allforms.html\">view all forms</a></label>\n        <input type=\"text\"\n               id=\"jcc-forms-filter__input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n        <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"", "\">view all forms</a></label>\n        <input type=\"text\"\n               id=\"jcc-forms-filter__input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
 
     _templateObject$3 = function _templateObject() {
       return data;
@@ -2736,7 +2739,7 @@ var initFormsLookup = (function () {
   function initFormsLookup(containerEl) {
     console.log('forms lookup init'); // Add the forms lookup DOM elements to the page
 
-    containerEl.appendChild(browser(_templateObject$3()));
+    containerEl.appendChild(browser(_templateObject$3(), allFormsPageUrl));
     searchInput = document.querySelector("#jcc-forms-filter__input");
     resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
 
