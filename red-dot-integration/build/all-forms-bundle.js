@@ -2459,7 +2459,7 @@ var initAllForms = (function () {
   }
 
   function _templateObject2() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\" target=\"_blank\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\" target=\"_blank\">See form info</a>\n          <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\" target=\"_blank\">Download form</a>\n        </div>\n      </div>\n    "]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\" target=\"_blank\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <div class=\"jcc-forms-filter__form-result-buttons\">\n            <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\" target=\"_blank\">See form info</a>\n            <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\" target=\"_blank\">Download form</a>\n          </div>\n        </div>\n      </div>\n    "]);
 
     _templateObject2 = function _templateObject2() {
       return data;

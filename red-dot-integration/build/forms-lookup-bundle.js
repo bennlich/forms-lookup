@@ -2580,6 +2580,24 @@ var initFormsLookup = (function () {
 
   var fetchForms = _$1.debounce(_fetchForms, 200);
 
+  var bodyInitialStyle;
+  var freezeBody = function freezeBody() {
+    if (typeof bodyInitialStyle === 'undefined') {
+      bodyInitialStyle = document.body.style.overflow;
+      console.log("SETTING INITIAL STYLE", bodyInitialStyle);
+    }
+
+    document.body.style.overflow = 'hidden';
+  };
+  var unfreezeBody = function unfreezeBody() {
+    if (typeof bodyInitialStyle === 'undefined') {
+      bodyInitialStyle = document.body.style.overflow;
+      console.log("SETTING INITIAL STYLE", bodyInitialStyle);
+    }
+
+    document.body.style.overflow = bodyInitialStyle;
+  };
+
   function _templateObject3() {
     var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n      </div>\n    </div>\n  "]);
 
@@ -2726,7 +2744,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject$3() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n        <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"", "\">view all forms</a></label>\n        <input type=\"text\"\n               id=\"jcc-forms-filter__input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n        <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"", "\">view all forms</a></label>\n        <input type=\"text\"\n               id=\"jcc-forms-filter__input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n    <div class=\"jcc-forms-filter__mobile-container\">\n      <div class=\"jcc-forms-filter__input-container\">\n        <input type=\"text\"\n               id=\"jcc-forms-filter__mobile-input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__mobile-input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n      </div>\n      <div class=\"jcc-forms-filter__mobile-search-results\"></div>\n    </div>\n  "]);
 
     _templateObject$3 = function _templateObject() {
       return data;
@@ -2734,14 +2752,47 @@ var initFormsLookup = (function () {
 
     return data;
   }
-  var searchInput;
-  var resultsContainer;
+
+  function isMobile() {
+    return window.innerWidth < 700;
+  }
+
+  function mobileContainerVisible() {
+    return history.state && history.state.mobileContainerVisible;
+  }
+
   function initFormsLookup(containerEl) {
     console.log('forms lookup init'); // Add the forms lookup DOM elements to the page
 
     containerEl.appendChild(browser(_templateObject$3(), allFormsPageUrl));
-    searchInput = document.querySelector("#jcc-forms-filter__input");
-    resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
+    var searchInput = document.querySelector("#jcc-forms-filter__input");
+    searchInput.addEventListener("input", function () {
+      return doQuery({
+        query: searchInput.value
+      });
+    });
+
+    if (isMobile()) {
+      searchInput.addEventListener("touchend", function (e) {
+        e.preventDefault();
+        history.pushState({
+          mobileContainerVisible: true
+        }, '');
+        rerender();
+      });
+    }
+
+    var mobileSearchInput = document.querySelector("#jcc-forms-filter__mobile-input");
+    mobileSearchInput.addEventListener("input", function () {
+      return doQuery({
+        query: mobileSearchInput.value
+      });
+    });
+    var lastRender = {};
+
+    var rerender = function rerender() {
+      return render(lastRender);
+    };
 
     var render = function render() {
       var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
@@ -2749,6 +2800,13 @@ var initFormsLookup = (function () {
           response = _ref.response,
           loading = _ref.loading;
 
+      lastRender = {
+        query: query,
+        response: response,
+        loading: loading
+      }; // Render desktop
+
+      var resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
       Array.from(resultsContainer.children).forEach(function (el) {
         return el.remove();
       });
@@ -2756,7 +2814,28 @@ var initFormsLookup = (function () {
         query: query,
         response: response,
         loading: loading
-      }));
+      })); // Render mobile
+
+      if (mobileContainerVisible()) {
+        var mobileContainer = document.querySelector(".jcc-forms-filter__mobile-container");
+        mobileContainer.style.display = 'block';
+        var mobileResultsContainer = document.querySelector(".jcc-forms-filter__mobile-search-results");
+        Array.from(mobileResultsContainer.children).forEach(function (el) {
+          return el.remove();
+        });
+        mobileResultsContainer.appendChild(renderSearchResults({
+          query: query,
+          response: response,
+          loading: loading
+        }));
+        mobileSearchInput.focus();
+        freezeBody();
+      } else {
+        var _mobileContainer = document.querySelector(".jcc-forms-filter__mobile-container");
+
+        _mobileContainer.style.display = 'none';
+        unfreezeBody();
+      }
     };
 
     var renderSearchResults = function renderSearchResults(_ref2) {
@@ -2767,7 +2846,15 @@ var initFormsLookup = (function () {
       var onCategoryClick = function onCategoryClick(e, category) {
         e.preventDefault();
         searchInput.value = category.query;
-        searchInput.focus();
+        mobileSearchInput.value = category.query;
+        searchInput.focus(); // Enter mobile mode if we are not already there
+
+        if (!mobileContainerVisible() && isMobile()) {
+          history.pushState({
+            mobileContainerVisible: true
+          }, '');
+        }
+
         doQuery({
           query: category.query,
           pushState: true
@@ -2792,15 +2879,6 @@ var initFormsLookup = (function () {
       }
     };
 
-    searchInput.addEventListener("input", function () {
-      return doQuery({
-        query: searchInput.value
-      });
-    });
-    window.addEventListener("popstate", function () {
-      return updateStateFromQueryString();
-    });
-
     function doQuery(_ref3) {
       var query = _ref3.query,
           _ref3$pushState = _ref3.pushState,
@@ -2809,9 +2887,9 @@ var initFormsLookup = (function () {
       var newUrl = "".concat(window.location.pathname, "?query=").concat(query);
 
       if (pushState) {
-        history.pushState(null, '', newUrl);
+        history.pushState(history.state, '', newUrl);
       } else {
-        history.replaceState(null, '', newUrl);
+        history.replaceState(history.state, '', newUrl);
       } // Fetch and re-render
 
 
@@ -2843,14 +2921,22 @@ var initFormsLookup = (function () {
       }
 
       searchInput.value = query;
+      mobileSearchInput.value = query;
       render({
         loading: true
       });
       fetchForms(query, render);
-    }
+    } // Initial render. Subsequent renders occur when the user types in the input,
+    // or clicks on a category button.
+
 
     render();
-    updateStateFromQueryString();
+    updateStateFromQueryString(); // Handle case when someone uses the browser back button
+
+    window.addEventListener("popstate", function () {
+      return updateStateFromQueryString();
+    }); // Focus the search input to draw attention to it
+
     searchInput.focus();
   }
 

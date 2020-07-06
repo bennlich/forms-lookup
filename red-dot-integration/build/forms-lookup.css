@@ -241,13 +241,19 @@
     width: auto;
   }
 }
-.jcc-forms-filter__input {
+.jcc-forms-filter__input, .jcc-forms-filter__mobile-input {
   background-position-y: 4px;
   background-position-x: 0.3rem;
   background-size: 1.8rem;
   background-image: url(../images/icomoon/SVG/search.svg);
   background-repeat: no-repeat;
   padding-left: 2.4rem;
+}
+
+.jcc-forms-filter__mobile-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 
 .jcc-forms-filter__search-results {
@@ -382,6 +388,26 @@
   display: block;
 }
 
+.jcc-forms-filter__mobile-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2000;
+  background: white;
+  overflow-y: scroll;
+  display: none;
+}
+@media (min-width: 992px) {
+  .jcc-forms-filter__mobile-container {
+    display: none;
+  }
+}
+.jcc-forms-filter__mobile-container .jcc-forms-filter__results-container {
+  margin-top: 0px;
+}
+
 /* uswds imports */
 /* courtyard style */
 /* uswds override -- embed svg in data url for easier deployment */
@@ -391,7 +417,8 @@
 }
 
 /* courts.ca.gov style overrides */
-.jcc-forms-filter__input-container, .jcc-forms-filter__search-results {
+.jcc-forms-filter__input-container, .jcc-forms-filter__search-results,
+.jcc-forms-filter__mobile-container {
   font-family: Lato, sans-serif;
   font-size: 1.06rem;
 }
@@ -400,7 +427,7 @@
   font-weight: 400;
 }
 
-.jcc-forms-filter__input {
+.jcc-forms-filter__input, .jcc-forms-filter__mobile-input {
   /* from uswds */
   border-radius: 0;
   color: #1b1b1b;
@@ -415,6 +442,14 @@
   padding-left: 2.4rem;
 }
 
+.jcc-forms-filter__mobile-input {
+  max-width: 100%;
+  margin-top: 0px;
+}
+.jcc-forms-filter__mobile-input:focus {
+  outline: none !important;
+}
+
 .jcc-forms-filter__results-container {
   border: 1px solid #aaa;
   margin-bottom: 20px;
@@ -427,4 +462,9 @@
 
 .jcc-forms-filter__alert-heading {
   font-weight: bold;
+}
+
+.jcc-forms-filter__mobile-container .jcc-forms-filter__results-container {
+  border: none;
+  box-shadow: none;
 }
