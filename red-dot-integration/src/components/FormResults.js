@@ -13,8 +13,10 @@ export const FormResults = ({ query, response }) => {
             <div class="form-number">${form.id}</div>
             <div class="form-title">${form.title}</div>
           </a>
-          <a class="usa-button usa-button--outline jcc-forms-filter__form-guide-button" href="${formInfoUrl}">See form info</a>
-          <a class="usa-button usa-button--outline jcc-forms-filter__download-form-button" href="${form.url}">View PDF</a>
+          <div class="jcc-forms-filter__form-result-buttons">
+            <a class="usa-button usa-button--outline jcc-forms-filter__form-guide-button" href="${formInfoUrl}">See form info</a>
+            <a class="usa-button usa-button--outline jcc-forms-filter__download-form-button" href="${form.url}">View PDF</a>
+          </div>
         </div>
       </div>
     `;

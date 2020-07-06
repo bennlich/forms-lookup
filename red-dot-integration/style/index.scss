@@ -1,9 +1,9 @@
-/* courtyard style */
-@use '_forms-lookup';
-
 /* uswds imports */
 @use 'usa-alert';
 @use 'usa-button';
+
+/* courtyard style */
+@use '_forms-lookup';
 
 /* uswds override -- embed svg in data url for easier deployment */
 .usa-alert--info {

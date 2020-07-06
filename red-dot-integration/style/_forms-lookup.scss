@@ -69,9 +69,13 @@
 }
 
 .jcc-forms-filter__form-result-content {
-  display: flex;
-  align-items: center;
+  display: block;
   padding: 10px 20px;
+
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .jcc-forms-filter__form-number-and-title {
@@ -98,9 +102,30 @@
   }
 }
 
+.jcc-forms-filter__form-result-buttons {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 4px;
+
+  @media (min-width: 992px) {
+    flex: 0 0 290px;
+    justify-content: flex-end;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 .jcc-forms-filter__form-guide-button,
 .jcc-forms-filter__download-form-button {
   white-space: nowrap;
+  flex-grow: 1;
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  @media (min-width: 992px) {
+    width: auto;
+  }
 }
 
 .jcc-forms-filter__form-guide-button {
