@@ -2,13 +2,19 @@ import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 import { categories } from './categories.js';
 import { fetchForms } from './fetchForms.js';
+import { freezeBody, unfreezeBody } from './freezeBody.js';
 import { CategoryLinks } from './components/CategoryLinks.js';
 import { CategoryAlert } from './components/CategoryAlert.js';
 import { FormResults } from './components/FormResults.js';
 import { allFormsPageUrl } from './config.js';
 
-let searchInput;
-let resultsContainer;
+function isMobile() {
+  return window.innerWidth < 700;
+}
+
+function mobileContainerVisible() {
+  return history.state && history.state.mobileContainerVisible;
+}
 
 export default function initFormsLookup(containerEl) {
   console.log('forms lookup init');
@@ -25,21 +31,73 @@ export default function initFormsLookup(containerEl) {
                autocomplete="off">
     </div>
     <div class="jcc-forms-filter__search-results"></div>
+    <div class="jcc-forms-filter__mobile-container">
+      <div class="jcc-forms-filter__input-container">
+        <input type="text"
+               id="jcc-forms-filter__mobile-input"
+               placeholder="E.g. divorce, name change, fl-100, restraining order"
+               class="usa-input jcc-forms-filter__mobile-input"
+               name="input-type-text"
+               autocomplete="off">
+      </div>
+      <div class="jcc-forms-filter__mobile-search-results"></div>
+    </div>
   `);
   
-  searchInput = document.querySelector("#jcc-forms-filter__input");
-  resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
+  let searchInput = document.querySelector("#jcc-forms-filter__input");
+  searchInput.addEventListener("input", () => doQuery({ query: searchInput.value }));
+  if (isMobile()) {
+    searchInput.addEventListener("touchend", (e) => {
+      e.preventDefault();
+      history.pushState({ mobileContainerVisible: true }, '');
+      rerender();
+    });
+  }
+
+  let mobileSearchInput = document.querySelector("#jcc-forms-filter__mobile-input");
+  mobileSearchInput.addEventListener("input", () => doQuery({ query: mobileSearchInput.value }));
+
+  let lastRender = {};
+  let rerender = () => render(lastRender);
 
   let render = ({ query, response, loading } = {}) => {
+    lastRender = { query, response, loading };
+
+    // Render desktop
+    let resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
     Array.from(resultsContainer.children).forEach(el => el.remove());
     resultsContainer.appendChild(renderSearchResults({ query, response, loading }));
+
+    // Render mobile
+    if (mobileContainerVisible()) {
+      let mobileContainer = document.querySelector(".jcc-forms-filter__mobile-container");
+      mobileContainer.style.display = 'block';
+      
+      let mobileResultsContainer = document.querySelector(".jcc-forms-filter__mobile-search-results");
+      Array.from(mobileResultsContainer.children).forEach(el => el.remove());
+      mobileResultsContainer.appendChild(renderSearchResults({ query, response, loading }));
+      
+      mobileSearchInput.focus();
+      freezeBody();
+    } else {
+      let mobileContainer = document.querySelector(".jcc-forms-filter__mobile-container");
+      mobileContainer.style.display = 'none';
+      unfreezeBody();
+    }
   };
 
   let renderSearchResults = ({ query, response, loading }) => {
     let onCategoryClick = (e, category) => {
       e.preventDefault();
       searchInput.value = category.query;
+      mobileSearchInput.value = category.query;
       searchInput.focus();
+      
+      // Enter mobile mode if we are not already there
+      if (!mobileContainerVisible() && isMobile()) {
+        history.pushState({ mobileContainerVisible: true }, '');
+      }
+      
       doQuery({ query: category.query, pushState: true });
     };
 
@@ -64,17 +122,13 @@ export default function initFormsLookup(containerEl) {
     }
   };
 
-  searchInput.addEventListener("input", () => doQuery({ query: searchInput.value }));
-
-  window.addEventListener("popstate", () => updateStateFromQueryString());
-
   function doQuery({ query, pushState=false }) {
     // Update query string
     let newUrl = `${window.location.pathname}?query=${query}`;
     if (pushState) {
-      history.pushState(null, '', newUrl);
+      history.pushState(history.state, '', newUrl);
     } else {
-      history.replaceState(null, '', newUrl);
+      history.replaceState(history.state, '', newUrl);
     }
     
     // Fetch and re-render
@@ -99,13 +153,20 @@ export default function initFormsLookup(containerEl) {
     }
     
     searchInput.value = query;
+    mobileSearchInput.value = query;
     render({ loading: true });
     fetchForms(query, render);
   }
 
+  // Initial render. Subsequent renders occur when the user types in the input,
+  // or clicks on a category button.
   render();
 
   updateStateFromQueryString();
 
+  // Handle case when someone uses the browser back button
+  window.addEventListener("popstate", () => updateStateFromQueryString());
+
+  // Focus the search input to draw attention to it
   searchInput.focus();
 }
