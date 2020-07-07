@@ -2580,11 +2580,12 @@ var initFormsLookup = (function () {
 
   var fetchForms = _$1.debounce(_fetchForms, 200);
 
+  // These functions enable/disable the page body from scrolling
+  // when the mobile search overlay is present
   var bodyInitialStyle;
   var freezeBody = function freezeBody() {
     if (typeof bodyInitialStyle === 'undefined') {
       bodyInitialStyle = document.body.style.overflow;
-      console.log("SETTING INITIAL STYLE", bodyInitialStyle);
     }
 
     document.body.style.overflow = 'hidden';
@@ -2592,7 +2593,6 @@ var initFormsLookup = (function () {
   var unfreezeBody = function unfreezeBody() {
     if (typeof bodyInitialStyle === 'undefined') {
       bodyInitialStyle = document.body.style.overflow;
-      console.log("SETTING INITIAL STYLE", bodyInitialStyle);
     }
 
     document.body.style.overflow = bodyInitialStyle;
@@ -2662,11 +2662,11 @@ var initFormsLookup = (function () {
   var CategoryAlert = function CategoryAlert(_ref) {
     var query = _ref.query;
     var category = categories.find(function (category) {
-      return category.query === query;
+      return category.query.toLowerCase() === query.toLowerCase();
     });
 
     if (category) {
-      return browser(_templateObject$1(), query, category.url, category.title, category.formsUrl, category.title);
+      return browser(_templateObject$1(), query.toLowerCase(), category.url, category.title, category.formsUrl, category.title);
     } else {
       return '';
     }
@@ -2761,6 +2761,12 @@ var initFormsLookup = (function () {
     return history.state && history.state.mobileContainerVisible;
   }
 
+  function enterMobileView() {
+    history.pushState({
+      mobileContainerVisible: true
+    }, '');
+  }
+
   function initFormsLookup(containerEl) {
     console.log('forms lookup init'); // Add the forms lookup DOM elements to the page
 
@@ -2773,11 +2779,9 @@ var initFormsLookup = (function () {
     });
 
     if (isMobile()) {
-      searchInput.addEventListener("touchend", function (e) {
+      searchInput.addEventListener("mouseup", function (e) {
         e.preventDefault();
-        history.pushState({
-          mobileContainerVisible: true
-        }, '');
+        enterMobileView();
         rerender();
       });
     }
@@ -2810,7 +2814,7 @@ var initFormsLookup = (function () {
       Array.from(resultsContainer.children).forEach(function (el) {
         return el.remove();
       });
-      resultsContainer.appendChild(renderSearchResults({
+      resultsContainer.appendChild(SearchResults({
         query: query,
         response: response,
         loading: loading
@@ -2823,7 +2827,7 @@ var initFormsLookup = (function () {
         Array.from(mobileResultsContainer.children).forEach(function (el) {
           return el.remove();
         });
-        mobileResultsContainer.appendChild(renderSearchResults({
+        mobileResultsContainer.appendChild(SearchResults({
           query: query,
           response: response,
           loading: loading
@@ -2838,7 +2842,7 @@ var initFormsLookup = (function () {
       }
     };
 
-    var renderSearchResults = function renderSearchResults(_ref2) {
+    var SearchResults = function SearchResults(_ref2) {
       var query = _ref2.query,
           response = _ref2.response,
           loading = _ref2.loading;
@@ -2850,9 +2854,7 @@ var initFormsLookup = (function () {
         searchInput.focus(); // Enter mobile mode if we are not already there
 
         if (!mobileContainerVisible() && isMobile()) {
-          history.pushState({
-            mobileContainerVisible: true
-          }, '');
+          enterMobileView();
         }
 
         doQuery({

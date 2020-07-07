@@ -242,7 +242,7 @@
   }
 }
 .jcc-forms-filter__input, .jcc-forms-filter__mobile-input {
-  background-position-y: 4px;
+  background-position-y: 0.3rem;
   background-position-x: 0.3rem;
   background-size: 1.8rem;
   background-image: url(../images/icomoon/SVG/search.svg);
@@ -445,6 +445,8 @@
 .jcc-forms-filter__mobile-input {
   max-width: 100%;
   margin-top: 0px;
+  height: 3rem;
+  background-position-y: 0.6rem;
 }
 .jcc-forms-filter__mobile-input:focus {
   outline: none !important;
