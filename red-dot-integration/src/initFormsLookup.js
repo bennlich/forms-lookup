@@ -16,6 +16,10 @@ function mobileContainerVisible() {
   return history.state && history.state.mobileContainerVisible;
 }
 
+function enterMobileView() {
+  history.pushState({ mobileContainerVisible: true }, '');
+}
+
 export default function initFormsLookup(containerEl) {
   console.log('forms lookup init');
 
@@ -47,9 +51,9 @@ export default function initFormsLookup(containerEl) {
   let searchInput = document.querySelector("#jcc-forms-filter__input");
   searchInput.addEventListener("input", () => doQuery({ query: searchInput.value }));
   if (isMobile()) {
-    searchInput.addEventListener("touchend", (e) => {
+    searchInput.addEventListener("mouseup", (e) => {
       e.preventDefault();
-      history.pushState({ mobileContainerVisible: true }, '');
+      enterMobileView();
       rerender();
     });
   }
@@ -66,7 +70,7 @@ export default function initFormsLookup(containerEl) {
     // Render desktop
     let resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
     Array.from(resultsContainer.children).forEach(el => el.remove());
-    resultsContainer.appendChild(renderSearchResults({ query, response, loading }));
+    resultsContainer.appendChild(SearchResults({ query, response, loading }));
 
     // Render mobile
     if (mobileContainerVisible()) {
@@ -75,7 +79,7 @@ export default function initFormsLookup(containerEl) {
       
       let mobileResultsContainer = document.querySelector(".jcc-forms-filter__mobile-search-results");
       Array.from(mobileResultsContainer.children).forEach(el => el.remove());
-      mobileResultsContainer.appendChild(renderSearchResults({ query, response, loading }));
+      mobileResultsContainer.appendChild(SearchResults({ query, response, loading }));
       
       mobileSearchInput.focus();
       freezeBody();
@@ -86,7 +90,7 @@ export default function initFormsLookup(containerEl) {
     }
   };
 
-  let renderSearchResults = ({ query, response, loading }) => {
+  let SearchResults = ({ query, response, loading }) => {
     let onCategoryClick = (e, category) => {
       e.preventDefault();
       searchInput.value = category.query;
@@ -95,7 +99,7 @@ export default function initFormsLookup(containerEl) {
       
       // Enter mobile mode if we are not already there
       if (!mobileContainerVisible() && isMobile()) {
-        history.pushState({ mobileContainerVisible: true }, '');
+        enterMobileView();
       }
       
       doQuery({ query: category.query, pushState: true });

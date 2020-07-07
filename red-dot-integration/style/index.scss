@@ -41,6 +41,8 @@
 .jcc-forms-filter__mobile-input {
   max-width: 100%;
   margin-top: 0px;
+  height: 3rem;
+  background-position-y: 0.6rem;
   
   &:focus {
     outline: none !important;
