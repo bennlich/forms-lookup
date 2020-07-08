@@ -153,7 +153,9 @@ export default function initFormsLookup(containerEl) {
     let query = '';
     if (window.location.search) {
       let queryDict = parseQueryString(window.location.search);
-      query = decodeURI(queryDict.query);
+      if (queryDict.query) {
+        query = decodeURI(queryDict.query);
+      }
     }
     
     searchInput.value = query;

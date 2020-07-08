@@ -2919,7 +2919,10 @@ var initFormsLookup = (function () {
 
       if (window.location.search) {
         var queryDict = parseQueryString(window.location.search);
-        query = decodeURI(queryDict.query);
+
+        if (queryDict.query) {
+          query = decodeURI(queryDict.query);
+        }
       }
 
       searchInput.value = query;
