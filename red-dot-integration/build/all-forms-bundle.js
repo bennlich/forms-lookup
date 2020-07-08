@@ -2469,7 +2469,7 @@ var initAllForms = (function () {
   }
 
   function _templateObject() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n      <label class=\"jcc-forms-filter__input-label\">Browse the list of all court forms, or <a class=\"text-white\" href=\"", "\">search by topic or form number</a></label>\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container\">\n      <h1>Find Your Court Forms</h1>\n      <label class=\"jcc-forms-filter__input-label\">Browse the list of all court forms, or <a class=\"text-white\" href=\"", "\">search by topic or form number</a></label>\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n  "]);
 
     _templateObject = function _templateObject() {
       return data;
