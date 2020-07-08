@@ -10,7 +10,8 @@
     "build-sass": "sass --no-source-map style/index.scss build/forms-lookup.css",
     "build-js": "rollup --config rollup.config.js",
     "watch-sass": "sass --watch --no-source-map style/index.scss build/forms-lookup.css",
-    "watch-js": "rollup --watch --config rollup.config.js"
+    "watch-js": "rollup --watch --config rollup.config.js",
+    "watch": "concurrently \"npm:watch-js\" \"npm:watch-sass\""
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "@rollup/plugin-babel": "^5.0.4",
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
+    "concurrently": "^5.2.0",
     "rollup": "^2.18.1",
     "sass": "^1.26.5"
   },
