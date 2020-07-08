@@ -25,7 +25,7 @@
   }
 }
 
-.jcc-forms-filter__input-container {
+.jcc-forms-filter__input-container--desktop {
   background: #073873;
   padding: 20px 20px 28px 20px;
   color: white;
@@ -70,6 +70,8 @@
   margin-top: 0px;
   height: 3rem;
   background-position-y: 0.6rem;
+  border-style: none;
+  border-bottom-style: solid;
   
   &:focus {
     outline: none !important;

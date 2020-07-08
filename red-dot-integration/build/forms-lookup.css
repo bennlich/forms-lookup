@@ -429,16 +429,16 @@
   font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
 }
 
-.jcc-forms-filter__input-container {
+.jcc-forms-filter__input-container--desktop {
   background: #073873;
   padding: 20px 20px 28px 20px;
   color: white;
   border-radius: 4px;
 }
-.jcc-forms-filter__input-container h1 {
+.jcc-forms-filter__input-container--desktop h1 {
   margin: 0px;
 }
-.jcc-forms-filter__input-container h1, .jcc-forms-filter__input-container a, .jcc-forms-filter__input-container a:visited {
+.jcc-forms-filter__input-container--desktop h1, .jcc-forms-filter__input-container--desktop a, .jcc-forms-filter__input-container--desktop a:visited {
   color: white;
 }
 
@@ -470,6 +470,8 @@
   margin-top: 0px;
   height: 3rem;
   background-position-y: 0.6rem;
+  border-style: none;
+  border-bottom-style: solid;
 }
 .jcc-forms-filter__mobile-input:focus {
   outline: none !important;
