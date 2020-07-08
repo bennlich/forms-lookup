@@ -11,6 +11,7 @@ export default function initAllForms(containerEl) {
   // Add the forms lookup DOM elements to the page
   containerEl.appendChild(html`
     <div class="jcc-forms-filter__input-container">
+      <h1>Find Your Court Forms</h1>
       <label class="jcc-forms-filter__input-label">Browse the list of all court forms, or <a class="text-white" href="${lookupPageUrl}">search by topic or form number</a></label>
     </div>
     <div class="jcc-forms-filter__search-results"></div>

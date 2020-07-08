@@ -17,8 +17,27 @@
 /* courts.ca.gov style overrides */
 .jcc-forms-filter__input-container, .jcc-forms-filter__search-results,
 .jcc-forms-filter__mobile-container {
-  font-family: Lato, sans-serif;
+  font-family: Lato, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.06rem;
+
+  h1 {
+    font-family: Lora, Georgia, Cambria, Times New Roman, Times, serif;
+  }
+}
+
+.jcc-forms-filter__input-container {
+  background: #073873;
+  padding: 20px 20px 28px 20px;
+  color: white;
+  border-radius: 4px;
+
+  h1 {
+    margin: 0px;
+  }
+
+  h1, a, a:visited {
+    color: white;
+  }
 }
 
 .jcc-forms-filter__input-label {

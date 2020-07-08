@@ -26,13 +26,14 @@ export default function initFormsLookup(containerEl) {
   // Add the forms lookup DOM elements to the page
   containerEl.appendChild(html`
     <div class="jcc-forms-filter__input-container">
-        <label for="jcc-forms-filter__input" class="jcc-forms-filter__input-label">Search for any topic or form number, or <a class="text-white" href="${allFormsPageUrl}">view all forms</a></label>
-        <input type="text"
-               id="jcc-forms-filter__input"
-               placeholder="E.g. divorce, name change, fl-100, restraining order"
-               class="usa-input jcc-forms-filter__input"
-               name="input-type-text"
-               autocomplete="off">
+      <h1>Find Your Court Forms</h1>
+      <label for="jcc-forms-filter__input" class="jcc-forms-filter__input-label">Search for any topic or form number, or <a class="text-white" href="${allFormsPageUrl}">view all forms</a></label>
+      <input type="text"
+             id="jcc-forms-filter__input"
+             placeholder="E.g. divorce, name change, fl-100, restraining order"
+             class="usa-input jcc-forms-filter__input"
+             name="input-type-text"
+             autocomplete="off">
     </div>
     <div class="jcc-forms-filter__search-results"></div>
     <div class="jcc-forms-filter__mobile-container">
