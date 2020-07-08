@@ -8,9 +8,10 @@ export const CategoryAlert = ({ query }) => {
       <div class="usa-alert usa-alert--info" >
         <div class="usa-alert__body">
           <p class="usa-alert__heading jcc-forms-filter__alert-heading">Looking for info about ${query.toLowerCase()}?</p>
-          <p class="usa-alert__text">
-            Read the <a href="${category.url}">${category.title} self-help guide</a> and the <a href="${category.formsUrl}">${category.title} forms page</a>.
-          </p>
+          <ul class="usa-alert__text">
+            <li>Read the <a href="${category.url}">${category.title} self-help guide</a></li>
+            <li>See <a href="${category.formsUrl}">${category.title} forms packets</a></li>
+          </ul>
         </div>
       </div>`;  
   } else {

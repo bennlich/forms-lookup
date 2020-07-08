@@ -2651,7 +2651,7 @@ var initFormsLookup = (function () {
   };
 
   function _templateObject$1() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__heading jcc-forms-filter__alert-heading\">Looking for info about ", "?</p>\n          <p class=\"usa-alert__text\">\n            Read the <a href=\"", "\">", " self-help guide</a> and the <a href=\"", "\">", " forms page</a>.\n          </p>\n        </div>\n      </div>"]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__heading jcc-forms-filter__alert-heading\">Looking for info about ", "?</p>\n          <ul class=\"usa-alert__text\">\n            <li>Read the <a href=\"", "\">", " self-help guide</a></li>\n            <li>See <a href=\"", "\">", " forms packets</a></li>\n          </ul>\n        </div>\n      </div>"]);
 
     _templateObject$1 = function _templateObject() {
       return data;
