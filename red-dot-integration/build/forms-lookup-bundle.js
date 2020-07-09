@@ -2400,6 +2400,11 @@ var initFormsLookup = (function () {
     formsUrl: "https://www.courts.ca.gov/1017.htm",
     tags: ["small claims", "sue", "suing", "mediation", "appeal"]
   }, {
+    id: "criminal",
+    title: "Criminal Cases",
+    query: "cr",
+    url: "https://www.courts.ca.gov/selfhelp-criminallaw.htm"
+  }, {
     id: "custody",
     title: "Custody & Parenting Time (Visitation)",
     query: "custody",
@@ -2599,7 +2604,7 @@ var initFormsLookup = (function () {
   };
 
   function _templateObject3() {
-    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n      </div>\n    </div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n        <div class=\"jcc-forms-filter__category-result-row\">\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">View all forms</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
 
     _templateObject3 = function _templateObject3() {
       return data;
@@ -2609,7 +2614,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject2() {
-    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"#\" target=\"_blank\" onclick=", ">", "</a>\n          </div>\n        "]);
+    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"#\" onclick=", ">", "</a>\n          </div>\n        "]);
 
     _templateObject2 = function _templateObject2() {
       return data;
@@ -2647,7 +2652,7 @@ var initFormsLookup = (function () {
       }));
     };
 
-    return browser(_templateObject3(), categoryGroups.map(CategoryResultRow));
+    return browser(_templateObject3(), categoryGroups.map(CategoryResultRow), allFormsPageUrl);
   };
 
   function _templateObject$1() {
@@ -2666,7 +2671,7 @@ var initFormsLookup = (function () {
     });
 
     if (category) {
-      return browser(_templateObject$1(), query.toLowerCase(), category.url, category.title, category.formsUrl, category.title);
+      return browser(_templateObject$1(), category.title.toLowerCase(), category.url, category.title, category.formsUrl, category.title);
     } else {
       return '';
     }

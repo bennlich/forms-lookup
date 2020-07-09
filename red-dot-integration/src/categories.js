@@ -8,6 +8,12 @@ export const categories = [
     tags: ["small claims", "sue", "suing", "mediation", "appeal"]
   },
   {
+    id: "criminal",
+    title: "Criminal Cases",
+    query: "cr",
+    url: "https://www.courts.ca.gov/selfhelp-criminallaw.htm"
+  },
+  {
     id: "custody",
     title: "Custody & Parenting Time (Visitation)",
     query: "custody",

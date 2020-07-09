@@ -1,6 +1,7 @@
 import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 import { categories } from '../categories.js';
+import { allFormsPageUrl } from '../config.js';
 
 export const CategoryLinks = ({ onCategoryClick }) => {
   let sortedCategories = categories.sort((a, b) => (a.title < b.title ? -1 : 1));
@@ -16,7 +17,7 @@ export const CategoryLinks = ({ onCategoryClick }) => {
       <div class="jcc-forms-filter__category-result-row">
         ${categoryGroup.map(category => html`
           <div class="jcc-forms-filter__category-result">
-            <a href="#" target="_blank" onclick=${e => onCategoryClick(e, category)}>${category.title}</a>
+            <a href="#" onclick=${e => onCategoryClick(e, category)}>${category.title}</a>
           </div>
         `)}
       </div>
@@ -27,6 +28,11 @@ export const CategoryLinks = ({ onCategoryClick }) => {
     <div>
       <div class="jcc-forms-filter__category-results">
         ${categoryGroups.map(CategoryResultRow)}
+        <div class="jcc-forms-filter__category-result-row">
+          <div class="jcc-forms-filter__category-result">
+            <a href="${allFormsPageUrl}">View all forms</a>
+          </div>
+        </div>
       </div>
     </div>
   `;
