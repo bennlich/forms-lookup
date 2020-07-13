@@ -1,7 +1,7 @@
 import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 import { categories } from '../categories.js';
-import { allFormsPageUrl } from '../config.js';
+import { legacyDropdownLookupUrl } from '../config.js';
 
 export const CategoryLinks = ({ onCategoryClick }) => {
   let sortedCategories = categories.sort((a, b) => (a.title < b.title ? -1 : 1));
@@ -30,7 +30,7 @@ export const CategoryLinks = ({ onCategoryClick }) => {
         ${categoryGroups.map(CategoryResultRow)}
         <div class="jcc-forms-filter__category-result-row">
           <div class="jcc-forms-filter__category-result">
-            <a href="${allFormsPageUrl}">View all forms</a>
+            <a href="${legacyDropdownLookupUrl}">Search by category</a>
           </div>
         </div>
       </div>

@@ -2544,6 +2544,7 @@ var initFormsLookup = (function () {
   }];
 
   var allFormsPageUrl = './allforms.html';
+  var legacyDropdownLookupUrl = '';
   var formsAPIUrl = function formsAPIUrl(query) {
     return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
   };
@@ -2620,7 +2621,7 @@ var initFormsLookup = (function () {
   };
 
   function _templateObject3() {
-    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n        <div class=\"jcc-forms-filter__category-result-row\">\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">View all forms</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n        <div class=\"jcc-forms-filter__category-result-row\">\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">Search by category</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
 
     _templateObject3 = function _templateObject3() {
       return data;
@@ -2668,7 +2669,7 @@ var initFormsLookup = (function () {
       }));
     };
 
-    return browser(_templateObject3(), categoryGroups.map(CategoryResultRow), allFormsPageUrl);
+    return browser(_templateObject3(), categoryGroups.map(CategoryResultRow), legacyDropdownLookupUrl);
   };
 
   function _templateObject$1() {
