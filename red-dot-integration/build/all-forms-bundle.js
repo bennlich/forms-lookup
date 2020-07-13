@@ -2411,7 +2411,23 @@ var initAllForms = (function () {
       return;
     }
 
-    _executeQuery(query, callback);
+    _executeQuery(query, function (_ref) {
+      var query = _ref.query,
+          response = _ref.response;
+
+      // Push num results to google tag manager data layer
+      if (window.dataLayer && window.dataLayer.push) {
+        window.dataLayer.push({
+          'event': 'searchResults',
+          'numSearchResults': response.length
+        });
+      }
+
+      callback({
+        query: query,
+        response: response
+      });
+    });
   };
 
   var _executeQuery = function _executeQuery(query, callback) {

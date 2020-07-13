@@ -12,7 +12,16 @@ let _fetchForms = function(query, callback) {
     return;
   }
 
-  _executeQuery(query, callback);
+  _executeQuery(query, ({ query, response }) => {
+    // Push num results to google tag manager data layer
+    if (window.dataLayer && window.dataLayer.push) {
+      window.dataLayer.push({
+       'event': 'searchResults',
+       'numSearchResults': response.length
+      });
+    }
+    callback({ query, response });
+  });
 };
 
 let _executeQuery = function(query, callback) {
