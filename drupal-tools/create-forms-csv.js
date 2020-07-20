@@ -6,8 +6,7 @@ let fs = require('fs');
 let parseCsv = require('csv-parse/lib/sync');
 
 let forms = JSON.parse(fs.readFileSync('./data/forms.json'));
-let guides = JSON.parse(fs.readFileSync('./data/guides.self-help-forms-pages.json'));
-let formsByGuide = JSON.parse(fs.readFileSync('./data/forms-by-guide.self-help-forms-pages.json'));
+let formsByCategoryId = parsePilotCategoriesCsv('./data/Pilot Categories.csv');
 let languageVariantsByFormId = JSON.parse(fs.readFileSync('./data/language-variants-by-form-id.json'));
 let languageLetters = JSON.parse(fs.readFileSync('./data/language-letters.json'));
 let allLanguages = Array.from(new Set(languageLetters.map(r => r.language))).sort();
@@ -15,9 +14,23 @@ let formDescriptions = parseFormDescriptionsCsv('./data/Family Law Forms 1.csv')
 
 function tagForms() {
   forms.forEach(form => {
-    let categories = formsByGuide.filter(category => category.formUrls.includes(form.url));
-    form.caseTypes = categories.map((category) => guides.find(g => g.id === category.guideId).title);
+    form.categoryIds = formsByCategoryId
+      .filter(category => category.formIds.includes(form.id))
+      .map(category => category.categoryId);
   });
+}
+
+function parsePilotCategoriesCsv(filename) {
+  let rawText = fs.readFileSync(filename).toString();
+  let rows = rawText.split('\n').map(r => r.split(','));
+  let categoryIds = rows[0];
+  let formsByCategoryId = categoryIds.map((categoryId, i) => {
+    return {
+      categoryId,
+      formIds: rows.slice(1).map(cols => cols[i]).filter(val => val && val !== '')
+    };
+  });
+  return formsByCategoryId;
 }
 
 function parseFormDescriptionsCsv(filename) {
@@ -55,7 +68,7 @@ function saveFormsCsv() {
   let columns = [
     'Form name',
     'Form number',
-    'Case types',
+    'Form category ids',
     'Plain language description (1-2 sentences)',
     'PDF URL'
   ].concat(allLanguages.map(language => `${language} URL`));
@@ -75,43 +88,14 @@ function saveFormsCsv() {
       return [
         `"${form.title}"`,
         form.id,
-        `"${form.caseTypes.join(', ')}"`,
+        `"${form.categoryIds.join(', ')}"`,
         `"${getFormDescription(form.id)}"`,
         form.url
       ].concat(allLanguages.map(language => getLanguageUrl(form.id, language))).join(',');
     });
   let header = columns.join(',');
   let allRows = Array.prototype.concat(header, formRows);
-  fs.writeFileSync('output/forms.csv', allRows.join('\n'));
+  fs.writeFileSync('output/jcc_forms.csv', allRows.join('\n'));
 }
 
-function saveCaseTypesCsv() {
-  let columns = [
-    'Case Type',
-    'Info Url',
-    'Info Url Title'
-  ];
-  let caseTypeRows = guides.map((guide) => {
-    return [
-      `"${guide.title}"`,
-      guide.url,
-      `"How-to instructions for ${guide.title}"`
-    ].join(',');
-  });
-  let header = columns.join(',');
-  let allRows = Array.prototype.concat(header, caseTypeRows);
-  fs.writeFileSync('output/case_types.csv', allRows.join('\n'));
-}
-
-function printFormsWithDuplicateNumbers() {
-  let formsByTitle = _.groupBy(forms, f => f.title);
-  let dupes =
-    _.zip(Object.keys(formsByTitle), Object.values(formsByTitle))
-      .filter(row => row[1].length > 1)
-      .map(row => ({ title: row[0], ids: row[1].map(f => f.id )}));
-  console.log(JSON.stringify(dupes, null, 2));
-}
-
-// saveFormsCsv();
-saveCaseTypesCsv();
-// printFormsWithDuplicateNumbers();
+saveFormsCsv();
