@@ -1,0 +1,6564 @@
+{
+  "ADOPT-210": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ADOPT-210 S",
+        "title": "Adoption Agreement (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/adopt210s.pdf"
+      }
+    }
+  ],
+  "ADOPT-215": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ADOPT-215 S",
+        "title": "Adoption Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/adopt215s.pdf"
+      }
+    }
+  ],
+  "ADOPT-216": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ADOPT-216 S",
+        "title": "Verification of Compliance with Hague Adoption Convention Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/adopt216s.pdf"
+      }
+    }
+  ],
+  "APP-015-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "APP-015-INFO S",
+        "title": "Information Sheet on Waiver of Appellate Court Fees (Supreme Court, Court of Appeal, Appellate Division) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/app015infos.pdf"
+      }
+    }
+  ],
+  "APP-016": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "APP-016 S",
+        "title": "Order on Court Fee Waiver (Court of Appeal or Supreme Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/app016s.pdf"
+      }
+    }
+  ],
+  "APP-016-GC": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "APP-016-GC S",
+        "title": "Order on Court Fee Waiver (Ward or Conservatee) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/app016gcs.pdf"
+      }
+    }
+  ],
+  "CH-100": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-100 C",
+        "title": "Request For Civil Harassment Restraining Orders (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch100c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-100 K",
+        "title": "Request For Civil Harassment Restraining Orders (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch100k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-100 S",
+        "title": "Request For Civil Harassment Restraining Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch100s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-100 V",
+        "title": "Request For Civil Harassment Restraining Orders (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch100v.pdf"
+      }
+    }
+  ],
+  "CH-109": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-109 C",
+        "title": "Notice of Court Hearing (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch109c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-109 K",
+        "title": "Notice of Court Hearing (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch109k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-109 S",
+        "title": "Notice of Court Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch109s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-109 V",
+        "title": "Notice of Court Hearing (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch109v.pdf"
+      }
+    }
+  ],
+  "CH-110": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-110 C",
+        "title": "Temporary Restraining Order (CLETS-TCH) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch110c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-110 K",
+        "title": "Temporary Restraining Order (CLETS-TCH) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch110k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-110 S",
+        "title": "Temporary Restraining Order (CLETS-TCH) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch110s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-110 V",
+        "title": "Temporary Restraining Order (CLETS-TCH) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch110v.pdf"
+      }
+    }
+  ],
+  "CH-120": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-120 C",
+        "title": "Response to Request for Civil Harassment Restraining Orders (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch120c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-120 K",
+        "title": "Response to Request for Civil Harassment Restraining Orders (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch120k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-120 S",
+        "title": "Response to Request for Civil Harassment Restraining Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch120s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-120 V",
+        "title": "Response to Request for Civil Harassment Restraining Orders (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch120v.pdf"
+      }
+    }
+  ],
+  "CH-130": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-130 C",
+        "title": "Civil Harassment Restraining Order After Hearing (CLETS-CHO) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch130c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-130 K",
+        "title": "Civil Harassment Restraining Order After Hearing (CLETS-CHO) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch130k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-130 S",
+        "title": "Civil Harassment Restraining Order After Hearing (CLETS-CHO) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch130s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-130 V",
+        "title": "Civil Harassment Restraining Order After Hearing (CLETS-CHO) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch130v.pdf"
+      }
+    }
+  ],
+  "CH-170": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-170 C",
+        "title": "Notice of Order Protecting Information of Minor (Civil Harassment Prevention) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch170c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-170 K",
+        "title": "Notice of Order Protecting Information of Minor (Civil Harassment Prevention) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch170k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-170 S",
+        "title": "Notice of Order Protecting Information of Minor (Civil Harassment Prevention) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch170s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-170 V",
+        "title": "Notice of Order Protecting Information of Minor (Civil Harassment Prevention) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch170v.pdf"
+      }
+    }
+  ],
+  "CH-175": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-175 C",
+        "title": "Cover Sheet for Confidential Information (Civil Harassment Prevention) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch175c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-175 K",
+        "title": "Cover Sheet for Confidential Information (Civil Harassment Prevention) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch175k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-175 S",
+        "title": "Cover Sheet for Confidential Information (Civil Harassment Prevention) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch175s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-175 V",
+        "title": "Cover Sheet for Confidential Information (Civil Harassment Prevention) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch175v.pdf"
+      }
+    }
+  ],
+  "CH-200-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-200-INFO C",
+        "title": "What Is Proof of Personal Service? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch200infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-200-INFO K",
+        "title": "What Is Proof of Personal Service (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch200infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-200-INFO S",
+        "title": "What Is Proof of Personal Service? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch200infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-200-INFO V",
+        "title": "What Is Proof of Personal Service? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch200infov.pdf"
+      }
+    }
+  ],
+  "CH-250": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-250 C",
+        "title": "Proof of Service of Response by Mail (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch250c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-250 K",
+        "title": "Proof of Service of Response by Mail (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch250k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-250 S",
+        "title": "Proof of Service of Response by Mail (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch250s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-250 V",
+        "title": "Proof of Service of Response by Mail (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch250v.pdf"
+      }
+    }
+  ],
+  "CH-260": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-260 C",
+        "title": "Proof of Service of Order After Hearing by Mail (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch260c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-260 K",
+        "title": "Proof of Service of Order After Hearing by Mail (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch260k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-260 S",
+        "title": "Proof of Service of Order After Hearing by Mail (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch260s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-260 V",
+        "title": "Proof of Service of Order After Hearing by Mail (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch260v.pdf"
+      }
+    }
+  ],
+  "CH-700": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-700 C",
+        "title": "Request to Renew Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch700c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-700 K",
+        "title": "Request to Renew Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch700k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-700 S",
+        "title": "Request to Renew Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch700s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-700 V",
+        "title": "Request to Renew Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch700v.pdf"
+      }
+    }
+  ],
+  "CH-710": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-710 C",
+        "title": "Notice of Hearing to Renew Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch710c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-710 K",
+        "title": "Notice of Hearing to Renew Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch710k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-710 S",
+        "title": "Notice of Hearing to Renew Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch710s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-710 V",
+        "title": "Notice of Hearing to Renew Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch710v.pdf"
+      }
+    }
+  ],
+  "CH-730": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CH-730 C",
+        "title": "Order Renewing Civil Harassment Restraining Order (CLETS) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch730c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CH-730 K",
+        "title": "Order Renewing Civil Harassment Restraining Order (CLETS) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch730k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CH-730 S",
+        "title": "Order Renewing Civil Harassment Restraining Order (CLETS) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch730s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CH-730 V",
+        "title": "Order Renewing Civil Harassment Restraining Order (CLETS) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ch730v.pdf"
+      }
+    }
+  ],
+  "CR-112": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CR-112 S",
+        "title": "Instructions: Order for Restitution and Abstract of Judgment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr112s.pdf"
+      }
+    }
+  ],
+  "CR-160": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CR-160 S",
+        "title": "Criminal Protective Order—Domestic Violence (CLETS—CPO) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr160s.pdf"
+      }
+    }
+  ],
+  "CR-409": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CR-409 C",
+        "title": "Petition to Seal Arrest and Related Records (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CR-409 K",
+        "title": "Petition to Seal Arrest and Related Records (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CR-409 S",
+        "title": "Petition to Seal Arrest and Related Records (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CR-409 V",
+        "title": "Petition to Seal Arrest and Related Records (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409v.pdf"
+      }
+    }
+  ],
+  "CR-409-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CR-409-INFO C",
+        "title": "Information on How to File a Petition to Seal Arrest and Related Records Under Penal Code Section 851.91 (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CR-409-INFO K",
+        "title": "Information on How to File a Petition to Seal Arrest and Related Records Under Penal Code Section 851.91 (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CR-409-INFO S",
+        "title": "Information on How to File a Petition to Seal Arrest and Related Records Under Penal Code Section 851.91 (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CR-409-INFO V",
+        "title": "Information on How to File a Petition to Seal Arrest and Related Records Under Penal Code Section 851.91 (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr409infov.pdf"
+      }
+    }
+  ],
+  "CR-410": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "CR-410 C",
+        "title": "Order to Seal Arrest and Related Records (Pen. Code, Sections 851.91, 851.92) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr410c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "CR-410 K",
+        "title": "Order to Seal Arrest and Related Records (Pen. Code, Sections 851.91, 851.92) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr410k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "CR-410 S",
+        "title": "Order to Seal Arrest and Related Records (Pen. Code, Sections 851.91, 851.92) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr410s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "CR-410 V",
+        "title": "Order to Seal Arrest and Related Records (Pen. Code, Sections 851.91, 851.92) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/cr410v.pdf"
+      }
+    }
+  ],
+  "DAL-001": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DAL-001 C",
+        "title": "Important Information For Building Owners and Tenants (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dal001c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DAL-001 K",
+        "title": "Important Information For Building Owners and Tenants (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dal001k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DAL-001 S",
+        "title": "Important Information For Building Owners and Tenants (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dal001s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DAL-001 V",
+        "title": "Important Information For Building Owners and Tenants (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dal001v.pdf"
+      }
+    }
+  ],
+  "DV-100": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-100 C",
+        "title": "Request for Domestic Violence Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv100c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-100 K",
+        "title": "Request for Domestic Violence Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv100k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-100 S",
+        "title": "Request for Domestic Violence Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv100s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-100 V",
+        "title": "Request for Domestic Violence Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv100v.pdf"
+      }
+    }
+  ],
+  "DV-101": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-101 C",
+        "title": "Description of Abuse (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv101c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-101 K",
+        "title": "Description of Abuse (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv101k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-101 S",
+        "title": "Description of Abuse (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv101s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-101 V",
+        "title": "Description of Abuse (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv101v.pdf"
+      }
+    }
+  ],
+  "DV-105": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-105 C",
+        "title": "Request for Child Custody and Visitation Orders (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv105c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-105 K",
+        "title": "Request for Child Custody and Visitation Orders (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv105k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-105 S",
+        "title": "Request for Child Custody and Visitation Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv105s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-105 V",
+        "title": "Request for Child Custody and Visitation Orders (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv105v.pdf"
+      }
+    }
+  ],
+  "DV-108": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-108 C",
+        "title": "Request for Order: No Travel with Children (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv108c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-108 K",
+        "title": "Request for Order: No Travel with Children (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv108k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-108 S",
+        "title": "Request for Order: No Travel with Children (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv108s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-108 V",
+        "title": "Request for Order: No Travel with Children (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv108v.pdf"
+      }
+    }
+  ],
+  "DV-109": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-109 C",
+        "title": "Notice of Court Hearing (Domestic Violence) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv109c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-109 K",
+        "title": "Notice of Court Hearing (Domestic Violence) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv109k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-109 S",
+        "title": "Notice of Court Hearing (Domestic Violence) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv109s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-109 V",
+        "title": "Notice of Court Hearing (Domestic Violence) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv109v.pdf"
+      }
+    }
+  ],
+  "DV-110": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-110 C",
+        "title": "Temporary Restraining Order (CLETS—TRO) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv110c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-110 K",
+        "title": "Temporary Restraining Order (CLETS—TRO) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv110k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-110 S",
+        "title": "Temporary Restraining Order (CLETS—TRO) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv110s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-110 V",
+        "title": "Temporary Restraining Order (CLETS—TRO) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv110v.pdf"
+      }
+    }
+  ],
+  "DV-112": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-112 C",
+        "title": "Waiver of Hearing on Denied Request for Temporary Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv112c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-112 K",
+        "title": "Waiver of Hearing on Denied Request for Temporary Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv112k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-112 S",
+        "title": "Waiver of Hearing on Denied Request for Temporary Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv112s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-112 V",
+        "title": "Waiver of Hearing on Denied Request for Temporary Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv112v.pdf"
+      }
+    }
+  ],
+  "DV-115": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-115 C",
+        "title": "Request to Continue Court Hearing and Reissue Temporary Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-115 K",
+        "title": "Request to Continue Hearing (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-115 S",
+        "title": "Request to Continue Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-115 V",
+        "title": "Request to Continue Hearing (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115v.pdf"
+      }
+    }
+  ],
+  "DV-115-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-115-INFO C",
+        "title": "How to Ask for a New Hearing Date (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-115-INFO K",
+        "title": "How to Ask for a New Hearing Date (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-115-INFO S",
+        "title": "How to Ask for a New Hearing Date (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-115-INFO V",
+        "title": "How to Ask for a New Hearing Date (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv115infov.pdf"
+      }
+    }
+  ],
+  "DV-116": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-116 K",
+        "title": "Order on Request to Continue Hearing (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv116k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-116 S",
+        "title": "Order on Request to Continue Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv116s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-116 V",
+        "title": "Order on Request to Continue Hearing (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv116v.pdf"
+      }
+    }
+  ],
+  "DV-120": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-120 K",
+        "title": "Response to Request for Domestic Violence Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv120k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-120 S",
+        "title": "Response to Request for Domestic Violence Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv120s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-120 V",
+        "title": "Response to Request for Domestic Violence Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv120v.pdf"
+      }
+    }
+  ],
+  "DV-120-INFO": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-120-INFO K",
+        "title": "How Can I Respond to a Request for Domestic Violence Restraining Order? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv120infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-120-INFO S",
+        "title": "How Can I Respond to a Request for Domestic Violence Restraining Order? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv120infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-120-INFO V",
+        "title": "How Can I Respond to a Request for Domestic Violence Restraining Order? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv120infov.pdf"
+      }
+    }
+  ],
+  "DV-130": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-130 K",
+        "title": "Restraining Order After Hearing (CLETS—OAH) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv130k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-130 S",
+        "title": "Restraining Order After Hearing (CLETS—OAH) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv130s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-130 V",
+        "title": "Restraining Order After Hearing (CLETS—OAH) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv130v.pdf"
+      }
+    }
+  ],
+  "DV-140": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-140 C",
+        "title": "Child Custody and Visitation Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv140c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-140 K",
+        "title": "Child Custody and Visitation Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv140k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-140 S",
+        "title": "Child Custody and Visitation Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv140s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-140 V",
+        "title": "Child Custody and Visitation Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv140v.pdf"
+      }
+    }
+  ],
+  "DV-145": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-145 C",
+        "title": "Order: No Travel With Children (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv145c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-145 K",
+        "title": "Order: No Travel With Children (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv145k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-145 S",
+        "title": "Order: No Travel With Children (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv145s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-145 V",
+        "title": "Order: No Travel With Children (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv145v.pdf"
+      }
+    }
+  ],
+  "DV-160": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-160 C",
+        "title": "Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv160c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-160 K",
+        "title": "Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv160k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-160 S",
+        "title": "Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv160s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-160 V",
+        "title": "Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv160v.pdf"
+      }
+    }
+  ],
+  "DV-165": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-165 C",
+        "title": "Order on Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv165c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-165 K",
+        "title": "Order on Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv165k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-165 S",
+        "title": "Order on Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Spanish",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv165s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-165 V",
+        "title": "Order on Request to Keep Minor's Information Confidential (Domestic Violence Prevention) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv165v.pdf"
+      }
+    }
+  ],
+  "DV-175": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-175 C",
+        "title": "Cover Sheet for Confidential Information (Domestic Violence Prevention) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv175c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-175 K",
+        "title": "Cover Sheet for Confidential Information (Domestic Violence Prevention) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv175k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-175 S",
+        "title": "Cover Sheet for Confidential Information (Domestic Violence Prevention) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv175s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-175 V",
+        "title": "Cover Sheet for Confidential Information (Domestic Violence Prevention) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv175v.pdf"
+      }
+    }
+  ],
+  "DV-180": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-180 C",
+        "title": "Agreement and Judgment of Parentage (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv180c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-180 K",
+        "title": "Agreement and Judgment of Parentage (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv180k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-180 S",
+        "title": "Agreement and Judgment of Parentage (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv180s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-180 V",
+        "title": "Agreement and Judgment of Parentage (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv180v.pdf"
+      }
+    }
+  ],
+  "DV-200": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-200 K",
+        "title": "Proof of Personal Service (CLETS) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv200k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-200 S",
+        "title": "Proof of Personal Service (CLETS) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv200s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-200 V",
+        "title": "Proof of Personal Service (CLETS) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv200v.pdf"
+      }
+    }
+  ],
+  "DV-200-INFO": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-200-INFO K",
+        "title": "What Is Proof of Personal Service? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv200infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-200-INFO S",
+        "title": "What Is Proof of Personal Service? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv200infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-200-INFO V",
+        "title": "What Is Proof of Personal Service? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv200infov.pdf"
+      }
+    }
+  ],
+  "DV-250": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-250 C",
+        "title": "Proof of Service by Mail (CLETS) (Domestic Violence Prevention) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv250c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-250 K",
+        "title": "Proof of Service by Mail (CLETS) (Domestic Violence Prevention) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv250k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-250 S",
+        "title": "Proof of Service by Mail (CLETS) (Domestic Violence Prevention) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv250s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-250 V",
+        "title": "Proof of Service by Mail (CLETS) (Domestic Violence Prevention) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv250v.pdf"
+      }
+    }
+  ],
+  "DV-400": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-400 S",
+        "title": "Findings and Order to Terminate Restraining Order After Hearing (CLETS—CANCEL) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv400s.pdf"
+      }
+    }
+  ],
+  "DV-400-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-400-INFO C",
+        "title": "How Do I Ask to Change or End a Domestic Violence Restraining Order After Hearing? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv400infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-400-INFO K",
+        "title": "How Do I Ask to Change or End a Domestic Violence Restraining Order After Hearing? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv400infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-400-INFO S",
+        "title": "How Do I Ask to Change or End a Domestic Violence Restraining Order After Hearing? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv400infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-400-INFO V",
+        "title": "How Do I Ask to Change or End a Domestic Violence Restraining Order After Hearing? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv400infov.pdf"
+      }
+    }
+  ],
+  "DV-500-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-500-INFO C",
+        "title": "Can a Domestic Violence Restraining Order Help Me? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv500infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-500-INFO K",
+        "title": "Can a Domestic Violence Restraining Order Help Me? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv500infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-500-INFO S",
+        "title": "Can a Domestic Violence Restraining Order Help Me? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv500infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-500-INFO V",
+        "title": "Can a Domestic Violence Restraining Order Help Me? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv500infov.pdf"
+      }
+    }
+  ],
+  "DV-505-INFO": [
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-505-INFO K",
+        "title": "How Do I Ask For a Temporary Restraining Order? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv505infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-505-INFO S",
+        "title": "How Do I Ask For a Temporary Restraining Order? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv505infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-505-INFO V",
+        "title": "How Do I Ask For a Temporary Restraining Order? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv505infov.pdf"
+      }
+    }
+  ],
+  "DV-520-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-520-INFO C",
+        "title": "Get Ready for the Court Hearing (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv520infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-520-INFO K",
+        "title": "Get Ready for the Court Hearing (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv520infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-520-INFO S",
+        "title": "Get Ready for the Court Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv520infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-520-INFO V",
+        "title": "Get Ready for the Court Hearing (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv520infov.pdf"
+      }
+    }
+  ],
+  "DV-530-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-530-INFO C",
+        "title": "How to Enforce Your Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv530infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-530-INFO K",
+        "title": "How to Enforce Your Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv530infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-530-INFO S",
+        "title": "How to Enforce Your Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv530infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-530-INFO V",
+        "title": "How to Enforce Your Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv530infov.pdf"
+      }
+    }
+  ],
+  "DV-570": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-570 C",
+        "title": "Which Financial Form—FL-155 or FL-150? (Domestic Violence) - Chinese",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv570c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-570 K",
+        "title": "Which Financial Form—FL-155 or FL-150? (Domestic Violence) - Korean",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv570k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-570 S",
+        "title": "Which Financial Form—FL-155 or FL-150? (Domestic Violence) - Spanish",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv570s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-570 V",
+        "title": "Which Financial Form—FL-155 or FL-150? (Domestic Violence) - Vietnamese",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv570v.pdf"
+      }
+    }
+  ],
+  "DV-600": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-600 C",
+        "title": "Order to Register Out-of-State or Tribal Court Protective/Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv600c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-600 K",
+        "title": "Order to Register Out-of-State or Tribal Court Protective/Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv600k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-600 S",
+        "title": "Order to Register Out-of-State or Tribal Court Protective/Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv600s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-600 V",
+        "title": "Order to Register Out-of-State or Tribal Court Protective/Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv600v.pdf"
+      }
+    }
+  ],
+  "DV-630": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-630 C",
+        "title": "Order to Register Canadian Domestic Violence Protective/Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv630c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-630 K",
+        "title": "Order to Register Canadian Domestic Violence Protective/Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv630k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-630 S",
+        "title": "Order to Register Canadian Domestic Violence Protective/Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv630s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-630 V",
+        "title": "Order to Register Canadian Domestic Violence Protective/Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv630v.pdf"
+      }
+    }
+  ],
+  "DV-700": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-700 C",
+        "title": "Request to Renew Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-700 K",
+        "title": "Request to Renew Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-700 S",
+        "title": "Request to Renew Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-700 V",
+        "title": "Request to Renew Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700v.pdf"
+      }
+    }
+  ],
+  "DV-700-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-700-INFO C",
+        "title": "How Do I Ask the Court to Renew My Restraining Order? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-700-INFO K",
+        "title": "How Do I Ask the Court to Renew My Restraining Order? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-700-INFO S",
+        "title": "How Do I Ask the Court to Renew My Restraining Order? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-700-INFO V",
+        "title": "How Do I Ask the Court to Renew My Restraining Order? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv700infov.pdf"
+      }
+    }
+  ],
+  "DV-710": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-710 C",
+        "title": "Notice of Hearing to Renew Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv710c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-710 K",
+        "title": "Notice of Hearing to Renew Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv710k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-710 S",
+        "title": "Notice of Hearing to Renew Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv710s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-710 V",
+        "title": "Notice of Hearing to Renew Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv710v.pdf"
+      }
+    }
+  ],
+  "DV-720": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-720 C",
+        "title": "Response to Request to Renew Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv720c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-720 K",
+        "title": "Response to Request to Renew Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv720k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-720 S",
+        "title": "Response to Request to Renew Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv720s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-720 V",
+        "title": "Response to Request to Renew Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv720v.pdf"
+      }
+    }
+  ],
+  "DV-730": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-730 C",
+        "title": "Order to Renew Domestic Violence Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv730c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-730 K",
+        "title": "Order to Renew Domestic Violence Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv730k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-730 S",
+        "title": "Order to Renew Domestic Violence Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv730s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-730 V",
+        "title": "Order to Renew Domestic Violence Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv730v.pdf"
+      }
+    }
+  ],
+  "DV-800-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-800-INFO C",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv800infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-800-INFO K",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv800infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-800-INFO S",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv800infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-800-INFO V",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv800infov.pdf"
+      }
+    }
+  ],
+  "DV-805": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-805 C",
+        "title": "Proof of Enrollment for Batterer Intervention Program (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv805c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-805 K",
+        "title": "Proof of Enrollment for Batterer Intervention Program (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv805k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-805 S",
+        "title": "Proof of Enrollment for Batterer Intervention Program (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv805s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-805 V",
+        "title": "Proof of Enrollment for Batterer Intervention Program (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv805v.pdf"
+      }
+    }
+  ],
+  "DV-815": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-815 C",
+        "title": "Batterer Intervention Program Progress Report (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv815c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-815 K",
+        "title": "Batterer Intervention Program Progress Report (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv815k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-815 S",
+        "title": "Batterer Intervention Program Progress Report (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv815s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-815 V",
+        "title": "Batterer Intervention Program Progress Report (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv815v.pdf"
+      }
+    }
+  ],
+  "DV-900": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-900 C",
+        "title": "Order Transferring Wireless Phone Account (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv900c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-900 K",
+        "title": "Order Transferring Wireless Phone Account (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv900k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-900 S",
+        "title": "Order Transferring Wireless Phone Account (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv900s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-900 V",
+        "title": "Order Transferring Wireless Phone Account (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv900v.pdf"
+      }
+    }
+  ],
+  "DV-901": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "DV-901 C",
+        "title": "Attachment to Order Transferring Wireless Phone Account (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv901c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "DV-901 K",
+        "title": "Attachment to Order Transferring Wireless Phone Account (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv901k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "DV-901 S",
+        "title": "Attachment to Order Transferring Wireless Phone Account (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv901s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "DV-901 V",
+        "title": "Attachment to Order Transferring Wireless Phone Account (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/dv901v.pdf"
+      }
+    }
+  ],
+  "EA-100": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EA-100 C",
+        "title": "Request for Elder or Dependent Adult Abuse Restraining Orders (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea100c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EA-100 K",
+        "title": "Request for Elder or Dependent Adult Abuse Restraining Orders (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea100k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EA-100 S",
+        "title": "Request for Elder or Dependent Adult Abuse Restraining Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea100s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EA-100 V",
+        "title": "Request for Elder or Dependent Adult Abuse Restraining Orders (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea100v.pdf"
+      }
+    }
+  ],
+  "EA-110": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EA-110 C",
+        "title": "Temporary Restraining Order (CLETS—TEA or TEF) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea110c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EA-110 K",
+        "title": "Temporary Restraining Order (CLETS—TEA or TEF) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea110k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EA-110 S",
+        "title": "Temporary Restraining Order (CLETS—TEA or TEF) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea110s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EA-110 V",
+        "title": "Temporary Restraining Order (CLETS—TEA or TEF) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea110v.pdf"
+      }
+    }
+  ],
+  "EA-120": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EA-120 C",
+        "title": "Response to Request for Elder or Dependent Adult Abuse Restraining Orders (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea120c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EA-120 K",
+        "title": "Response to Request for Elder or Dependent Adult Abuse Restraining Orders (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea120k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EA-120 S",
+        "title": "Response to Request for Elder or Dependent Adult Abuse Restraining Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea120s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EA-120 V",
+        "title": "Response to Request for Elder or Dependent Adult Abuse Restraining Orders (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea120v.pdf"
+      }
+    }
+  ],
+  "EA-130": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EA-130 C",
+        "title": "Elder or Dependent Adult Abuse Restraining Order After Hearing (CLETS—EAR or EAF) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea130c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EA-130 K",
+        "title": "Elder or Dependent Adult Abuse Restraining Order After Hearing (CLETS—EAR or EAF) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea130k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EA-130 S",
+        "title": "Elder or Dependent Adult Abuse Restraining Order After Hearing (CLETS—EAR or EAF) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea130s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EA-130 V",
+        "title": "Elder or Dependent Adult Abuse Restraining Order After Hearing (CLETS—EAR or EAF) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ea130v.pdf"
+      }
+    }
+  ],
+  "EFS-005-JV": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EFS-005-JV S",
+        "title": "E-Mail Notice of Hearing: Consent, Withdrawal of Consent, Address Change (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/efs005jvs.pdf"
+      }
+    }
+  ],
+  "EM-100-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EM-100-INFO C",
+        "title": "Emancipation Pamphlet (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/em100infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EM-100-INFO K",
+        "title": "Emancipation Pamphlet (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/em100infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EM-100-INFO S",
+        "title": "Emancipation Pamphlet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/em100infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EM-100-INFO V",
+        "title": "Emancipation Pamphlet (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/em100infov.pdf"
+      }
+    }
+  ],
+  "EPO-001": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EPO-001 C",
+        "title": "Emergency Protective Order (CLETS-EPO) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo001c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EPO-001 K",
+        "title": "Emergency Protective Order (CLETS-EPO) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo001k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EPO-001 S",
+        "title": "Emergency Protective Order (CLETS-EPO) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo001s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EPO-001 V",
+        "title": "Emergency Protective Order (CLETS-EPO) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo001v.pdf"
+      }
+    }
+  ],
+  "EPO-002": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "EPO-002 C",
+        "title": "Firearms Emergency Protective Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo002c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "EPO-002 K",
+        "title": "Firearms Emergency Protective Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo002k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "EPO-002 S",
+        "title": "Firearms Emergency Protective Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo002s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "EPO-002 V",
+        "title": "Firearms Emergency Protective Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/epo002v.pdf"
+      }
+    }
+  ],
+  "FL-100": [
+    {
+      "language": "Arabic",
+      "form": {
+        "id": "FL-100 A",
+        "title": "Petition—Marriage/Domestic Partnership (Arabic)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl100a.pdf"
+      }
+    },
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-100 C",
+        "title": "Petition—Marriage/Domestic Partnership (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl100c.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-100 S",
+        "title": "Petition—Marriage/Domestic Partnership (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl100s.pdf"
+      }
+    }
+  ],
+  "FL-105": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-105 S",
+        "title": "Declaration Under Uniform Child Custody Jurisdiction and Enforcement Act (UCCJEA) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl105s.pdf"
+      }
+    }
+  ],
+  "FL-107-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-107-INFO C",
+        "title": "Legal Steps for a Divorce or Legal Separation (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl107infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-107-INFO K",
+        "title": "Legal Steps for a Divorce or Legal Separation (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl107infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-107-INFO S",
+        "title": "Legal Steps for a Divorce or Legal Separation (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl107infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-107-INFO V",
+        "title": "Legal Steps for a Divorce or Legal Separation (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl107infov.pdf"
+      }
+    }
+  ],
+  "FL-110": [
+    {
+      "language": "Arabic",
+      "form": {
+        "id": "FL-110 A",
+        "title": "Summons (Arabic)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl110a.pdf"
+      }
+    },
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-110 C",
+        "title": "Summons (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl110c.pdf"
+      }
+    }
+  ],
+  "FL-120": [
+    {
+      "language": "Arabic",
+      "form": {
+        "id": "FL-120 A",
+        "title": "Response—Marriage/Domestic Partnership (Arabic)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl120a.pdf"
+      }
+    },
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-120 C",
+        "title": "Response—Marriage/Domestic Partnership (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl120c.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-120 S",
+        "title": "Response—Marriage/Domestic Partnership (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl120s.pdf"
+      }
+    }
+  ],
+  "FL-130": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-130 S",
+        "title": "Appearance, Stipulations, and Waivers (Uniform Parentage—Custody and Support) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl130s.pdf"
+      }
+    }
+  ],
+  "FL-140": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-140 S",
+        "title": "Declaration of Disclosure (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl140s.pdf"
+      }
+    }
+  ],
+  "FL-142": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-142 S",
+        "title": "Schedule of Assets and Debts (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl142s.pdf"
+      }
+    }
+  ],
+  "FL-150": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-150 S",
+        "title": "Income and Expense Declaration (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl150s.pdf"
+      }
+    }
+  ],
+  "FL-155": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-155 S",
+        "title": "Financial Statement (Simplified) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl155s.pdf"
+      }
+    }
+  ],
+  "FL-157": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-157 S",
+        "title": "Spousal or Partner Support Declaration Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl157s.pdf"
+      }
+    }
+  ],
+  "FL-160": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-160 S",
+        "title": "Property Declaration (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl160s.pdf"
+      }
+    }
+  ],
+  "FL-180": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-180 S",
+        "title": "Judgment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl180s.pdf"
+      }
+    }
+  ],
+  "FL-191": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-191 S",
+        "title": "Child Support Case Registry Form (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl191s.pdf"
+      }
+    }
+  ],
+  "FL-192": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-192 S",
+        "title": "Notice of Rights and Responsibilities (Health-Care Costs and Reimbursement Procedures) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl192s.pdf"
+      }
+    }
+  ],
+  "FL-200": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-200 S",
+        "title": "Petition to Establish Parental Relationship (Uniform Parentage) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl200s.pdf"
+      }
+    }
+  ],
+  "FL-210": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-210 C",
+        "title": "Summons (Uniform Parentage—Petition for Custody and Support) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl210c.pdf"
+      }
+    }
+  ],
+  "FL-220": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-220 S",
+        "title": "Response to Petition to Establish Parental Relationship (Uniform Parentage) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl220s.pdf"
+      }
+    }
+  ],
+  "FL-235": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-235 S",
+        "title": "Advisement and Waiver of Rights Re: Establishment of Parental Relationship (Uniform Parentage) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl235s.pdf"
+      }
+    }
+  ],
+  "FL-240": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-240 S",
+        "title": "Stipulation for Entry of Judgment Re: Establishment of Parental Relationship (Uniform Parentage) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl240s.pdf"
+      }
+    }
+  ],
+  "FL-250": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-250 S",
+        "title": "Judgment (Uniform Parentage—Custody and Support) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl250s.pdf"
+      }
+    }
+  ],
+  "FL-260": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-260 S",
+        "title": "Petition for Custody and Support of Minor Children (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl260s.pdf"
+      }
+    }
+  ],
+  "FL-270": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-270 S",
+        "title": "Response to Petition for Custody and Support of Minor Children (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl270s.pdf"
+      }
+    }
+  ],
+  "FL-272": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-272 S",
+        "title": "Notice of Motion to Set Aside Judgment of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl272s.pdf"
+      }
+    }
+  ],
+  "FL-273": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-273 S",
+        "title": "Declaration in Support of Motion to Set Aside Judgment of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl273s.pdf"
+      }
+    }
+  ],
+  "FL-274": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-274 S",
+        "title": "Information Sheet for Completing Notice of Motion to Set Aside Judgment of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl274s.pdf"
+      }
+    }
+  ],
+  "FL-276": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-276 S",
+        "title": "Response to Notice of Motion to Set Aside Judgment of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl276s.pdf"
+      }
+    }
+  ],
+  "FL-278": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-278 S",
+        "title": "Order After Hearing on Motion to Set Aside Judgment of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl278s.pdf"
+      }
+    }
+  ],
+  "FL-280": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-280 S",
+        "title": "Request for Hearing and Application to Set Aside Voluntary Declaration of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl280s.pdf"
+      }
+    }
+  ],
+  "FL-281": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-281 S",
+        "title": "Information Sheet for Completing Request for Hearing and Application to Set Aside Voluntary Declaration of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl281s.pdf"
+      }
+    }
+  ],
+  "FL-285": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-285 S",
+        "title": "Responsive Declaration to Application to Set Aside Voluntary Declaration of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl285s.pdf"
+      }
+    }
+  ],
+  "FL-290": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-290 S",
+        "title": "Order After Hearing on Motion to Set Aside Voluntary Declaration of Paternity (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl290s.pdf"
+      }
+    }
+  ],
+  "FL-300": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-300 S",
+        "title": "Request for Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl300s.pdf"
+      }
+    }
+  ],
+  "FL-300-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-300-INFO S",
+        "title": "Information Sheet for Request for Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl300infos.pdf"
+      }
+    }
+  ],
+  "FL-303": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-303 S",
+        "title": "Declaration Regarding Notice and Service of Request for Temporary Emergency (Ex Parte) Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl303s.pdf"
+      }
+    }
+  ],
+  "FL-305": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-305 S",
+        "title": "Temporary Emergency (Ex Parte) Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl305s.pdf"
+      }
+    }
+  ],
+  "FL-306": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-306 S",
+        "title": "Request to Continue Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl306s.pdf"
+      }
+    }
+  ],
+  "FL-307": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-307 S",
+        "title": "Order on Request to Continue Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl307s.pdf"
+      }
+    }
+  ],
+  "FL-311": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-311 S",
+        "title": "Child Custody and Visitation (Parenting Time) Application Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl311s.pdf"
+      }
+    }
+  ],
+  "FL-312": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-312 S",
+        "title": "Request for Child Abduction Prevention Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl312s.pdf"
+      }
+    }
+  ],
+  "FL-313-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-313-INFO C",
+        "title": "Child Custody Information Sheet—Recommending Counseling (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl313infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-313-INFO K",
+        "title": "Child Custody Information Sheet—Recommending Counseling (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl313infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-313-INFO S",
+        "title": "Child Custody Information Sheet—Recommending Counseling (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl313infos.pdf"
+      }
+    },
+    {
+      "language": "Tagalog",
+      "form": {
+        "id": "FL-313-INFO T",
+        "title": "Child Custody Information Sheet—Recommending Counseling (Tagalog)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl313infot.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-313-INFO V",
+        "title": "Child Custody Information Sheet—Recommending Counseling (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl313infov.pdf"
+      }
+    }
+  ],
+  "FL-314-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-314-INFO C",
+        "title": "Child Custody Information Sheet—Child Custody Mediation (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl314infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-314-INFO K",
+        "title": "Child Custody Information Sheet—Child Custody Mediation (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl314infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-314-INFO S",
+        "title": "Child Custody Information Sheet—Child Custody Mediation (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl314infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-314-INFO V",
+        "title": "Child Custody Information Sheet—Child Custody Mediation (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl314infov.pdf"
+      }
+    }
+  ],
+  "FL-320": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-320 S",
+        "title": "Responsive Declaration to Request for Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl320s.pdf"
+      }
+    }
+  ],
+  "FL-320-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-320-INFO S",
+        "title": "Information Sheet: Responsive Declaration to Request for Order (spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl320infos.pdf"
+      }
+    }
+  ],
+  "FL-322": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-322 S",
+        "title": "Declaration of Counsel for a Child Regarding Qualifications (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl322s.pdf"
+      }
+    }
+  ],
+  "FL-323": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-323 C",
+        "title": "Order Appointing Counsel for a Child (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-323 K",
+        "title": "Order Appointing Counsel for a Child (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-323 S",
+        "title": "Order Appointing Counsel for a Child (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-323 V",
+        "title": "Order Appointing Counsel for a Child (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323v.pdf"
+      }
+    }
+  ],
+  "FL-323-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-323-INFO C",
+        "title": "Attorney for Child in a Family Law Case—Information Sheet (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-323-INFO K",
+        "title": "Attorney for Child in a Family Law Case—Information Sheet (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-323-INFO S",
+        "title": "Attorney for Child in a Family Law Case—Information Sheet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-323-INFO V",
+        "title": "Attorney for Child in a Family Law Case—Information Sheet (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl323infov.pdf"
+      }
+    }
+  ],
+  "FL-324": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-324 S",
+        "title": "Declaration of Supervised Visitation Provider (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl324s.pdf"
+      }
+    }
+  ],
+  "FL-329-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-329-INFO S",
+        "title": "Child Custody Evaluation Information Sheet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl329infos.pdf"
+      }
+    }
+  ],
+  "FL-341": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-341 S",
+        "title": "Child Custody and Visitation Order Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl341s.pdf"
+      }
+    }
+  ],
+  "FL-341(A)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-341(A) S",
+        "title": "Supervised Visitation Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl341as.pdf"
+      }
+    }
+  ],
+  "FL-341(B)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-341(B) S",
+        "title": "Child Abduction Prevention Order Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl341bs.pdf"
+      }
+    }
+  ],
+  "FL-341(C)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-341(C) S",
+        "title": "Children's Holiday Schedule Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl341cs.pdf"
+      }
+    }
+  ],
+  "FL-341(D)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-341(D) S",
+        "title": "Additional Provisions—Physical Custody Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl341ds.pdf"
+      }
+    }
+  ],
+  "FL-341(E)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-341(E) S",
+        "title": "Joint Legal Custody Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl341es.pdf"
+      }
+    }
+  ],
+  "FL-342": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-342 S",
+        "title": "Child Support Information and Order Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl342s.pdf"
+      }
+    }
+  ],
+  "FL-344": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-344 S",
+        "title": "Property Order Attachment to Findings and Order After Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl344s.pdf"
+      }
+    }
+  ],
+  "FL-345": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-345 S",
+        "title": "Property Order Attachment to Judgment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl345s.pdf"
+      }
+    }
+  ],
+  "FL-348": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-348 S",
+        "title": "Pension Benefits—Attachment to Judgment (Attach to form FL-180) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl348s.pdf"
+      }
+    }
+  ],
+  "FL-350": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-350 S",
+        "title": "Stipulation to Establish or Modify Child Support and Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl350s.pdf"
+      }
+    }
+  ],
+  "FL-355": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-355 S",
+        "title": "Stipulation and Order for Custody and/or Visitation of Children (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl355s.pdf"
+      }
+    }
+  ],
+  "FL-356": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-356 S",
+        "title": "Confidential Request for Special Immigrant Juvenile Findings—Family Law (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl356s.pdf"
+      }
+    }
+  ],
+  "FL-357": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-357 S",
+        "title": "Special Immigrant Juvenile Findings (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl357s.pdf"
+      }
+    }
+  ],
+  "FL-358": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-358 S",
+        "title": "Confidential Response to Request for Special Immigrant Juvenile Findings (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl358s.pdf"
+      }
+    }
+  ],
+  "FL-490": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-490 S",
+        "title": "Application to Determine Arrears (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl490s.pdf"
+      }
+    }
+  ],
+  "FL-530": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-530 S",
+        "title": "Judgment Regarding Parental Obligations (UIFSA) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl530s.pdf"
+      }
+    }
+  ],
+  "FL-615": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-615 S",
+        "title": "Stipulation for Judgment or Supplemental Judgment Regarding Parental Obligations and Judgment (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl615s.pdf"
+      }
+    }
+  ],
+  "FL-618": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-618 S",
+        "title": "Request for Dismissal (Governmental, UIFSA) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl618s.pdf"
+      }
+    }
+  ],
+  "FL-625": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-625 S",
+        "title": "Stipulation and Order (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl625s.pdf"
+      }
+    }
+  ],
+  "FL-626": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-626 C",
+        "title": "Stipulation and Order Waiving Unassigned Arrears (Governmental) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl626c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-626 K",
+        "title": "Stipulation and Order Waiving Unassigned Arrears (Governmental) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl626k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-626 S",
+        "title": "Stipulation and Order Waiving Unassigned Arrears (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl626s.pdf"
+      }
+    },
+    {
+      "language": "Tagalog",
+      "form": {
+        "id": "FL-626 T",
+        "title": "Stipulation and Order Waiving Unassigned Arrears (Governmental) (Tagalog)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl626t.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-626 V",
+        "title": "Stipulation and Order Waiving Unassigned Arrears (Governmental) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl626v.pdf"
+      }
+    }
+  ],
+  "FL-630": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-630 S",
+        "title": "Judgment Regarding Parental Obligations (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl630s.pdf"
+      }
+    }
+  ],
+  "FL-634": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-634 S",
+        "title": "Notice of Change of Responsibility for Managing Child Support Case (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl634s.pdf"
+      }
+    }
+  ],
+  "FL-640": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-640 S",
+        "title": "Notice and Motion to Cancel (Set Aside) Support Order Based on Presumed Income (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl640s.pdf"
+      }
+    }
+  ],
+  "FL-640-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-640-INFO S",
+        "title": "Information Sheet for Notice and Motion to Cancel (Set Aside) Support Order Based On Presumed Income (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl640infos.pdf"
+      }
+    }
+  ],
+  "FL-663": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-663 C",
+        "title": "Stipulation and Order for Joinder of Other Parent (Governmental) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl663c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-663 K",
+        "title": "Stipulation and Order for Joinder of Other Parent (Governmental) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl663k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-663 S",
+        "title": "Stipulation and Order for Joinder of Other Parent (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl663s.pdf"
+      }
+    },
+    {
+      "language": "Tagalog",
+      "form": {
+        "id": "FL-663 T",
+        "title": "Stipulation and Order for Joinder of Other Parent (Governmental) (Tagalog)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl663t.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-663 V",
+        "title": "Stipulation and Order for Joinder of Other Parent (Governmental) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl663v.pdf"
+      }
+    }
+  ],
+  "FL-665": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-665 S",
+        "title": "Findings and Recommendation of Commissioner (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl665s.pdf"
+      }
+    }
+  ],
+  "FL-676": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-676 S",
+        "title": "Request for Determination of Support Arrears (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl676s.pdf"
+      }
+    }
+  ],
+  "FL-679": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-679 S",
+        "title": "Request for Telephone Appearance (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl679s.pdf"
+      }
+    }
+  ],
+  "FL-679-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-679-INFO S",
+        "title": "Information Sheet—Request for Telephone Appearance (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl679infos.pdf"
+      }
+    }
+  ],
+  "FL-687": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-687 S",
+        "title": "Order After Hearing (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl687s.pdf"
+      }
+    }
+  ],
+  "FL-688": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-688 S",
+        "title": "Short Form Order After Hearing (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl688s.pdf"
+      }
+    }
+  ],
+  "FL-692": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-692 S",
+        "title": "Minutes and Order or Judgment (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl692s.pdf"
+      }
+    }
+  ],
+  "FL-694": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-694 C",
+        "title": "Advisement and Waiver of Rights for Stipulation (Governmental) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl694c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-694 K",
+        "title": "Advisement and Waiver of Rights for Stipulation (Governmental) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl694k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-694 S",
+        "title": "Advisement and Waiver of Rights for Stipulation (Governmental) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl694s.pdf"
+      }
+    },
+    {
+      "language": "Tagalog",
+      "form": {
+        "id": "FL-694 T",
+        "title": "Advisement and Waiver of Rights for Stipulation (Governmental) (Tagalog)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl694t.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-694 V",
+        "title": "Advisement and Waiver of Rights for Stipulation (Governmental) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl694v.pdf"
+      }
+    }
+  ],
+  "FL-810": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-810 S",
+        "title": "Summary Dissolution Information (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl810s.pdf"
+      }
+    }
+  ],
+  "FL-940": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "FL-940 C",
+        "title": "Office of the Family Law Facilitator Disclosure (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl940c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "FL-940 K",
+        "title": "Office of the Family Law Facilitator Disclosure (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl940k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-940 S",
+        "title": "Office of the Family Law Facilitator Disclosure (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl940s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "FL-940 V",
+        "title": "Office of the Family Law Facilitator Disclosure (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl940v.pdf"
+      }
+    }
+  ],
+  "FL-955-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FL-955-INFO S",
+        "title": "Information for Client About Notice of Completion of Limited Scope Representation (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fl955infos.pdf"
+      }
+    }
+  ],
+  "FW-001": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-001 S",
+        "title": "Request to Waive Court Fees (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw001s.pdf"
+      }
+    }
+  ],
+  "FW-001-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-001-INFO S",
+        "title": "Information Sheet on Waiver of Court Fees and Costs (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw001infos.pdf"
+      }
+    }
+  ],
+  "FW-002": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-002 S",
+        "title": "Request to Waive Additional Court Fees (Superior Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw002s.pdf"
+      }
+    }
+  ],
+  "FW-003": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-003 S",
+        "title": "Order on Court Fee Waiver (Superior Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw003s.pdf"
+      }
+    }
+  ],
+  "FW-005": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-005 S",
+        "title": "Notice: Waiver of Court Fees (Superior Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw005s.pdf"
+      }
+    }
+  ],
+  "FW-006": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-006 S",
+        "title": "Request for Hearing About Court Fee Waiver Order (Superior Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw006s.pdf"
+      }
+    }
+  ],
+  "FW-006-GC": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-006-GC S",
+        "title": "Request for Hearing About Court Fee Waiver Order (Superior Court) (Ward or Conservatee) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw006gcs.pdf"
+      }
+    }
+  ],
+  "FW-007": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-007 S",
+        "title": "Notice on Hearing About Court Fees (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw007s.pdf"
+      }
+    }
+  ],
+  "FW-008": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-008 S",
+        "title": "Order on Court Fee Waiver After Hearing (Superior Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw008s.pdf"
+      }
+    }
+  ],
+  "FW-010": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-010 S",
+        "title": "Notice to Court of Improved Financial Situation or Settlement (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw010s.pdf"
+      }
+    }
+  ],
+  "FW-011": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-011 S",
+        "title": "Notice to Appear for Reconsideration of Fee Waiver (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw011s.pdf"
+      }
+    }
+  ],
+  "FW-012": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-012 S",
+        "title": "Order on Court Fee Waiver After Reconsideration Hearing (Superior Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw012s.pdf"
+      }
+    }
+  ],
+  "FW-012-GC": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-012-GC S",
+        "title": "Order on Court Fee Waiver After Reconsideration Hearing (Superior Court) (Ward or Conservatee) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw012gcs.pdf"
+      }
+    }
+  ],
+  "FW-015-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-015-INFO S",
+        "title": "Information Sheet on Waiver of Appellate Court Fees (Supreme Court, Court of Appeal, Appellate Division) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw015infos.pdf"
+      }
+    }
+  ],
+  "FW-016": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-016 S",
+        "title": "Order on Court Fee Waiver (Court of Appeal or Supreme Court) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw016s.pdf"
+      }
+    }
+  ],
+  "FW-016-GC": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "FW-016-GC S",
+        "title": "Order on Court Fee Waiver (Ward or Conservatee) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/fw016gcs.pdf"
+      }
+    }
+  ],
+  "GC-120": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-120 S",
+        "title": "Declaration Under Uniform Child Custody Jurisdiction and Enforcement Act (UCCJEA) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc120s.pdf"
+      }
+    }
+  ],
+  "GC-205": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GC-205 C",
+        "title": "Guardianship Pamphlet (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc205c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GC-205 K",
+        "title": "Guardianship Pamphlet (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc205k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-205 S",
+        "title": "Guardianship Pamphlet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc205s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GC-205 V",
+        "title": "Guardianship Pamphlet (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc205v.pdf"
+      }
+    }
+  ],
+  "GC-220": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-220 S",
+        "title": "Petition for Special Immigrant Juvenile Findings (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc220s.pdf"
+      }
+    }
+  ],
+  "GC-224": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-224 S",
+        "title": "Special Immigrant Juvenile Findings (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc224s.pdf"
+      }
+    }
+  ],
+  "GC-248": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-248 S",
+        "title": "Duties of Guardian (Probate) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc248s.pdf"
+      }
+    }
+  ],
+  "GC-341": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-341 S",
+        "title": "Notice of Conservatee's Rights (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc341s.pdf"
+      }
+    }
+  ],
+  "GC-348": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-348 S",
+        "title": "Duties of Conservator and Acknowledgment of Receipt of Handbook for Conservators (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc348s.pdf"
+      }
+    }
+  ],
+  "GC-505": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-505 S",
+        "title": "Forms You Need to Ask the Court to Appoint a Guardian of the Person (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc505s.pdf"
+      }
+    }
+  ],
+  "GC-510": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GC-510 S",
+        "title": "What Is Proof of Service in a Guardianship? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gc510s.pdf"
+      }
+    }
+  ],
+  "GDC-001*": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GDC-001* C",
+        "title": "Advisory Notice to Defendant (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gdc001c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GDC-001* K",
+        "title": "Advisory Notice to Defendant (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gdc001k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GDC-001* S",
+        "title": "Advisory Notice to Defendant (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gdc001s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GDC-001* V",
+        "title": "Advisory Notice to Defendant (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gdc001v.pdf"
+      }
+    }
+  ],
+  "GV-100": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-100 C",
+        "title": "Petition for Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-100 K",
+        "title": "Petition for Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-100 S",
+        "title": "Petition for Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-100 V",
+        "title": "Petition for Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100v.pdf"
+      }
+    }
+  ],
+  "GV-100-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-100-INFO C",
+        "title": "Can a Firearms Restraining Order Help Me? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-100-INFO K",
+        "title": "Can a Firearms Restraining Order Help Me? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-100-INFO S",
+        "title": "Can a Firearms Restraining Order Help Me? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-100-INFO V",
+        "title": "Can a Firearms Restraining Order Help Me? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv100infov.pdf"
+      }
+    }
+  ],
+  "GV-109": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-109 C",
+        "title": "Notice of Court Hearing (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv109c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-109 K",
+        "title": "Notice of Court Hearing (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv109k.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-109 V",
+        "title": "Notice of Court Hearing (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv109v.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-109 S",
+        "title": "Notice of Court Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv109s.pdf"
+      }
+    }
+  ],
+  "GV-110": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-110 C",
+        "title": "Temporary Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv110c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-110 K",
+        "title": "Temporary Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv110k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-110 S",
+        "title": "Temporary Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv110s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-110 V",
+        "title": "Temporary Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv110v.pdf"
+      }
+    }
+  ],
+  "GV-115": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-115 C",
+        "title": "Request to Continue Court Hearing for Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv115c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-115 K",
+        "title": "Request to Continue Court Hearing for Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv115k.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-115 V",
+        "title": "Request to Continue Court Hearing for Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv115v.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-115 S",
+        "title": "Request to Continue Court Hearing for Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv115s.pdf"
+      }
+    }
+  ],
+  "GV-116": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-116 C",
+        "title": "Notice of New Hearing Date (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv116c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-116 K",
+        "title": "Notice of New Hearing Date (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv116k.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-116 V",
+        "title": "Notice of New Hearing Date (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv116v.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-116 S",
+        "title": "Notice of New Hearing Date (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv116s.pdf"
+      }
+    }
+  ],
+  "GV-120": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-120 C",
+        "title": "Response to Petition for Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-120 K",
+        "title": "Response to Petition for Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-120 S",
+        "title": "Response to Petition for Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-120 V",
+        "title": "Response to Petition for Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120v.pdf"
+      }
+    }
+  ],
+  "GV-120-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-120-INFO C",
+        "title": "How Can I Respond to a Petition for Firearms Restraining Order? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-120-INFO K",
+        "title": "How Can I Respond to a Petition for Firearms Restraining Order? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120infok.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-120-INFO V",
+        "title": "How Can I Respond to a Petition for Firearms Restraining Order? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120infov.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-120-INFO S",
+        "title": "How Can I Respond to a Petition for Firearms Restraining Order? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv120infos.pdf"
+      }
+    }
+  ],
+  "GV-130": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-130 C",
+        "title": "Firearms Restraining Order After Hearing (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv130c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-130 K",
+        "title": "Firearms Restraining Order After Hearing (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv130k.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-130 V",
+        "title": "Firearms Restraining Order After Hearing (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv130v.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-130 S",
+        "title": "Firearms Restraining Order After Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv130s.pdf"
+      }
+    }
+  ],
+  "GV-200": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-200 C",
+        "title": "Proof of Personal Service (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-200 K",
+        "title": "Proof of Personal Service (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-200 S",
+        "title": "Proof of Personal Service (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-200 V",
+        "title": "Proof of Personal Service (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200v.pdf"
+      }
+    }
+  ],
+  "GV-200-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-200-INFO C",
+        "title": "What Is \"Proof of Personal Service\"? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-200-INFO K",
+        "title": "What Is \"Proof of Personal Service\"? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-200-INFO S",
+        "title": "What Is \"Proof of Personal Service\"? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-200-INFO V",
+        "title": "What Is \"Proof of Personal Service\"? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv200infov.pdf"
+      }
+    }
+  ],
+  "GV-250": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-250 C",
+        "title": "Proof of Service by Mail (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv250c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-250 K",
+        "title": "Proof of Service by Mail (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv250k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-250 S",
+        "title": "Proof of Service by Mail (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv250s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-250 V",
+        "title": "Proof of Service by Mail (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv250v.pdf"
+      }
+    }
+  ],
+  "GV-600": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-600 C",
+        "title": "Request to Terminate Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv600c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-600 K",
+        "title": "Request to Terminate Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv600k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-600 S",
+        "title": "Request to Terminate Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv600s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-600 V",
+        "title": "Request to Terminate Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv600v.pdf"
+      }
+    }
+  ],
+  "GV-610": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-610 C",
+        "title": "Notice of Hearing on Request to Terminate Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv610c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-610 K",
+        "title": "Notice of Hearing on Request to Terminate Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv610k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-610 S",
+        "title": "Notice of Hearing on Request to Terminate Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv610s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-610 V",
+        "title": "Notice of Hearing on Request to Terminate Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv610v.pdf"
+      }
+    }
+  ],
+  "GV-620": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-620 C",
+        "title": "Response to Request to Terminate Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv620c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-620 K",
+        "title": "Response to Request to Terminate Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv620k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-620 S",
+        "title": "Response to Request to Terminate Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv620s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-620 V",
+        "title": "Response to Request to Terminate Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv620v.pdf"
+      }
+    }
+  ],
+  "GV-630": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-630 C",
+        "title": "Order on Request to Terminate Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv630c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-630 K",
+        "title": "Order on Request to Terminate Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv630k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-630 S",
+        "title": "Order on Request to Terminate Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv630s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-630 V",
+        "title": "Order on Request to Terminate Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv630v.pdf"
+      }
+    }
+  ],
+  "GV-700": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-700 C",
+        "title": "Request to Renew Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv700c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-700 K",
+        "title": "Request to Renew Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv700k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-700 S",
+        "title": "Request to Renew Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv700s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-700 V",
+        "title": "Request to Renew Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv700v.pdf"
+      }
+    }
+  ],
+  "GV-710": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-710 C",
+        "title": "Notice of Hearing on Request to Renew Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv710c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-710 K",
+        "title": "Notice of Hearing on Request to Renew Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv710k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-710 S",
+        "title": "Notice of Hearing on Request to Renew Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv710s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-710 V",
+        "title": "Notice of Hearing on Request to Renew Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv710v.pdf"
+      }
+    }
+  ],
+  "GV-720": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-720 C",
+        "title": "Response to Request to Renew Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv720c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-720 K",
+        "title": "Response to Request to Renew Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv720k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-720 S",
+        "title": "Response to Request to Renew Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv720s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-720 V",
+        "title": "Response to Request to Renew Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv720v.pdf"
+      }
+    }
+  ],
+  "GV-730": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-730 C",
+        "title": "Order on Request to Renew Firearms Restraining Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv730c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-730 K",
+        "title": "Order on Request to Renew Firearms Restraining Order (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv730k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-730 S",
+        "title": "Order on Request to Renew Firearms Restraining Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv730s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-730 V",
+        "title": "Order on Request to Renew Firearms Restraining Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv730v.pdf"
+      }
+    }
+  ],
+  "GV-800": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-800 C",
+        "title": "Proof of Firearms Turned In, Sold, or Stored (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-800 K",
+        "title": "Proof of Firearms Turned In, Sold, or Stored (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-800 S",
+        "title": "Proof of Firearms Turned In, Sold, or Stored (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-800 V",
+        "title": "Proof of Firearms Turned In, Sold, or Stored (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800v.pdf"
+      }
+    }
+  ],
+  "GV-800-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "GV-800-INFO C",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "GV-800-INFO K",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "GV-800-INFO S",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "GV-800-INFO V",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/gv800infov.pdf"
+      }
+    }
+  ],
+  "ICWA-010(A)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ICWA-010(A) S",
+        "title": "Indian Child Inquiry Attachment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/icwa010as.pdf"
+      }
+    }
+  ],
+  "ICWA-020": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ICWA-020 S",
+        "title": "Parental Notification of Indian Status (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/icwa020s.pdf"
+      }
+    }
+  ],
+  "ICWA-030(A)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ICWA-030(A) S",
+        "title": "Attachment to Notice of Child Custody Proceeding for Indian Child (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/icwa030as.pdf"
+      }
+    }
+  ],
+  "ICWA-030": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "ICWA-030 S",
+        "title": "Notice of Child Custody Proceeding for Indian Child (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/icwa030s.pdf"
+      }
+    }
+  ],
+  "INT-300": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "INT-300 C",
+        "title": "Request for Interpreter (Civil) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300c.pdf"
+      }
+    },
+    {
+      "language": "Chinese Traditional",
+      "form": {
+        "id": "INT-300 CT",
+        "title": "Request for Interpreter (Civil) (Chinese Traditional)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300ct.pdf"
+      }
+    },
+    {
+      "language": "Farsi",
+      "form": {
+        "id": "INT-300 F",
+        "title": "Request for Interpreter (Civil) (Farsi)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300f.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "INT-300 K",
+        "title": "Request for Interpreter (Civil) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300k.pdf"
+      }
+    },
+    {
+      "language": "Punjabi",
+      "form": {
+        "id": "INT-300 P",
+        "title": "Request for Interpreter (Civil) (Punjabi)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300p.pdf"
+      }
+    },
+    {
+      "language": "Russian",
+      "form": {
+        "id": "INT-300 R",
+        "title": "Request for Interpreter (Civil) (Russian)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300r.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "INT-300 S",
+        "title": "Request for Interpreter (Civil) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300s.pdf"
+      }
+    },
+    {
+      "language": "Tagalog",
+      "form": {
+        "id": "INT-300 TG",
+        "title": "Request for Interpreter (Civil) (Tagalog)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300tg.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "INT-300 V",
+        "title": "Request for Interpreter (Civil) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/int300v.pdf"
+      }
+    }
+  ],
+  "JV-050-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-050-INFO C",
+        "title": "What happens if your child is taken from your home? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infoc.pdf"
+      }
+    },
+    {
+      "language": "Cambodian",
+      "form": {
+        "id": "JV-050-INFO CM",
+        "title": "What happens if your child is taken from your home? (Cambodian)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infocm.pdf"
+      }
+    },
+    {
+      "language": "Hmong",
+      "form": {
+        "id": "JV-050-INFO H",
+        "title": "What happens if your child is taken from your home? (Hmong)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infoh.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-050-INFO K",
+        "title": "What happens if your child is taken from your home? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infok.pdf"
+      }
+    },
+    {
+      "language": "Russian",
+      "form": {
+        "id": "JV-050-INFO R",
+        "title": "What happens if your child is taken from your home? (Russian)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infor.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-050-INFO S",
+        "title": "What happens if your child is taken from your home? (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-050-INFO V",
+        "title": "What happens if your child is taken from your home? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv050infov.pdf"
+      }
+    }
+  ],
+  "JV-060-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-060-INFO C",
+        "title": "Juvenile Justice Court—Information for Parents (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv060infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-060-INFO K",
+        "title": "Juvenile Justice Court—Information for Parents (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv060infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-060-INFO S",
+        "title": "Juvenile Justice Court—Information for Parents (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv060infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-060-INFO V",
+        "title": "Juvenile Justice Court—Information for Parents (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv060infov.pdf"
+      }
+    }
+  ],
+  "JV-100": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-100 S",
+        "title": "Juvenile Dependency Petition (Version One) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv100s.pdf"
+      }
+    }
+  ],
+  "JV-101(A)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-101(A) S",
+        "title": "Additional Children Attachment—Juvenile Dependency Petition (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv101as.pdf"
+      }
+    }
+  ],
+  "JV-110": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-110 S",
+        "title": "Juvenile Dependency Petition (Version Two) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv110s.pdf"
+      }
+    }
+  ],
+  "JV-120": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-120 S",
+        "title": "Serious Physical Harm (§ 300 (a)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv120s.pdf"
+      }
+    }
+  ],
+  "JV-121": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-121 S",
+        "title": "Failure To Protect (§ 300 (b)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv121s.pdf"
+      }
+    }
+  ],
+  "JV-122": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-122 S",
+        "title": "Serious Emotional Damage (§ 300 (c)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv122s.pdf"
+      }
+    }
+  ],
+  "JV-123": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-123 S",
+        "title": "Sexual Abuse (§ 300 (d)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv123s.pdf"
+      }
+    }
+  ],
+  "JV-124": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-124 S",
+        "title": "Severe Physical Abuse (§ 300 (e)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv124s.pdf"
+      }
+    }
+  ],
+  "JV-125": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-125 S",
+        "title": "Caused Another Child's Death Through Abuse or Neglect (§ 300 (f)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv125s.pdf"
+      }
+    }
+  ],
+  "JV-126": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-126 S",
+        "title": "No Provision for Support (§ 300 (g)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv126s.pdf"
+      }
+    }
+  ],
+  "JV-127": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-127 S",
+        "title": "Freed for Adoption (§ 300 (h)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv127s.pdf"
+      }
+    }
+  ],
+  "JV-128": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-128 S",
+        "title": "Cruelty (§ 300 (i)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv128s.pdf"
+      }
+    }
+  ],
+  "JV-129": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-129 S",
+        "title": "Abuse of Sibling (§ 300 (i)) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv129s.pdf"
+      }
+    }
+  ],
+  "JV-130-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-130-INFO S",
+        "title": "Paying for Lawyers in Dependency Court—Information for Parents and Guardians (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv130infos.pdf"
+      }
+    }
+  ],
+  "JV-140": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-140 S",
+        "title": "Notification of Mailing Address (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv140s.pdf"
+      }
+    }
+  ],
+  "JV-141": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-141 S",
+        "title": "E-Mail Notice of Hearing: Consent, Withdrawal of Consent, Address Change (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv141s.pdf"
+      }
+    }
+  ],
+  "JV-150": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-150 S",
+        "title": "Supplemental Petition for More Restrictive Placement (Attachment) (Welf. & Inst. Code, § 387) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv150s.pdf"
+      }
+    }
+  ],
+  "JV-180": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-180 S",
+        "title": "Request to Change Court Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv180s.pdf"
+      }
+    }
+  ],
+  "JV-190": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-190 S",
+        "title": "Waiver of Rights—Juvenile Dependency (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv190s.pdf"
+      }
+    }
+  ],
+  "JV-195": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-195 S",
+        "title": "Waiver of Reunification Services (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv195s.pdf"
+      }
+    }
+  ],
+  "JV-200": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-200 S",
+        "title": "Custody Order—Juvenile—Final Judgment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv200s.pdf"
+      }
+    }
+  ],
+  "JV-205": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-205 S",
+        "title": "Visitation Order—Juvenile (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv205s.pdf"
+      }
+    }
+  ],
+  "JV-212": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-212 S",
+        "title": "Application to Review Decision by Social Worker Not to Commence Proceedings (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv212s.pdf"
+      }
+    }
+  ],
+  "JV-214-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-214-INFO S",
+        "title": "Instructions for Requesting a Hearing to Review Waiver of Presumptive Transfer of Specialty Mental Health Services (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv214infos.pdf"
+      }
+    }
+  ],
+  "JV-218": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-218 S",
+        "title": "Child's Opinion About the Medicine (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv218s.pdf"
+      }
+    }
+  ],
+  "JV-219": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-219 S",
+        "title": "Statement About Medicine Prescribed (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv219s.pdf"
+      }
+    }
+  ],
+  "JV-222": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-222 S",
+        "title": "Input on Application for Psychotropic Medication (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv222s.pdf"
+      }
+    }
+  ],
+  "JV-225": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-225 S",
+        "title": "Your Child's Health and Education",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv225s.pdf"
+      }
+    }
+  ],
+  "JV-245": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-245 C",
+        "title": "Request for Restraining Order—Juvenile (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv245c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-245 K",
+        "title": "Request for Restraining Order—Juvenile (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv245k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-245 S",
+        "title": "Request for Restraining Order—Juvenile (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv245s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-245 V",
+        "title": "Request for Restraining Order—Juvenile (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv245v.pdf"
+      }
+    }
+  ],
+  "JV-247": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-247 S",
+        "title": "Answer to Request for Restraining Order—Juvenile (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv247s.pdf"
+      }
+    }
+  ],
+  "JV-250": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-250 C",
+        "title": "Notice of Hearing and Temporary Restraining Order—Juvenile (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv250c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-250 K",
+        "title": "Notice of Hearing and Temporary Restraining Order—Juvenile (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv250k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-250 S",
+        "title": "Notice of Hearing and Temporary Restraining Order—Juvenile (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv250s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-250 V",
+        "title": "Notice of Hearing and Temporary Restraining Order—Juvenile (VIetnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv250v.pdf"
+      }
+    }
+  ],
+  "JV-251": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-251 S",
+        "title": "Request and Order to Continue Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv251s.pdf"
+      }
+    }
+  ],
+  "JV-252-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-252-INFO C",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv252infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-252-INFO K",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv252infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-252-INFO S",
+        "title": "How Do I Turn In, Sell, or Store My Firearms?(Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv252infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-252-INFO V",
+        "title": "How Do I Turn In, Sell, or Store My Firearms? (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv252infov.pdf"
+      }
+    }
+  ],
+  "JV-255": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-255 C",
+        "title": "Restraining Order—Juvenile (CLETS—JUV) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv255c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-255 K",
+        "title": "Restraining Order—Juvenile (CLETS—JUV) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv255k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-255 S",
+        "title": "Restraining Order—Juvenile (CLETS—JUV) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv255s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-255 V",
+        "title": "Restraining Order—Juvenile (CLETS—JUV) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv255v.pdf"
+      }
+    }
+  ],
+  "JV-257": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-257 S",
+        "title": "Change to Restraining Order After Hearing—Juvenile (CLETS—JUV) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv257s.pdf"
+      }
+    },
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-257 C",
+        "title": "Change to Restraining Order After Hearing—Juvenile (CLETS—JUV) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv257c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-257 K",
+        "title": "Change to Restraining Order After Hearing—Juvenile (CLETS—JUV) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv257k.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-257 V",
+        "title": "Change to Restraining Order After Hearing—Juvenile (CLETS—JUV) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv257v.pdf"
+      }
+    }
+  ],
+  "JV-280": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-280 S",
+        "title": "Notice of Review Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv280s.pdf"
+      }
+    }
+  ],
+  "JV-285": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-285 S",
+        "title": "Relative Information (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv285s.pdf"
+      }
+    }
+  ],
+  "JV-287": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-287 S",
+        "title": "Confidential Information (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv287s.pdf"
+      }
+    }
+  ],
+  "JV-290": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-290 C",
+        "title": "Caregiver Information Form (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-290 K",
+        "title": "Caregiver Information Form (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-290 S",
+        "title": "Caregiver Information Form (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-290 V",
+        "title": "Caregiver Information Form (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290v.pdf"
+      }
+    }
+  ],
+  "JV-290-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-290-INFO C",
+        "title": "Instruction Sheet for Caregiver Information Form (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-290-INFO K",
+        "title": "Instruction Sheet for Caregiver Information Form (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-290-INFO S",
+        "title": "Instruction Sheet for Caregiver Information Form (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-290-INFO V",
+        "title": "Instruction Sheet for Caregiver Information Form (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv290infov.pdf"
+      }
+    }
+  ],
+  "JV-295": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-295 S",
+        "title": "De Facto Parent Request (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv295s.pdf"
+      }
+    }
+  ],
+  "JV-296": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-296 S",
+        "title": "De Facto Parent Statement (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv296s.pdf"
+      }
+    }
+  ],
+  "JV-297": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-297 S",
+        "title": "De Facto Parent Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv297s.pdf"
+      }
+    }
+  ],
+  "JV-298": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-298 S",
+        "title": "Order Ending De Facto Parent Status (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv298s.pdf"
+      }
+    }
+  ],
+  "JV-299": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-299 C",
+        "title": "De Facto Parent Pamphlet (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv299c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-299 K",
+        "title": "De Facto Parent Pamphlet (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv299k.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-299 S",
+        "title": "De Facto Parent Pamphlet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv299s.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-299 V",
+        "title": "De Facto Parent Pamphlet (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv299v.pdf"
+      }
+    }
+  ],
+  "JV-300": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-300 S",
+        "title": "Notice of Hearing on Selection of a Permanent Plan (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv300s.pdf"
+      }
+    }
+  ],
+  "JV-305": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-305 S",
+        "title": "Citation for Publication Under Welfare and Institutions Code Section 294 (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv305s.pdf"
+      }
+    }
+  ],
+  "JV-310": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-310 S",
+        "title": "Proof of Service Under Section 366.26 of the Welfare And Institutions Code (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv310s.pdf"
+      }
+    }
+  ],
+  "JV-326-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-326-INFO S",
+        "title": "Instructions for Notice of Prospective Adoptive Parent Hearing (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv326infos.pdf"
+      }
+    }
+  ],
+  "JV-330": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-330 C",
+        "title": "Letters of Guardianship (Juvenile) (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv330c.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-330 K",
+        "title": "Letters of Guardianship (Juvenile) (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv330k.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-330 V",
+        "title": "Letters of Guardianship (Juvenile) (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv330v.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-330 S",
+        "title": "Letters of Guardianship (Juvenile) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv330s.pdf"
+      }
+    }
+  ],
+  "JV-350-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-350-INFO C",
+        "title": "Guardianship Pamphlet (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv350infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-350-INFO K",
+        "title": "Guardianship Pamphlet (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv350infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-350-INFO S",
+        "title": "Guardianship Pamphlet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv350infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-350-INFO V",
+        "title": "Guardianship Pamphlet (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv350infov.pdf"
+      }
+    }
+  ],
+  "JV-357": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-357 S",
+        "title": "Special Immigrant Juvenile Findings (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv357s.pdf"
+      }
+    }
+  ],
+  "JV-364": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-364 S",
+        "title": "Termination of Dependency (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv364s.pdf"
+      }
+    }
+  ],
+  "JV-365": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-365 S",
+        "title": "Termination of Juvenile Court Jurisdiction—Nonminor (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv365s.pdf"
+      }
+    }
+  ],
+  "JV-464-INFO": [
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "JV-464-INFO C",
+        "title": "How to Ask to Return to Juvenile Court Jurisdiction and Foster Care (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv464infoc.pdf"
+      }
+    },
+    {
+      "language": "Korean",
+      "form": {
+        "id": "JV-464-INFO K",
+        "title": "How to Ask to Return to Juvenile Court Jurisdiction and Foster Care (Korean)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv464infok.pdf"
+      }
+    },
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-464-INFO S",
+        "title": "How to Ask to Return to Juvenile Court Jurisdiction and Foster Care (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv464infos.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "JV-464-INFO V",
+        "title": "How to Ask to Return to Juvenile Court Jurisdiction and Foster Care (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv464infov.pdf"
+      }
+    }
+  ],
+  "JV-500": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-500 S",
+        "title": "Parentage Inquiry (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv500s.pdf"
+      }
+    }
+  ],
+  "JV-501": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-501 S",
+        "title": "Parentage—Findings and Judgment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv501s.pdf"
+      }
+    }
+  ],
+  "JV-505": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-505 S",
+        "title": "Statement Regarding Parentage (Juvenile) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv505s.pdf"
+      }
+    }
+  ],
+  "JV-520": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-520 S",
+        "title": "Fax Filing Cover Sheet (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv520s.pdf"
+      }
+    }
+  ],
+  "JV-530": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-530 S",
+        "title": "Certified Request for Pupil Records—Truancy (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv530s.pdf"
+      }
+    }
+  ],
+  "JV-531": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-531 S",
+        "title": "Local Educational Agency Response to JV-530 (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv531s.pdf"
+      }
+    }
+  ],
+  "JV-535": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-535 S",
+        "title": "Order Designating Educational Rights Holder (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv535s.pdf"
+      }
+    }
+  ],
+  "JV-535(A)": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-535(A) S",
+        "title": "Attachment to Order Designating Educational Rights Holder (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv535as.pdf"
+      }
+    }
+  ],
+  "JV-536": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-536 S",
+        "title": "Local Educational Agency Response to JV-535—Appointment of Surrogate Parent (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv536s.pdf"
+      }
+    }
+  ],
+  "JV-537": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-537 S",
+        "title": "Educational Rights Holder Statement (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv537s.pdf"
+      }
+    }
+  ],
+  "JV-539": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-539 S",
+        "title": "Request for Hearing Regarding Child's Access to Services (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv539s.pdf"
+      }
+    }
+  ],
+  "JV-540": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-540 S",
+        "title": "Notice of Hearing on Joinder—Juvenile (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv540s.pdf"
+      }
+    }
+  ],
+  "JV-550": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-550 S",
+        "title": "Juvenile Court Transfer Orders (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv550s.pdf"
+      }
+    }
+  ],
+  "JV-552": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-552 S",
+        "title": "Juvenile Court Transfer-Out Orders—Nonminor Dependent (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv552s.pdf"
+      }
+    }
+  ],
+  "JV-570": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-570 S",
+        "title": "Petition for Disclosure of Juvenile Court Records Welfare and Institutions Code, § 827 (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv570s.pdf"
+      }
+    }
+  ],
+  "JV-575": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-575 S",
+        "title": "Petition to Obtain Report of Law Enforcement Agency (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv575s.pdf"
+      }
+    }
+  ],
+  "JV-580": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-580 S",
+        "title": "Notice to Child and Parent/Guardian RE: Release of Juvenile Police Records and Objection (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv580s.pdf"
+      }
+    }
+  ],
+  "JV-590": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-590 S",
+        "title": "Order to Seal Juvenile Records—Welfare and Institutions Code Section 781 (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv590s.pdf"
+      }
+    }
+  ],
+  "JV-595-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-595-INFO S",
+        "title": "How to Ask the Court to Seal Your Records (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv595infos.pdf"
+      }
+    }
+  ],
+  "JV-596-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-596-INFO S",
+        "title": "Sealing of Records for Satisfactory Completion of Probation (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv596infos.pdf"
+      }
+    }
+  ],
+  "JV-600": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-600 S",
+        "title": "Juvenile Wardship Petition (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv600s.pdf"
+      }
+    }
+  ],
+  "JV-610": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-610 S",
+        "title": "Child Habitually Disobedient § 601(a) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv610s.pdf"
+      }
+    }
+  ],
+  "JV-611": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-611 S",
+        "title": "Child Habitually Truant § 601(b) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv611s.pdf"
+      }
+    }
+  ],
+  "JV-615": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-615 S",
+        "title": "Deferred Entry of Judgment Notice of Noncompliance (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv615s.pdf"
+      }
+    }
+  ],
+  "JV-618": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-618 S",
+        "title": "Waiver of Rights—Juvenile Delinquency (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv618s.pdf"
+      }
+    }
+  ],
+  "JV-620": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-620 S",
+        "title": "Violation of Law By Child (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv620s.pdf"
+      }
+    }
+  ],
+  "JV-625": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-625 S",
+        "title": "Notice of Hearing—Juvenile Delinquency Proceeding (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv625s.pdf"
+      }
+    }
+  ],
+  "JV-635": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-635 S",
+        "title": "Promise to Appear—Juvenile Delinquency (Juvenile 14 years or Older) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv635s.pdf"
+      }
+    }
+  ],
+  "JV-710": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-710 S",
+        "title": "Order to Transfer Juvenile to Criminal Court Jurisdiction (Welfare and Institutions Code, § 707) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv710s.pdf"
+      }
+    }
+  ],
+  "JV-732": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-732 S",
+        "title": "Commitment to the California Department of Corrections and Rehabilitation, Division of Juvenile Facilities (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv732s.pdf"
+      }
+    }
+  ],
+  "JV-735": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-735 S",
+        "title": "Juvenile Notice of Violation of Probation (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv735s.pdf"
+      }
+    }
+  ],
+  "JV-740": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-740 S",
+        "title": "Petition to Modify, Change, or Set Aside Previous Orders—Change of Circumstances (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv740s.pdf"
+      }
+    }
+  ],
+  "JV-750": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-750 S",
+        "title": "Determination of Eligibility—Deferred Entry of Judgment—Juvenile (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv750s.pdf"
+      }
+    }
+  ],
+  "JV-755": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-755 S",
+        "title": "Deferred Entry of Judgment-Dismissal and Sealing of Juvenile Records (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv755s.pdf"
+      }
+    }
+  ],
+  "JV-792": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-792 S",
+        "title": "Instructions: Order for Restitution and Abstract of Judgment (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv792s.pdf"
+      }
+    }
+  ],
+  "JV-826": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "JV-826 S",
+        "title": "Denial of Petition (California Rules of Court, Rules 8.452, 8.456) (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/jv826s.pdf"
+      }
+    }
+  ],
+  "LA-400": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "LA-400 S",
+        "title": "Service Not Available in My Language: Request to Change Court Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la400s.pdf"
+      }
+    },
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "LA-400 C",
+        "title": "Service Not Available in My Language: Request to Change Court Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la400c.pdf"
+      }
+    },
+    {
+      "language": "Russian",
+      "form": {
+        "id": "LA-400 R",
+        "title": "Service Not Available in My Language: Request to Change Court Order (Russian)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la400r.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "LA-400 V",
+        "title": "Service Not Available in My Language: Request to Change Court Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la400v.pdf"
+      }
+    }
+  ],
+  "LA-450": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "LA-450 S",
+        "title": "Service Not Available in My Language: Order (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la450s.pdf"
+      }
+    },
+    {
+      "language": "Chinese",
+      "form": {
+        "id": "LA-450 C",
+        "title": "Service Not Available in My Language: Order (Chinese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la450c.pdf"
+      }
+    },
+    {
+      "language": "Russian",
+      "form": {
+        "id": "LA-450 R",
+        "title": "Service Not Available in My Language: Order (Russian)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la450r.pdf"
+      }
+    },
+    {
+      "language": "Vietnamese",
+      "form": {
+        "id": "LA-450 V",
+        "title": "Service Not Available in My Language: Order (Vietnamese)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/la450v.pdf"
+      }
+    }
+  ],
+  "MC-025": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "MC-025 S",
+        "title": "Attachment to Judicial Council Form (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/mc025s.pdf"
+      }
+    }
+  ],
+  "SC-200-INFO": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "SC-200-INFO S",
+        "title": "What to Do After the Court Decides Your Small Claims Case (Spanish)",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/sc200infos.pdf"
+      }
+    }
+  ],
+  "UD-110": [
+    {
+      "language": "Spanish",
+      "form": {
+        "id": "UD-110 S",
+        "title": "Judgment—Unlawful Detainer Attachment",
+        "isMandatory": false,
+        "url": "https://courts.ca.gov/documents/ud110s.pdf"
+      }
+    }
+  ]
+}

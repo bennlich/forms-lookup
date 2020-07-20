@@ -1,0 +1,54 @@
+[
+  {
+    "letter": "S",
+    "language": "Spanish"
+  },
+  {
+    "letter": "C",
+    "language": "Chinese"
+  },
+  {
+    "letter": "K",
+    "language": "Korean"
+  },
+  {
+    "letter": "V",
+    "language": "Vietnamese"
+  },
+  {
+    "letter": "A",
+    "language": "Arabic"
+  },
+  {
+    "letter": "T",
+    "language": "Tagalog"
+  },
+  {
+    "letter": "CT",
+    "language": "Chinese Traditional"
+  },
+  {
+    "letter": "F",
+    "language": "Farsi"
+  },
+  {
+    "letter": "P",
+    "language": "Punjabi"
+  },
+  {
+    "letter": "R",
+    "language": "Russian"
+  },
+  {
+    "letter": "TG",
+    "language": "Tagalog"
+  },
+  {
+    "letter": "CM",
+    "language": "Cambodian"
+  },
+  {
+    "letter": "H",
+    "language": "Hmong"
+  }
+]
