@@ -2393,154 +2393,203 @@ var initFormsLookup = (function () {
   var browser = dom(document);
 
   var categories = [{
-    id: "small-claims",
-    title: "Small Claims",
-    query: "small claims",
-    url: "https://www.courts.ca.gov/selfhelp-smallclaims.htm",
-    formsUrl: "https://www.courts.ca.gov/1017.htm",
-    tags: ["small claims", "sue", "suing", "mediation", "appeal"]
+    "id": "adoption",
+    "title": "Adoption",
+    "url": "https://www.courts.ca.gov/selfhelp-adoption.htm",
+    "formsUrl": "https://www.courts.ca.gov/1219.htm",
+    "query": "adoption"
   }, {
-    id: "criminal",
-    title: "Criminal Cases",
-    query: "cr",
-    url: "https://www.courts.ca.gov/selfhelp-criminallaw.htm"
+    "id": "appeals",
+    "title": "Appeals",
+    "url": "https://www.courts.ca.gov/selfhelp-appeals.htm",
+    "formsUrl": "https://www.courts.ca.gov/8545.htm",
+    "query": "appeals"
   }, {
-    id: "custody",
-    title: "Custody & Parenting Time (Visitation)",
-    query: "custody",
-    url: "https://www.courts.ca.gov/selfhelp-custody.htm",
-    formsUrl: "https://www.courts.ca.gov/1192.htm",
-    tags: ["family law", "custody", "parenting time", "visitation", "violence"]
+    "id": "custody",
+    "title": "Child Custody and Visitation",
+    "url": "https://www.courts.ca.gov/selfhelp-custody.htm",
+    "formsUrl": "https://www.courts.ca.gov/1192.htm",
+    "query": "custody"
   }, {
-    id: "child-support",
-    title: "Child Support",
-    query: "child support",
-    url: "https://www.courts.ca.gov/selfhelp-support.htm",
-    formsUrl: "https://www.courts.ca.gov/1199.htm",
-    tags: ["family law", "child support"]
+    "id": "child-support",
+    "title": "Child Support",
+    "url": "https://www.courts.ca.gov/selfhelp-support.htm",
+    "formsUrl": "https://www.courts.ca.gov/1199.htm",
+    "query": "child support"
   }, {
-    id: "parentage",
-    title: "Parentage/Paternity",
-    query: "parentage",
-    url: "https://www.courts.ca.gov/selfhelp-parentage.htm",
-    formsUrl: "https://www.courts.ca.gov/1203.htm",
-    tags: ["family law", "parentage", "paternity", "parent"]
+    "id": "civil",
+    "title": "Civil",
+    "url": "https://www.courts.ca.gov/1061.htm",
+    "query": "civil"
   }, {
-    id: "child-abuse",
-    title: "Child Abuse & Neglect",
-    query: "child abuse",
-    url: "https://www.courts.ca.gov/selfhelp-childabuse.htm",
-    formsUrl: "https://www.courts.ca.gov/1208.htm",
-    tags: ["family law", "child abuse", "neglect", "abuse", "violence"]
+    "id": "civil-harassment",
+    "title": "Civil Harassment",
+    "url": "https://www.courts.ca.gov/1044.htm",
+    "formsUrl": "https://www.courts.ca.gov/1281.htm",
+    "query": "civil harassment"
   }, {
-    id: "guardianship",
-    title: "Guardianship",
-    query: "guardianship",
-    url: "https://www.courts.ca.gov/selfhelp-guardianship.htm",
-    formsUrl: "https://www.courts.ca.gov/1214.htm",
-    tags: ["family law", "guardianship", "custody", "parent"]
+    "id": "cleaning-criminal-record",
+    "title": "Cleaning Criminal Record",
+    "url": "https://www.courts.ca.gov/1070.htm",
+    "formsUrl": "https://www.courts.ca.gov/1330.htm",
+    "query": "cleaning criminal record"
   }, {
-    id: "juvenile-delinquency",
-    title: "Juvenile Delinquency",
-    query: "juvenile delinquency",
-    url: "https://www.courts.ca.gov/selfhelp-delinquency.htm",
-    formsUrl: "https://www.courts.ca.gov/1217.htm",
-    tags: ["family law", "juvenile delinquency", "minor"]
+    "id": "conservatorship",
+    "title": "Conservatorship",
+    "url": "https://www.courts.ca.gov/selfhelp-conservatorship.htm",
+    "formsUrl": "https://www.courts.ca.gov/1302.htm",
+    "query": "conservatorship"
   }, {
-    id: "adoption",
-    title: "Adoption",
-    query: "adoption",
-    url: "https://www.courts.ca.gov/selfhelp-adoption.htm",
-    formsUrl: "https://www.courts.ca.gov/1219.htm",
-    tags: ["family law", "adoption"]
+    "id": "criminal",
+    "title": "Criminal",
+    "url": "https://www.courts.ca.gov/selfhelp-criminallaw.htm",
+    "query": "criminal",
+    "hidden": true
   }, {
-    id: "emancipation",
-    title: "Emancipation",
-    query: "emancipation",
-    url: "https://www.courts.ca.gov/selfhelp-emancipation.htm",
-    formsUrl: "https://www.courts.ca.gov/1222.htm",
-    tags: ["family law", "emancipation", "become adult", "parents"]
+    "id": "debt-collection",
+    "title": "Debt Collection",
+    "url": "https://www.courts.ca.gov/selfhelp-problemswithmoney.htm",
+    "query": "debt collection",
+    "hidden": true
   }, {
-    id: "divorce",
-    title: "Divorce or Separation",
-    query: "divorce",
-    url: "https://www.courts.ca.gov/selfhelp-divorce.htm",
-    formsUrl: "https://www.courts.ca.gov/8218.htm",
-    tags: ["divorce", "separation", "domestic partner"]
+    "id": "discovery-and-subpoenas",
+    "title": "Discovery and Subpoenas",
+    "url": "https://www.courts.ca.gov/1093.htm",
+    "query": "discovery and subpoenas"
   }, {
-    id: "domestic-violence",
-    title: "Domestic Violence",
-    query: "domestic violence",
-    url: "https://www.courts.ca.gov/selfhelp-domesticviolence.htm",
-    formsUrl: "https://www.courts.ca.gov/1271.htm",
-    tags: ["violence", "domestic", "restraining order"]
+    "id": "divorce",
+    "title": "Divorce",
+    "url": "https://www.courts.ca.gov/selfhelp-divorce.htm",
+    "formsUrl": "https://www.courts.ca.gov/8218.htm",
+    "query": "divorce"
   }, {
-    id: "restraining-order",
-    title: "Restraining Order",
-    query: "restraining order",
-    url: "https://www.courts.ca.gov/selfhelp-domesticviolence.htm",
-    formsUrl: "https://www.courts.ca.gov/1271.htm",
-    tags: ["violence", "restraining order"]
+    "id": "domestic-violence",
+    "title": "Domestic Violence",
+    "url": "https://www.courts.ca.gov/selfhelp-domesticviolence.htm",
+    "formsUrl": "https://www.courts.ca.gov/1271.htm",
+    "query": "domestic violence"
   }, {
-    id: "adult-abuse",
-    title: "Elder and Dependent Adult Abuse",
-    query: "adult abuse",
-    url: "https://www.courts.ca.gov/selfhelp-elder.htm",
-    formsUrl: "https://www.courts.ca.gov/1276.htm",
-    tags: ["violence", "restraining order"]
+    "id": "elder-abuse",
+    "title": "Elder Abuse",
+    "url": "https://www.courts.ca.gov/1058.htm",
+    "formsUrl": "https://www.courts.ca.gov/1298.htm",
+    "query": "elder abuse"
   }, {
-    id: "civil-harassment",
-    title: "Civil Harassment",
-    query: "civil harassment",
-    url: "https://www.courts.ca.gov/1044.htm",
-    formsUrl: "https://www.courts.ca.gov/1281.htm",
-    tags: ["violence"]
+    "id": "electronic-filing-and-service",
+    "title": "Electronic Filing",
+    "query": "electronic filing",
+    "hidden": true
   }, {
-    id: "workplace-violence",
-    title: "Workplace Violence",
-    query: "workplace violence",
-    url: "https://www.courts.ca.gov/1045.htm",
-    formsUrl: "https://www.courts.ca.gov/1286.htm",
-    tags: ["violence"]
+    "id": "enforcement-of-judgment",
+    "title": "Enforcement of Judgment",
+    "url": "https://www.courts.ca.gov/1014.htm",
+    "query": "enforcement of judgment"
   }, {
-    id: "gun-violence",
-    title: "Gun Violence Restraining Orders",
-    query: "restraining order",
-    url: "https://www.courts.ca.gov/33961.htm",
-    formsUrl: "https://www.courts.ca.gov/33683.htm",
-    tags: ["violence"]
+    "id": "eviction",
+    "title": "Eviction",
+    "url": "https://www.courts.ca.gov/selfhelp-eviction.htm",
+    "formsUrl": "https://www.courts.ca.gov/selfhelp-eviction.htm",
+    "query": "eviction"
   }, {
-    id: "evictions",
-    title: "Evictions",
-    query: "eviction",
-    url: "https://www.courts.ca.gov/selfhelp-eviction.htm",
-    formsUrl: "https://www.courts.ca.gov/selfhelp-eviction.htm",
-    tags: ["housing", "evictions", "unlawful detainer"]
+    "id": "fee-waivers",
+    "title": "Fee Waivers",
+    "url": "https://www.courts.ca.gov/selfhelp-feewaiver.htm",
+    "query": "fee waivers"
   }, {
-    id: "name-change",
-    title: "Name Change",
-    query: "name change",
-    url: "https://www.courts.ca.gov/selfhelp-namechange.htm",
-    formsUrl: "https://www.courts.ca.gov/1053.htm",
-    tags: ["name change"]
+    "id": "gender-change",
+    "title": "Gender Change",
+    "url": "https://www.courts.ca.gov/genderchange.htm",
+    "formsUrl": "https://www.courts.ca.gov/11183.htm",
+    "query": "gender change"
   }, {
-    id: "elder-abuse",
-    title: "Elder Abuse",
-    query: "elder abuse",
-    url: "https://www.courts.ca.gov/1058.htm",
-    formsUrl: "https://www.courts.ca.gov/1298.htm"
+    "id": "guardianship",
+    "title": "Guardianship",
+    "url": "https://www.courts.ca.gov/selfhelp-guardianship.htm",
+    "formsUrl": "https://www.courts.ca.gov/1214.htm",
+    "query": "guardianship"
   }, {
-    id: "conservatorship",
-    title: "Conservatorship",
-    query: "conservatorship",
-    url: "https://www.courts.ca.gov/selfhelp-conservatorship.htm",
-    formsUrl: "https://www.courts.ca.gov/1302.htm"
+    "id": "gun-violence-prevention",
+    "title": "Gun Violence Prevention",
+    "url": "https://www.courts.ca.gov/33961.htm",
+    "formsUrl": "https://www.courts.ca.gov/33683.htm",
+    "query": "gun violence prevention",
+    "hidden": true
   }, {
-    id: "gender-change",
-    title: "Gender Change",
-    query: "gender change",
-    url: "https://www.courts.ca.gov/genderchange.htm",
-    formsUrl: "https://www.courts.ca.gov/11183.htm"
+    "id": "juvenile",
+    "title": "Juvenile",
+    "url": "https://www.courts.ca.gov/selfhelp-delinquency.htm",
+    "formsUrl": "https://www.courts.ca.gov/1217.htm",
+    "query": "juvenile"
+  }, {
+    "id": "language-access",
+    "title": "Language Access",
+    "url": "https://www.courts.ca.gov/selfhelp-interpreter.htm",
+    "query": "language access"
+  }, {
+    "id": "name-change",
+    "title": "Name Change",
+    "url": "https://www.courts.ca.gov/selfhelp-namechange.htm",
+    "formsUrl": "https://www.courts.ca.gov/1053.htm",
+    "query": "name change"
+  }, {
+    "id": "parentage",
+    "title": "Parentage",
+    "url": "https://www.courts.ca.gov/selfhelp-parentage.htm",
+    "formsUrl": "https://www.courts.ca.gov/1203.htm",
+    "query": "parentage"
+  }, {
+    "id": "probate",
+    "title": "Probate",
+    "url": "https://www.courts.ca.gov/8865.htm",
+    "query": "probate"
+  }, {
+    "id": "proof-of-service",
+    "title": "Proof of Service",
+    "url": "https://www.courts.ca.gov/selfhelp-serving.htm",
+    "query": "proof of service"
+  }, {
+    "id": "small-claims",
+    "title": "Small Claims",
+    "url": "https://www.courts.ca.gov/selfhelp-smallclaims.htm",
+    "formsUrl": "https://www.courts.ca.gov/1017.htm",
+    "query": "small claims"
+  }, {
+    "id": "traffic",
+    "title": "Traffic",
+    "url": "https://www.courts.ca.gov/selfhelp-traffic.htm",
+    "formsUrl": "https://www.courts.ca.gov/1056.htm",
+    "query": "traffic"
+  }, {
+    "id": "fl-motions-and-attachments",
+    "title": "Family Law - Motions and Attachments",
+    "query": "Family Law - Motions and Attachments",
+    "hidden": true
+  }, {
+    "id": "fl-enforcement",
+    "title": "Family Law - Enforcement",
+    "query": "Family Law - Enforcement",
+    "hidden": true
+  }, {
+    "id": "fl-interstate-actions",
+    "title": "Family Law - Interstate Actions",
+    "query": "Family Law - Interstate Actions",
+    "hidden": true
+  }, {
+    "id": "fl-governmental-child-support",
+    "title": "Family Law - Governmental Child Support",
+    "query": "Family Law - Governmental Child Support",
+    "hidden": true
+  }, {
+    "id": "fl-summary-dissolution",
+    "title": "Family Law - Summary Dissolutions",
+    "url": "https://www.courts.ca.gov/selfhelp-summarydissolution.htm",
+    "query": "Family Law - Summary Dissolutions",
+    "hidden": true
+  }, {
+    "id": "fl-miscellaneous",
+    "title": "Family Law - Miscellaneous",
+    "query": "Family Law - Miscellaneous",
+    "hidden": true
   }];
 
   var allFormsPageUrl = './allforms.html';
@@ -2651,7 +2700,9 @@ var initFormsLookup = (function () {
   }
   var CategoryLinks = function CategoryLinks(_ref) {
     var onCategoryClick = _ref.onCategoryClick;
-    var sortedCategories = categories.sort(function (a, b) {
+    var sortedCategories = categories.filter(function (c) {
+      return !c.hidden;
+    }).sort(function (a, b) {
       return a.title < b.title ? -1 : 1;
     }); // Chunk the categories into columns
 
@@ -2733,6 +2784,317 @@ var initFormsLookup = (function () {
     };
 
     return browser(_templateObject2$1(), response.length, query, response.length > 0 ? browser(_templateObject3$1(), response.map(FormResult)) : '');
+  };
+
+  var legacyFilterMap = [{
+    "key": "AD",
+    "title": "Adoption",
+    "categoryId": "adoption"
+  }, {
+    "key": "ADR",
+    "title": "Alternative Dispute Resolution",
+    "prefix": "ADR"
+  }, {
+    "key": "APP",
+    "title": "Appellate",
+    "categoryId": "appeals"
+  }, {
+    "key": "AT",
+    "title": "Attachment",
+    "prefix": "AT"
+  }, {
+    "key": "BMD",
+    "title": "Birth, Marriage, Death",
+    "prefix": "BMD"
+  }, {
+    "key": "CLETS",
+    "title": "CLETS",
+    "prefix": "CLETS"
+  }, {
+    "key": "CM",
+    "title": "Case Management",
+    "prefix": "CM"
+  }, {
+    "key": "CIV",
+    "title": "Civil",
+    "categoryId": "civil"
+  }, {
+    "key": "CH",
+    "title": "Civil Harassment Prevention",
+    "categoryId": "civil-harassment"
+  }, {
+    "key": "CD",
+    "title": "Claim and Delivery",
+    "prefix": "CD"
+  }, {
+    "key": "REC",
+    "title": "Court Records",
+    "prefix": "REC"
+  }, {
+    "key": "CR",
+    "title": "Criminal",
+    "categoryId": "criminal"
+  }, {
+    "key": "DAL",
+    "title": "Disability Access Litigation",
+    "prefix": "DAL"
+  }, {
+    "key": "DSC",
+    "title": "Discovery",
+    "prefix": "DISC"
+  }, {
+    "key": "DV",
+    "title": "Domestic Violence Prevention - English",
+    "categoryId": "domestic-violence"
+  }, {
+    "key": "DVC",
+    "title": "Domestic Violence Prevention - Chinese",
+    "categoryId": "domestic-violence"
+  }, {
+    "key": "DVK",
+    "title": "Domestic Violence Prevention - Korean",
+    "categoryId": "domestic-violence"
+  }, {
+    "key": "DVS",
+    "title": "Domestic Violence Prevention - Spanish",
+    "categoryId": "domestic-violence"
+  }, {
+    "key": "DVV",
+    "title": "Domestic Violence Prevention - Vietnamese",
+    "categoryId": "domestic-violence"
+  }, {
+    "key": "DVO",
+    "title": "Domestic Violence Prevention - Other Languages",
+    "categoryId": "domestic-violence"
+  }, {
+    "key": "EA",
+    "title": "Elder or Dependent Adult Abuse Prevention",
+    "categoryId": "elder-abuse"
+  }, {
+    "key": "EFS",
+    "title": "Electronic Filing and Service",
+    "prefix": "EFS"
+  }, {
+    "key": "EM",
+    "title": "Emancipation of Minor",
+    "prefix": "EM"
+  }, {
+    "key": "EPO",
+    "title": "Emergency Protective Order",
+    "prefix": "EPO"
+  }, {
+    "key": "EJ",
+    "title": "Enforcement of Judgment",
+    "prefix": "EJ"
+  }, {
+    "key": "EJT",
+    "title": "Expedited Jury Trial",
+    "prefix": "EJT"
+  }, {
+    "key": "DI",
+    "title": "Family Law - Dissolution, Legal Separation and Annulment FL-100 - 199",
+    "categoryId": "divorce"
+  }, {
+    "key": "PA",
+    "title": "Family Law - Parentage Actions FL-200 - 299",
+    "categoryId": "parentage"
+  }, {
+    "key": "MO",
+    "title": "Family Law - Motions and Attachments FL-300 - 399",
+    "categoryId": "fl-motions-and-attachments"
+  }, {
+    "key": "EN",
+    "title": "Family Law - Enforcement FL-400 - 499",
+    "categoryId": "fl-enforcement"
+  }, {
+    "key": "IA",
+    "title": "Family Law - Interstate Actions FL-500 - 599",
+    "categoryId": "fl-interstate-actions"
+  }, {
+    "key": "GO",
+    "title": "Family Law - Governmental Child Support FL-600 - 699",
+    "categoryId": "fl-governmental-child-support"
+  }, {
+    "key": "SD",
+    "title": "Family Law - Summary Dissolutions FL-800 - 899",
+    "categoryId": "fl-summary-dissolutions"
+  }, {
+    "key": "FLM",
+    "title": "Family Law - Miscellaneous FL-900 - 999",
+    "categoryId": "fl-miscellaneous"
+  }, {
+    "key": "FW",
+    "title": "Fee Waiver",
+    "prefix": "FW"
+  }, {
+    "key": "GC",
+    "title": "Guardianships and Conservatorships",
+    "prefix": "GC"
+  }, {
+    "key": "GVP",
+    "title": "Gun Violence Prevention",
+    "categoryId": "gun-violence-prevention"
+  }, {
+    "key": "HC",
+    "title": "Habeas Corpus",
+    "prefix": "HC"
+  }, {
+    "key": "ID",
+    "title": "Ignition Interlock Device",
+    "prefix": "ID"
+  }, {
+    "key": "ICW",
+    "title": "Indian Child Welfare Act",
+    "prefix": "ICWA"
+  }, {
+    "key": "IN",
+    "title": "Interpreter",
+    "prefix": "INT"
+  }, {
+    "key": "JV",
+    "title": "Juvenile",
+    "categoryId": "juvenile"
+  }, {
+    "key": "JUD",
+    "title": "Judgment",
+    "prefix": "JUD"
+  }, {
+    "key": "JURY",
+    "title": "Jury Selection",
+    "prefix": "JURY"
+  }, {
+    "key": "LA",
+    "title": "Language Access",
+    "prefix": "LA"
+  }, {
+    "key": "MD",
+    "title": "Menacing Dog",
+    "prefix": "MD"
+  }, {
+    "key": "MIL",
+    "title": "Military Service",
+    "query": "military"
+  }, {
+    "key": "MC",
+    "title": "Miscellaneous",
+    "prefix": "MC"
+  }, {
+    "key": "NC",
+    "title": "Name Changes",
+    "prefix": "NC"
+  }, {
+    "key": "NTA",
+    "title": "Notice to Appear and Related Forms",
+    "prefix": "TR"
+  }, {
+    "key": "PLG",
+    "title": "Pleading - General",
+    "prefix": "PLD"
+  }, {
+    "key": "CO",
+    "title": "Pleading - Contract",
+    "prefix": "PLD"
+  }, {
+    "key": "PL",
+    "title": "Pleading - Personal Injury, Property Damage, Wrongful Death",
+    "prefix": "PLD"
+  }, {
+    "key": "UD",
+    "title": "Pleading - Unlawful Detainer",
+    "prefix": "UD"
+  }, {
+    "key": "DE",
+    "title": "Probate - Decedents Estates",
+    "prefix": "DE"
+  }, {
+    "key": "POS",
+    "title": "Proof of Service",
+    "categoryId": "proof-of-service"
+  }, {
+    "key": "RC",
+    "title": "Receiverships",
+    "prefix": "RC"
+  }, {
+    "key": "SVP",
+    "title": "School Violence Prevention",
+    "prefix": "SV"
+  }, {
+    "key": "SC",
+    "title": "Small Claims",
+    "categoryId": "small-claims"
+  }, {
+    "key": "SUB",
+    "title": "Subpoena",
+    "prefix": "SUBP"
+  }, {
+    "key": "SUM",
+    "title": "Summons",
+    "prefix": "SUM"
+  }, {
+    "key": "TR",
+    "title": "Traffic Infractions",
+    "categoryId": "traffic"
+  }, {
+    "key": "TH",
+    "title": "Transitional Housing Misconduct",
+    "prefix": "TH"
+  }, {
+    "key": "TC",
+    "title": "Translated forms - Chinese" // not currently supporting this filter
+
+  }, {
+    "key": "TK",
+    "title": "Translated forms - Korean" // not currently supporting this filter
+
+  }, {
+    "key": "TS",
+    "title": "Translated forms - Spanish" // not currently supporting this filter
+
+  }, {
+    "key": "TV",
+    "title": "Translated forms - Vietnamese" // not currently supporting this filter
+
+  }, {
+    "key": "TO",
+    "title": "Translated forms - Other" // not currently supporting this filter
+
+  }, {
+    "key": "UD",
+    "title": "Unlawful Detainer (Landlord/Tenant)",
+    "prefix": "UD"
+  }, {
+    "key": "VL",
+    "title": "Vexatious Litigants",
+    "prefix": "VL"
+  }, {
+    "key": "WG",
+    "title": "Wage Garnishment",
+    "prefix": "WG"
+  }, {
+    "key": "WV",
+    "title": "Workplace Violence Prevention",
+    "prefix": "WV"
+  }];
+  var getQueryForLegacyFilter = function getQueryForLegacyFilter(filter) {
+    var legacyFilterConfig = legacyFilterMap.find(function (config) {
+      return config.key === filter;
+    });
+
+    if (legacyFilterConfig) {
+      if (legacyFilterConfig.categoryId) {
+        // This will match a JCC Form Category taxonomy term
+        var matchingCategory = categories.find(function (c) {
+          return c.id === legacyFilterConfig.categoryId;
+        });
+        if (!matchingCategory) return '';
+        return matchingCategory.query;
+      } else {
+        // This will match a JCC Form Prefix taxonomy term
+        return legacyFilterConfig.title;
+      }
+    } else {
+      return '';
+    }
   };
 
   function _templateObject4() {
@@ -2944,6 +3306,9 @@ var initFormsLookup = (function () {
 
         if (queryDict.query) {
           query = decodeURI(queryDict.query);
+        } else if (queryDict.filter) {
+          // This is where we support legacy URLs like https://www.courts.ca.gov/forms.htm?filter=DV
+          query = getQueryForLegacyFilter(queryDict.filter);
         }
       }
 
