@@ -4,7 +4,9 @@ import { categories } from '../categories.js';
 import { legacyDropdownLookupUrl } from '../config.js';
 
 export const CategoryLinks = ({ onCategoryClick }) => {
-  let sortedCategories = categories.sort((a, b) => (a.title < b.title ? -1 : 1));
+  let sortedCategories = categories
+    .filter(c => !c.hidden)
+    .sort((a, b) => (a.title < b.title ? -1 : 1));
   
   // Chunk the categories into columns
   let categoryGroups = _.chunk(sortedCategories, 2);

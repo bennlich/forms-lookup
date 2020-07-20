@@ -6,6 +6,7 @@ import { freezeBody, unfreezeBody } from './freezeBody.js';
 import { CategoryLinks } from './components/CategoryLinks.js';
 import { CategoryAlert } from './components/CategoryAlert.js';
 import { FormResults } from './components/FormResults.js';
+import { getQueryForLegacyFilter } from './legacyFilterSupport.js';
 import { allFormsPageUrl } from './config.js';
 
 function isMobile() {
@@ -156,6 +157,9 @@ export default function initFormsLookup(containerEl) {
       let queryDict = parseQueryString(window.location.search);
       if (queryDict.query) {
         query = decodeURI(queryDict.query);
+      } else if (queryDict.filter) {
+        // This is where we support legacy URLs like https://www.courts.ca.gov/forms.htm?filter=DV
+        query = getQueryForLegacyFilter(queryDict.filter);
       }
     }
     
