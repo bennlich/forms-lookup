@@ -111,7 +111,6 @@ export const categories = [
     "id": "eviction",
     "title": "Eviction",
     "url": "https://www.courts.ca.gov/selfhelp-eviction.htm",
-    "formsUrl": "https://www.courts.ca.gov/selfhelp-eviction.htm",
     "query": "eviction"
   },
   {

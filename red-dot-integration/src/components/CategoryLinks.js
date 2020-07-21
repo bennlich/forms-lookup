@@ -22,7 +22,7 @@ export const CategoryLinks = ({ onCategoryClick }) => {
 
   const CategoryLink = category => html`
     <div class="jcc-forms-filter__category-result">
-      <a href="#" onclick=${e => onCategoryClick(e, category)}>${category.title}</a>
+      <a href="?query=${category.query}" onclick=${e => onCategoryClick(e, category)}>${category.title}</a>
     </div>
   `;
     
