@@ -2,7 +2,7 @@ import html from 'nanohtml/lib/browser';
 
 export const FormResults = ({ query, response }) => {
   let FormResult = (form) => {
-    let formInfoUrl = `https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/${form.id
+    let formInfoUrl = `https://selfhelp.courts.ca.gov/jcc-form/${form.id
       .toLowerCase()
       .replace(/\(|\)|\./g, "")}`;
 

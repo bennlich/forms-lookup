@@ -30,7 +30,7 @@ let render = ({ query, response, loading }) => {
 
 let renderFormResults = ({ query, response, loading }) => {
   let formResult = (form) => {
-    let formInfoUrl = `https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/${form.id
+    let formInfoUrl = `https://selfhelp.courts.ca.gov/jcc-form/${form.id
       .toLowerCase()
       .replace(/\(|\)|\./g, "")}`;
 
