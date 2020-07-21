@@ -2670,7 +2670,7 @@ var initFormsLookup = (function () {
   };
 
   function _templateObject2() {
-    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        <div class=\"jcc-forms-filter__category-result-column\">\n          ", "\n        </div>\n        <div class=\"jcc-forms-filter__category-result-column\">\n          ", "\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">Search by category</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        <div class=\"jcc-forms-filter__category-result-column\">\n          ", "\n        </div>\n        <div class=\"jcc-forms-filter__category-result-column\">\n          ", "\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">Browse all categories</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
 
     _templateObject2 = function _templateObject2() {
       return data;

@@ -35,7 +35,7 @@ export const CategoryLinks = ({ onCategoryClick }) => {
         <div class="jcc-forms-filter__category-result-column">
           ${SecondColumn()}
           <div class="jcc-forms-filter__category-result">
-            <a href="${legacyDropdownLookupUrl}">Search by category</a>
+            <a href="${legacyDropdownLookupUrl}">Browse all categories</a>
           </div>
         </div>
       </div>
