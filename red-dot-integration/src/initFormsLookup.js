@@ -36,7 +36,7 @@ export default function initFormsLookup(containerEl) {
              name="input-type-text"
              autocomplete="off">
     </div>
-    <div class="jcc-forms-filter__search-results"></div>
+    <div class="jcc-forms-filter__search-results" aria-live="polite"></div>
     <div class="jcc-forms-filter__mobile-container">
       <div class="jcc-forms-filter__input-container">
         <input type="text"
@@ -46,7 +46,7 @@ export default function initFormsLookup(containerEl) {
                name="input-type-text"
                autocomplete="off">
       </div>
-      <div class="jcc-forms-filter__mobile-search-results"></div>
+      <div class="jcc-forms-filter__mobile-search-results" aria-live="polite"></div>
     </div>
   `);
   
