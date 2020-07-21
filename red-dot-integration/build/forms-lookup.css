@@ -287,17 +287,27 @@
   text-align: center;
 }
 
-.jcc-forms-filter__category-result-row {
-  display: flex;
+@media (min-width: 992px) {
+  .jcc-forms-filter__category-results {
+    display: flex;
+  }
+}
+
+.jcc-forms-filter__category-result-column {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .jcc-forms-filter__category-result-column {
+    width: 50%;
+  }
+  .jcc-forms-filter__category-result-column:first-child {
+    border-right: 1px solid #ddd;
+  }
 }
 
 .jcc-forms-filter__category-result {
   flex-grow: 1;
-  width: 50%;
   box-sizing: border-box;
-}
-.jcc-forms-filter__category-result:first-child {
-  border-right: 1px solid #ddd;
 }
 .jcc-forms-filter__category-result a {
   display: block;

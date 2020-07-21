@@ -2669,18 +2669,8 @@ var initFormsLookup = (function () {
     document.body.style.overflow = bodyInitialStyle;
   };
 
-  function _templateObject3() {
-    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        ", "\n        <div class=\"jcc-forms-filter__category-result-row\">\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">Search by category</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
-
-    _templateObject3 = function _templateObject3() {
-      return data;
-    };
-
-    return data;
-  }
-
   function _templateObject2() {
-    var data = _taggedTemplateLiteral(["\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"#\" onclick=", ">", "</a>\n          </div>\n        "]);
+    var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__category-results\">\n        <div class=\"jcc-forms-filter__category-result-column\">\n          ", "\n        </div>\n        <div class=\"jcc-forms-filter__category-result-column\">\n          ", "\n          <div class=\"jcc-forms-filter__category-result\">\n            <a href=\"", "\">Search by category</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  "]);
 
     _templateObject2 = function _templateObject2() {
       return data;
@@ -2690,7 +2680,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__category-result-row\">\n        ", "\n      </div>\n    "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__category-result\">\n      <a href=\"#\" onclick=", ">", "</a>\n    </div>\n  "]);
 
     _templateObject = function _templateObject() {
       return data;
@@ -2704,23 +2694,26 @@ var initFormsLookup = (function () {
       return !c.hidden;
     }).sort(function (a, b) {
       return a.title < b.title ? -1 : 1;
-    }); // Chunk the categories into columns
+    });
+    var numCategories = sortedCategories.length + 1;
 
-    var categoryGroups = _$1.chunk(sortedCategories, 2);
-
-    if (window.innerWidth < 700) {
-      categoryGroups = _$1.chunk(sortedCategories, 1);
-    }
-
-    var CategoryResultRow = function CategoryResultRow(categoryGroup) {
-      return browser(_templateObject(), categoryGroup.map(function (category) {
-        return browser(_templateObject2(), function (e) {
-          return onCategoryClick(e, category);
-        }, category.title);
-      }));
+    var FirstColumn = function FirstColumn() {
+      var firstHalf = sortedCategories.slice(0, Math.ceil(numCategories / 2));
+      return firstHalf.map(CategoryLink);
     };
 
-    return browser(_templateObject3(), categoryGroups.map(CategoryResultRow), legacyDropdownLookupUrl);
+    var SecondColumn = function SecondColumn() {
+      var secondHalf = sortedCategories.slice(Math.ceil(numCategories / 2));
+      return secondHalf.map(CategoryLink);
+    };
+
+    var CategoryLink = function CategoryLink(category) {
+      return browser(_templateObject(), function (e) {
+        return onCategoryClick(e, category);
+      }, category.title);
+    };
+
+    return browser(_templateObject2(), FirstColumn(), SecondColumn(), legacyDropdownLookupUrl);
   };
 
   function _templateObject$1() {
@@ -2745,10 +2738,10 @@ var initFormsLookup = (function () {
     }
   };
 
-  function _templateObject3$1() {
+  function _templateObject3() {
     var data = _taggedTemplateLiteral(["<div class=\"jcc-forms-filter__form-results\">\n          ", "\n        </div>"]);
 
-    _templateObject3$1 = function _templateObject3() {
+    _templateObject3 = function _templateObject3() {
       return data;
     };
 
@@ -2783,7 +2776,7 @@ var initFormsLookup = (function () {
       return browser(_templateObject$2(), formInfoUrl, form.id, form.title, formInfoUrl, form.url);
     };
 
-    return browser(_templateObject2$1(), response.length, query, response.length > 0 ? browser(_templateObject3$1(), response.map(FormResult)) : '');
+    return browser(_templateObject2$1(), response.length, query, response.length > 0 ? browser(_templateObject3(), response.map(FormResult)) : '');
   };
 
   var legacyFilterMap = [{
@@ -3107,10 +3100,10 @@ var initFormsLookup = (function () {
     return data;
   }
 
-  function _templateObject3$2() {
+  function _templateObject3$1() {
     var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          ", "\n        </div>"]);
 
-    _templateObject3$2 = function _templateObject3() {
+    _templateObject3$1 = function _templateObject3() {
       return data;
     };
 
@@ -3252,7 +3245,7 @@ var initFormsLookup = (function () {
       }
 
       if (!response) {
-        return browser(_templateObject3$2(), CategoryLinks({
+        return browser(_templateObject3$1(), CategoryLinks({
           onCategoryClick: onCategoryClick
         }));
       } else {
