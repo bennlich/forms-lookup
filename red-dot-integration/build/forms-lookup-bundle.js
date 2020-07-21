@@ -2759,7 +2759,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject$2() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <div class=\"jcc-forms-filter__form-result-buttons\">\n            <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\" href=\"", "\">See form info</a>\n            <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\" href=\"", "\">View PDF</a>\n          </div>\n        </div>\n      </div>\n    "]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"jcc-forms-filter__form-result\">\n        <div class=\"jcc-forms-filter__form-result-content\">\n          <a class=\"jcc-forms-filter__form-number-and-title\" href=\"", "\">\n            <div class=\"form-number\">", "</div>\n            <div class=\"form-title\">", "</div>\n          </a>\n          <div class=\"jcc-forms-filter__form-result-buttons\">\n            <a class=\"usa-button usa-button--outline jcc-forms-filter__form-guide-button\"\n               href=\"", "\"\n               aria-label=\"See form info for ", " ", "\">See form info</a>\n            <a class=\"usa-button usa-button--outline jcc-forms-filter__download-form-button\"\n               href=\"", "\"\n               aria-label=\"View PDF form for ", " ", "\">View PDF</a>\n          </div>\n        </div>\n      </div>\n    "]);
 
     _templateObject$2 = function _templateObject() {
       return data;
@@ -2773,7 +2773,7 @@ var initFormsLookup = (function () {
 
     var FormResult = function FormResult(form) {
       var formInfoUrl = "https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
-      return browser(_templateObject$2(), formInfoUrl, form.id, form.title, formInfoUrl, form.url);
+      return browser(_templateObject$2(), formInfoUrl, form.id, form.title, formInfoUrl, form.id, form.title, form.url, form.id, form.title);
     };
 
     return browser(_templateObject2$1(), response.length, query, response.length > 0 ? browser(_templateObject3(), response.map(FormResult)) : '');
