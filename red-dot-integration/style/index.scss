@@ -30,6 +30,11 @@
   padding: 20px 20px 28px 20px;
   color: white;
   border-radius: 4px;
+  margin-top: 10px;
+
+  @media (min-width: 992px) {
+    margin-top: 0px;
+  }
 
   h1 {
     margin: 0px;
