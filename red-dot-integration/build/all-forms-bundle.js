@@ -2394,7 +2394,7 @@ var initAllForms = (function () {
 
   var lookupPageUrl = './';
   var formsAPIUrl = function formsAPIUrl(query) {
-    return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
+    return "https://selfhelp.courts.ca.gov/json/jcc-forms?query=".concat(query);
   };
 
   var previousRequest;
@@ -2523,7 +2523,7 @@ var initAllForms = (function () {
         loading = _ref2.loading;
 
     var formResult = function formResult(form) {
-      var formInfoUrl = "https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
+      var formInfoUrl = "https://selfhelp.courts.ca.gov/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
       return browser(_templateObject2(), formInfoUrl, form.id, form.title, formInfoUrl, form.id, form.title, form.url, form.id, form.title);
     };
 

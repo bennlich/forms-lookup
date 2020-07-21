@@ -2488,7 +2488,6 @@ var initFormsLookup = (function () {
     "id": "eviction",
     "title": "Eviction",
     "url": "https://www.courts.ca.gov/selfhelp-eviction.htm",
-    "formsUrl": "https://www.courts.ca.gov/selfhelp-eviction.htm",
     "query": "eviction"
   }, {
     "id": "fee-waivers",
@@ -2595,7 +2594,7 @@ var initFormsLookup = (function () {
   var allFormsPageUrl = './allforms.html';
   var legacyDropdownLookupUrl = '';
   var formsAPIUrl = function formsAPIUrl(query) {
-    return "https://epic-forms-jcc-srl.pantheonsite.io/json/jcc-forms?query=".concat(query);
+    return "https://selfhelp.courts.ca.gov/json/jcc-forms?query=".concat(query);
   };
 
   var previousRequest;
@@ -2680,7 +2679,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__category-result\">\n      <a href=\"#\" onclick=", ">", "</a>\n    </div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__category-result\">\n      <a href=\"?query=", "\" onclick=", ">", "</a>\n    </div>\n  "]);
 
     _templateObject = function _templateObject() {
       return data;
@@ -2708,7 +2707,7 @@ var initFormsLookup = (function () {
     };
 
     var CategoryLink = function CategoryLink(category) {
-      return browser(_templateObject(), function (e) {
+      return browser(_templateObject(), category.query, function (e) {
         return onCategoryClick(e, category);
       }, category.title);
     };
@@ -2716,8 +2715,18 @@ var initFormsLookup = (function () {
     return browser(_templateObject2(), FirstColumn(), SecondColumn(), legacyDropdownLookupUrl);
   };
 
+  function _templateObject2$1() {
+    var data = _taggedTemplateLiteral(["<li>See <a href=\"", "\">", " forms packets</a></li>"]);
+
+    _templateObject2$1 = function _templateObject2() {
+      return data;
+    };
+
+    return data;
+  }
+
   function _templateObject$1() {
-    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__heading jcc-forms-filter__alert-heading\">Looking for info about ", "?</p>\n          <ul class=\"usa-alert__text\">\n            <li>Read the <a href=\"", "\">", " self-help guide</a></li>\n            <li>See <a href=\"", "\">", " forms packets</a></li>\n          </ul>\n        </div>\n      </div>"]);
+    var data = _taggedTemplateLiteral(["\n      <div class=\"usa-alert usa-alert--info\" >\n        <div class=\"usa-alert__body\">\n          <p class=\"usa-alert__heading jcc-forms-filter__alert-heading\">Looking for info about ", "?</p>\n          <ul class=\"usa-alert__text\">\n            <li>Read the <a href=\"", "\">", " self-help guide</a></li>\n            ", "\n          </ul>\n        </div>\n      </div>"]);
 
     _templateObject$1 = function _templateObject() {
       return data;
@@ -2731,8 +2740,8 @@ var initFormsLookup = (function () {
       return category.query.toLowerCase() === query.toLowerCase();
     });
 
-    if (category) {
-      return browser(_templateObject$1(), category.title.toLowerCase(), category.url, category.title, category.formsUrl, category.title);
+    if (category && category.url) {
+      return browser(_templateObject$1(), category.title.toLowerCase(), category.url, category.title, category.formsUrl ? browser(_templateObject2$1(), category.formsUrl, category.title) : '');
     } else {
       return '';
     }
@@ -2748,10 +2757,10 @@ var initFormsLookup = (function () {
     return data;
   }
 
-  function _templateObject2$1() {
+  function _templateObject2$2() {
     var data = _taggedTemplateLiteral(["\n    <div>\n      <div class=\"jcc-forms-filter__results-header\">Found ", " forms matching \"", "\"</div>\n      ", "\n    </div>\n  "]);
 
-    _templateObject2$1 = function _templateObject2() {
+    _templateObject2$2 = function _templateObject2() {
       return data;
     };
 
@@ -2772,11 +2781,11 @@ var initFormsLookup = (function () {
         response = _ref.response;
 
     var FormResult = function FormResult(form) {
-      var formInfoUrl = "https://epic-forms-jcc-srl.pantheonsite.io/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
+      var formInfoUrl = "https://selfhelp.courts.ca.gov/jcc-form/".concat(form.id.toLowerCase().replace(/\(|\)|\./g, ""));
       return browser(_templateObject$2(), formInfoUrl, form.id, form.title, formInfoUrl, form.id, form.title, form.url, form.id, form.title);
     };
 
-    return browser(_templateObject2$1(), response.length, query, response.length > 0 ? browser(_templateObject3(), response.map(FormResult)) : '');
+    return browser(_templateObject2$2(), response.length, query, response.length > 0 ? browser(_templateObject3(), response.map(FormResult)) : '');
   };
 
   var legacyFilterMap = [{
@@ -3110,10 +3119,10 @@ var initFormsLookup = (function () {
     return data;
   }
 
-  function _templateObject2$2() {
+  function _templateObject2$3() {
     var data = _taggedTemplateLiteral(["\n        <div class=\"jcc-forms-filter__results-container\">\n          <div class=\"jcc-forms-filter__loading\">Loading...</div>\n        </div>"]);
 
-    _templateObject2$2 = function _templateObject2() {
+    _templateObject2$3 = function _templateObject2() {
       return data;
     };
 
@@ -3121,7 +3130,7 @@ var initFormsLookup = (function () {
   }
 
   function _templateObject$3() {
-    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container jcc-forms-filter__input-container--desktop\">\n      <h1>Find Your Court Forms</h1>\n      <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"", "\">view all forms</a></label>\n      <input type=\"text\"\n             id=\"jcc-forms-filter__input\"\n             placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n             class=\"usa-input jcc-forms-filter__input\"\n             name=\"input-type-text\"\n             autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\"></div>\n    <div class=\"jcc-forms-filter__mobile-container\">\n      <div class=\"jcc-forms-filter__input-container\">\n        <input type=\"text\"\n               id=\"jcc-forms-filter__mobile-input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__mobile-input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n      </div>\n      <div class=\"jcc-forms-filter__mobile-search-results\"></div>\n    </div>\n  "]);
+    var data = _taggedTemplateLiteral(["\n    <div class=\"jcc-forms-filter__input-container jcc-forms-filter__input-container--desktop\">\n      <h1>Find Your Court Forms</h1>\n      <label for=\"jcc-forms-filter__input\" class=\"jcc-forms-filter__input-label\">Search for any topic or form number, or <a class=\"text-white\" href=\"", "\">view all forms</a></label>\n      <input type=\"text\"\n             id=\"jcc-forms-filter__input\"\n             placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n             class=\"usa-input jcc-forms-filter__input\"\n             name=\"input-type-text\"\n             autocomplete=\"off\">\n    </div>\n    <div class=\"jcc-forms-filter__search-results\" aria-live=\"polite\"></div>\n    <div class=\"jcc-forms-filter__mobile-container\">\n      <div class=\"jcc-forms-filter__input-container\">\n        <input type=\"text\"\n               id=\"jcc-forms-filter__mobile-input\"\n               placeholder=\"E.g. divorce, name change, fl-100, restraining order\"\n               class=\"usa-input jcc-forms-filter__mobile-input\"\n               name=\"input-type-text\"\n               autocomplete=\"off\">\n      </div>\n      <div class=\"jcc-forms-filter__mobile-search-results\" aria-live=\"polite\"></div>\n    </div>\n  "]);
 
     _templateObject$3 = function _templateObject() {
       return data;
@@ -3241,7 +3250,7 @@ var initFormsLookup = (function () {
       };
 
       if (loading) {
-        return browser(_templateObject2$2());
+        return browser(_templateObject2$3());
       }
 
       if (!response) {
