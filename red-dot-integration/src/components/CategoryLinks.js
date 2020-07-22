@@ -1,14 +1,23 @@
 import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 import { categories } from '../categories.js';
-import { legacyDropdownLookupUrl } from '../config.js';
+import { legacyDropdownLookupUrl, showLegacyDropdownLookupLink } from '../config.js';
 
 export const CategoryLinks = ({ onCategoryClick }) => {
   let sortedCategories = categories
     .filter(c => !c.hidden)
     .sort((a, b) => (a.title < b.title ? -1 : 1));
-  
-  let numCategories = sortedCategories.length + 1;
+
+  let numCategories = sortedCategories.length;
+  if (showLegacyDropdownLookupLink) {
+    numCategories = sortedCategories.length + 1;
+  }
+
+  const legacyDropdownLookupLink = html`
+    <div class="jcc-forms-filter__category-result">
+      <a href="${legacyDropdownLookupUrl}">Browse all categories</a>
+    </div>
+  `;
 
   const FirstColumn = () => {
     let firstHalf = sortedCategories.slice(0, Math.ceil(numCategories / 2));
@@ -34,9 +43,7 @@ export const CategoryLinks = ({ onCategoryClick }) => {
         </div>
         <div class="jcc-forms-filter__category-result-column">
           ${SecondColumn()}
-          <div class="jcc-forms-filter__category-result">
-            <a href="${legacyDropdownLookupUrl}">Browse all categories</a>
-          </div>
+          ${showLegacyDropdownLookupLink ? legacyDropdownLookupLink : ''}
         </div>
       </div>
     </div>
