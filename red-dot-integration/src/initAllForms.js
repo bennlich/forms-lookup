@@ -1,5 +1,9 @@
 import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
+
+// For IE 11
+import './ChildNode.remove.polyfill.js';
+
 import { fetchAllForms } from './fetchForms.js';
 import { lookupPageUrl } from './config.js';
 

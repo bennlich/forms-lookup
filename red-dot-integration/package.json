@@ -25,6 +25,7 @@
     "sass": "^1.26.5"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "nanohtml": "^1.9.1",
     "underscore": "^1.10.2"
   }

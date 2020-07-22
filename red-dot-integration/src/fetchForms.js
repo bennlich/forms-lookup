@@ -27,12 +27,17 @@ let _fetchForms = function(query, callback) {
 let _executeQuery = function(query, callback) {
   let url = formsAPIUrl(query);
   let newRequest = new XMLHttpRequest();
-  newRequest.responseType = "json";
   newRequest.onload = function() {
-    callback({
-      query: query,
-      response: newRequest.response
-    });
+    try {
+      let response = JSON.parse(newRequest.response);
+      callback({ query, response });
+    } catch (e) {
+      console.error(e);
+      console.error("Could not parse response:", newRequest.response);
+    }
+  };
+  newRequest.onerror = function() {
+    console.error('An error occured while fetching forms.');
   };
   newRequest.open("GET", url);
   previousRequest = newRequest;
