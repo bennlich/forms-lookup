@@ -55,7 +55,14 @@ export default function initFormsLookup(containerEl) {
   `);
   
   let searchInput = document.querySelector("#jcc-forms-filter__input");
-  searchInput.addEventListener("input", () => doQuery({ query: searchInput.value }));
+  searchInput.addEventListener("input", (e) => {
+    // IE11 fix to prevent input event from firing when searchInput gains/loses focus
+    if (document.activeElement !== searchInput) {
+      return;
+    }
+    
+    doQuery({ query: searchInput.value });
+  });
   if (isMobile()) {
     searchInput.addEventListener("mouseup", (e) => {
       e.preventDefault();
