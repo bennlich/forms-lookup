@@ -15,7 +15,9 @@ The `--execute-dependencies` option will also execute the `jcc_form_prefix` and 
 Replace `<env>` with the name of the environment where you want to run the migration. E.g. `live` or `develop` or `pr-187`.
 
 ```
-terminus drush jcc-srl.<env> migrate-import jcc_form --execute-dependencies
+terminus drush jcc-srl.<env> migrate-import jcc_form_prefix --update
+terminus drush jcc-srl.<env> migrate-import jcc_form_category --update
+terminus drush jcc-srl.<env> migrate-import jcc_form --update
 ```
 
 ## courts.ca.gov forms lookup module
