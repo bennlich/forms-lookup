@@ -1,7 +1,7 @@
 import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 import { categories } from '../categories.js';
-import { legacyDropdownLookupUrl, showLegacyDropdownLookupLink } from '../config.js';
+import { legacyDropdownLookupUrl, showLegacyDropdownLookupLink } from '../../config.js';
 
 export const CategoryLinks = ({ onCategoryClick }) => {
   let sortedCategories = categories

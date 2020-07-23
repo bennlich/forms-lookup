@@ -2,16 +2,16 @@ import _ from 'underscore';
 import html from 'nanohtml/lib/browser';
 
 // For IE 11
-import './ChildNode.remove.polyfill.js';
+import '../ChildNode.remove.polyfill.js';
 
 import { categories } from './categories.js';
-import { fetchForms } from './fetchForms.js';
+import { fetchForms } from '../fetchForms.js';
 import { freezeBody, unfreezeBody } from './freezeBody.js';
 import { CategoryLinks } from './components/CategoryLinks.js';
 import { CategoryAlert } from './components/CategoryAlert.js';
 import { FormResults } from './components/FormResults.js';
 import { getQueryForLegacyFilter } from './legacyFilterSupport.js';
-import { allFormsPageUrl } from './config.js';
+import { allFormsPageUrl } from '../config.js';
 
 function isMobile() {
   return window.innerWidth < 700;
