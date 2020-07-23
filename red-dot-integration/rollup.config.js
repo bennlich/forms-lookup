@@ -16,7 +16,7 @@ export default [{
   ]
 },
 {
-  input: 'src/initAllForms.js',
+  input: 'src/all-forms-list/initAllForms.js',
   output: {
     file: 'build/all-forms-bundle.js',
     format: 'iife',

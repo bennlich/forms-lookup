@@ -7,7 +7,7 @@
     "build-dev": "cp src/config.dev.js src/config.js && npm run build-sass && npm run build-js",
     "build-prod": "cp src/config.prod.js src/config.js && npm run build-sass && npm run build-js",
     "build-sass": "sass --no-source-map style/index.scss build/forms-lookup.css",
-    "build-js": "rollup --config rollup.config.js",
+    "build-js": "rollup --config rollup.config.js && node build-all-forms-list-html.js",
     "watch-sass": "sass --watch --no-source-map style/index.scss build/forms-lookup.css",
     "watch-js": "rollup --watch --config rollup.config.js",
     "watch": "cp src/config.dev.js src/config.js && concurrently \"npm:watch-js\" \"npm:watch-sass\""
@@ -21,6 +21,8 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
     "concurrently": "^5.2.0",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.0",
     "rollup": "^2.18.1",
     "sass": "^1.26.5"
   },

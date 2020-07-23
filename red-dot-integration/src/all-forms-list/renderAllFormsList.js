@@ -1,38 +1,25 @@
-import _ from 'underscore';
-import html from 'nanohtml/lib/browser';
+// This is a bummer, but because we import these functions from client-side JS *and* from node.js,
+// the html function gets imported in slightly different ways, so we pass it in manually.
 
-// For IE 11
-import './ChildNode.remove.polyfill.js';
+import { lookupPageUrl } from '../config.js';
 
-import { fetchAllForms } from './fetchForms.js';
-import { lookupPageUrl } from './config.js';
-
-let resultsContainer;
-
-export default function initAllForms(containerEl) {
-  console.log("all forms init");
-
-  // Add the forms lookup DOM elements to the page
-  containerEl.appendChild(html`
+export const allFormsList = html => ({ response, loading }) => {
+  return html`
     <div class="jcc-forms-filter__input-container jcc-forms-filter__input-container--desktop">
       <h1>Find Your Court Forms</h1>
       <label class="jcc-forms-filter__input-label">Browse the list of all court forms, or <a class="text-white" href="${lookupPageUrl}">search by topic or form number</a></label>
     </div>
-    <div class="jcc-forms-filter__search-results"></div>
-  `);
+    <div class="jcc-forms-filter__search-results">${renderFormResults(html)({ response, loading })}</div>
+  `
+}
 
-  resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
-
-  render({ loading: true });
-  fetchAllForms(render);
-};
-
-let render = ({ query, response, loading }) => {
+export const render = html => ({ response, loading }) => {
+  let resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
   resultsContainer.firstChild && resultsContainer.firstChild.remove();
-  resultsContainer.appendChild(renderFormResults({ query, response, loading }));
+  resultsContainer.appendChild(renderFormResults(html)({ response, loading }));
 };
 
-let renderFormResults = ({ query, response, loading }) => {
+export const renderFormResults = html => ({ response, loading }) => {
   let formResult = (form) => {
     let formInfoUrl = `https://selfhelp.courts.ca.gov/jcc-form/${form.id
       .toLowerCase()
