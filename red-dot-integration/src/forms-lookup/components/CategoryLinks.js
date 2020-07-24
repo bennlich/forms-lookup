@@ -3,7 +3,7 @@ import html from 'nanohtml/lib/browser';
 import { categories } from '../categories.js';
 import { legacyDropdownLookupUrl, showLegacyDropdownLookupLink } from '../../config.js';
 
-export const CategoryLinks = ({ onCategoryClick }) => {
+export const CategoryLinks = (actions) => {
   let sortedCategories = categories
     .filter(c => !c.hidden)
     .sort((a, b) => (a.title < b.title ? -1 : 1));
@@ -31,7 +31,7 @@ export const CategoryLinks = ({ onCategoryClick }) => {
 
   const CategoryLink = category => html`
     <div class="jcc-forms-filter__category-result">
-      <a href="?query=${category.query}" onclick=${e => onCategoryClick(e, category)}>${category.title}</a>
+      <a href="?query=${category.query}" onclick=${e => actions.onCategoryClick(e, category)}>${category.title}</a>
     </div>
   `;
     

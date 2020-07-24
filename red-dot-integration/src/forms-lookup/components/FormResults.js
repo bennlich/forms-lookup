@@ -1,6 +1,7 @@
 import html from 'nanohtml/lib/browser';
 
-export const FormResults = ({ query, response }) => {
+export const FormResults = (actions, { query, response, showMoreForms }) => {
+  
   let FormResult = (form) => {
     let formInfoUrl = `https://selfhelp.courts.ca.gov/jcc-form/${form.id
       .toLowerCase()
@@ -26,13 +27,31 @@ export const FormResults = ({ query, response }) => {
     `;
   };
 
-  return html`
-    <div>
-      <div class="jcc-forms-filter__results-header">Found ${response.length} forms matching "${query}"</div>
-      ${response.length > 0 ?
-        html`<div class="jcc-forms-filter__form-results">
-          ${response.map(FormResult)}
-        </div>` : ''}
-    </div>
-  `;
+  const ResultsHeader = () => {
+    return html`<div class="jcc-forms-filter__results-header">Found ${response.length} forms matching "${query}"</div>`;
+  };
+
+  let maxResultsOnFirstLoad = 40;
+  if (response.length > maxResultsOnFirstLoad && !showMoreForms) {
+    return html`
+      ${ResultsHeader()}
+      <div class="jcc-forms-filter__form-results">
+        ${response.slice(0, maxResultsOnFirstLoad).map(FormResult)}
+        <div class="jcc-forms-filter__more-results-button-container">
+          <button class="usa-button usa-button--big" onclick=${() => actions.onShowMoreFormsClick()}>
+            Show ${response.length - maxResultsOnFirstLoad} more results
+          </button>
+        </div>
+      </div>
+    `;
+  } else if (response.length > 0) {
+    return html`
+      ${ResultsHeader()}
+      <div class="jcc-forms-filter__form-results">
+        ${response.map(FormResult)}
+      </div>
+    `;
+  } else {
+    return ResultsHeader();
+  }
 };

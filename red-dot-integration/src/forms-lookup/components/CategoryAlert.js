@@ -1,7 +1,7 @@
 import html from 'nanohtml/lib/browser';
 import { categories } from '../categories.js';
 
-export const CategoryAlert = ({ query }) => {
+export const CategoryAlert = (actions, { query }) => {
   let category = categories.find(category => category.query.toLowerCase() === query.toLowerCase());
   if (category && category.url) {
     return html`

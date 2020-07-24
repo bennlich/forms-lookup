@@ -77,13 +77,13 @@ export default function initFormsLookup(containerEl) {
   let lastRender = {};
   let rerender = () => render(lastRender);
 
-  let render = ({ query, response, loading } = {}) => {
-    lastRender = { query, response, loading };
+  let render = (state = {}) => {
+    lastRender = state;
 
     // Render desktop
     let resultsContainer = document.querySelector(".jcc-forms-filter__search-results");
-    Array.from(resultsContainer.children).forEach(el => el.remove());
-    resultsContainer.appendChild(SearchResults({ query, response, loading }));
+    resultsContainer.innerHTML = '';
+    resultsContainer.appendChild(SearchResults(actions, state));
 
     // Render mobile
     if (mobileContainerVisible()) {
@@ -91,8 +91,8 @@ export default function initFormsLookup(containerEl) {
       mobileContainer.style.display = 'block';
       
       let mobileResultsContainer = document.querySelector(".jcc-forms-filter__mobile-search-results");
-      Array.from(mobileResultsContainer.children).forEach(el => el.remove());
-      mobileResultsContainer.appendChild(SearchResults({ query, response, loading }));
+      mobileResultsContainer.innerHTML = '';
+      mobileResultsContainer.appendChild(SearchResults(actions, state));
       
       mobileSearchInput.focus();
       freezeBody();
@@ -103,8 +103,8 @@ export default function initFormsLookup(containerEl) {
     }
   };
 
-  let SearchResults = ({ query, response, loading }) => {
-    let onCategoryClick = (e, category) => {
+  let actions = {
+    onCategoryClick: (e, category) => {
       e.preventDefault();
       searchInput.value = category.query;
       mobileSearchInput.value = category.query;
@@ -116,8 +116,17 @@ export default function initFormsLookup(containerEl) {
       }
       
       doQuery({ query: category.query, pushState: true });
-    };
+    },
+    onShowMoreFormsClick: () => {
+      render({
+        query: lastRender.query,
+        response: lastRender.response,
+        showMoreForms: true
+      });
+    }
+  };
 
+  let SearchResults = (actions, { query, response, loading, showMoreForms }) => {
     if (loading) {
       return html`
         <div class="jcc-forms-filter__results-container">
@@ -128,13 +137,13 @@ export default function initFormsLookup(containerEl) {
     if (!response) {
       return html`
         <div class="jcc-forms-filter__results-container">
-          ${CategoryLinks({ onCategoryClick })}
+          ${CategoryLinks(actions)}
         </div>`;
     } else {
       return html`
-        ${CategoryAlert({ query })}
+        ${CategoryAlert(actions, { query })}
         <div class="jcc-forms-filter__results-container">
-          ${FormResults({ query, response })}
+          ${FormResults(actions, { query, response, showMoreForms })}
         </div>`;
     }
   };
