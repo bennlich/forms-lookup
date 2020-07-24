@@ -134,8 +134,7 @@ export default function initFormsLookup(containerEl) {
     }
     
     // Fetch and re-render
-    render({ loading: true });
-    fetchForms(query, render);
+    fetchForms(query, render, () => render({ loading: true }));
   }
 
   function updateStateFromQueryString() {
@@ -161,8 +160,7 @@ export default function initFormsLookup(containerEl) {
     
     searchInput.value = query;
     mobileSearchInput.value = query;
-    render({ loading: true });
-    fetchForms(query, render);
+    fetchForms(query, render, () => render({ loading: true }));
   }
 
   // Initial render. Subsequent renders occur when the user types in the input,
