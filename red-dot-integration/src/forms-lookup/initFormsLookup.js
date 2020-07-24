@@ -7,9 +7,7 @@ import '../ChildNode.remove.polyfill.js';
 import { categories } from './categories.js';
 import { fetchForms } from '../fetchForms.js';
 import { freezeBody, unfreezeBody } from './freezeBody.js';
-import { CategoryLinks } from './components/CategoryLinks.js';
-import { CategoryAlert } from './components/CategoryAlert.js';
-import { FormResults } from './components/FormResults.js';
+import { SearchResults } from './components/SearchResults.js';
 import { getQueryForLegacyFilter } from './legacyFilterSupport.js';
 import { allFormsPageUrl } from '../config.js';
 
@@ -123,28 +121,6 @@ export default function initFormsLookup(containerEl) {
         response: lastRender.response,
         showMoreForms: true
       });
-    }
-  };
-
-  let SearchResults = (actions, { query, response, loading, showMoreForms }) => {
-    if (loading) {
-      return html`
-        <div class="jcc-forms-filter__results-container">
-          <div class="jcc-forms-filter__loading">Loading...</div>
-        </div>`;
-    }
-
-    if (!response) {
-      return html`
-        <div class="jcc-forms-filter__results-container">
-          ${CategoryLinks(actions)}
-        </div>`;
-    } else {
-      return html`
-        ${CategoryAlert(actions, { query })}
-        <div class="jcc-forms-filter__results-container">
-          ${FormResults(actions, { query, response, showMoreForms })}
-        </div>`;
     }
   };
 
