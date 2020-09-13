@@ -22,7 +22,7 @@
     "@rollup/plugin-node-resolve": "^8.1.0",
     "concurrently": "^5.2.0",
     "esm": "^3.2.25",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "rollup": "^2.18.1",
     "sass": "^1.26.5"
   },
